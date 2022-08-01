@@ -1,5 +1,15 @@
 {
-    "redbus": [
+    
+    "userDetails": {
+        "username": "",
+        "gender": "",
+        "age": "",
+        "email": "",
+        "phone": ""
+    },
+
+
+    "products": [
         {
             "id": 1,
             "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
