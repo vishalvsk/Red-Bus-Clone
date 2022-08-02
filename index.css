@@ -1,6 +1,6 @@
 body{
     font: 100% Helvetica, sans-serif;
-    height: 100%;  
+    /* height: 100%;   */
     /* font-family: Montserrat; */
    margin: 0%;
    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -65,6 +65,23 @@ body{
     /* margin-top: -450px; */
     /* background: url(https://s2.rdbuz.com/web/images/home/city_scape_app_download.png); */
     
+/* media quaries */
+@media only screen and (max-width: 500px){
+    .main-div1{
+        width: 100%;
+        height: auto;
+    }
+    .main-div1 .div1-inner{
+        /* width: 100%; */
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+}
+
+    /* --------------maindiv2-------------------  */
+
 
 .main-div2{
 width: 100%;
@@ -79,7 +96,7 @@ justify-content: space-between;
 .div2-inner div img{
     height: 552px;
     width: 426px;
- 
+ /* margin-left: 150px; */
 }
 .div2-inner div #heading{
     font-size: 30px;
@@ -128,7 +145,22 @@ margin-left: 5px;
 margin-top: 10px;
 }
 
-
+@media only screen and (max-width: 500px){
+    .main-div2{
+        width: 100%;
+        }
+        .main-div2 .div2-inner{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin-left: 20px;
+        }
+        .div2-inner div img{
+            height: 552px;
+            width: 426px;
+         margin-left: 30px;
+        }
+}
 
 
 
@@ -168,7 +200,7 @@ font-weight: 600;
         line-height: 100px;
         background-color: #FFFFFF;
         margin: 10px 0 10px 0;
-        border:0.2px solid rgb(233, 226, 226);
+        border:0.2px solid rgb(240, 237, 237);
     }
     .main-div3 .div3-inner .benifit-service div img{
         height: 90px;
@@ -190,7 +222,38 @@ font-weight: 600;
     }
 
 
+    @media only screen and (max-width: 500px){
 
+        .main-div3{
+            height: auto;
+            width: 100%;
+            background-color: #ededed;
+        }
+        .main-div3 .div3-inner{
+           
+            text-align: center;
+        }
+        .main-div3 .div3-inner img{
+            height: 70px;
+            width: 60px;
+        margin-top: 20px;
+        font-size: 30px;
+        font-weight: 600;
+        }
+        .main-div3 .div3-inner p{
+            font-size: 25px;
+            font-weight: 600;
+            color: #333333;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            }
+        
+            .main-div3 .div3-inner .benifit-service{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                margin-left: -20px;
+            }
+    }
 
 
 
@@ -237,7 +300,37 @@ font-weight: 600;
         height: 90px;
     }
 
-
+    @media only screen and (max-width: 500px){
+        .main-div4{
+            width: 100%;
+            height: auto;
+        }
+        .main-div4 .div4-inner p{
+            font-size: 25px;
+            font-weight: 600;
+           color: #4a4a4a;
+        }
+        .main-div4 .div4-inner .img-box{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin: auto;
+        }
+     
+        .main-div4 .div4-inner .img-box p{
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            line-height: 30px;
+            letter-spacing: 2px;
+            color: #4a4a4a;
+        }
+        .main-div4 .div4-inner .img-box div{
+            margin-left: -100px;
+        }
+      
+     
+    
+    }
 
 
 
@@ -268,7 +361,33 @@ font-weight: 600;
         letter-spacing: 2px;
     }
 
-
+    @media only screen and (max-width: 500px){
+        .main-div5{
+            height: auto;
+            width: 100%;
+            background-color: #f1f1f1;
+            
+        }
+        .main-div5 .div5-inner{
+            width:80%;
+            margin: auto;
+            
+        }
+        .main-div5 .div5-inner .p-tag{
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .main-div5 .div5-inner .flag-div{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            text-align: center;
+            line-height: 35px;
+            color: #737373;
+            letter-spacing: 2px;
+        }
+    
+    }
 
 
 
@@ -305,19 +424,54 @@ font-weight: 600;
         color: #333333;
     }
 
-
+    @media only screen and (max-width: 500px){
+        .main-div6 .div6Inner{
+            width: 80%;
+            height: 250px;
+            margin: auto;
+      
+        }
+    
+        .main-div6 .p-tag{
+            font-size: 23px;
+            font-weight: 600;
+            text-align: center;
+            color: #4a4a4a;
+        }
+        .main-div6 .div6Inner{
+            display: flex;
+            
+        }
+        .main-div6 .div6Inner div{
+            width: 450px;
+            text-align: center;
+            color: #737373;
+         }
+        .main-div6 .div6Inner .red-tag{
+            color: #da4e52;
+            font-size: 28px;
+            line-height: 0px;
+        }
+        .main-div6 .div6Inner div p:nth-child(3){
+            color: #333333;
+            font-size: small;
+        }
+    
+    }
 
 
     /* <!-------- bus route and all city div  ---------> */
     
    .main-div7{
     background-color: #E5e5e5;
+    /* margin-top: -1px; */
    }
    .main-div7 .div7-inner{
     width: 1250px;
     height: 300px;
     margin: auto;
     display: flex;
+    
    }
    .main-div7 .div7-inner div{
     height: 250px;
@@ -338,7 +492,7 @@ font-weight: 600;
    }
    .main-div7  .top-oprator{
     width: 80%;
-    height: 300px;
+    height: auto;
     margin: auto;
     letter-spacing: 1px;
     line-height: 28px;
@@ -360,7 +514,22 @@ font-weight: 600;
    font-weight: 700;
    cursor: pointer;
 }
-
+@media only screen and (max-width: 500px){
+    .main-div7 .div7-inner{
+        /* width: 1250px; */
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+       }
+       .main-div7 .div7-inner div{
+        height: auto;
+       line-height: 25px;
+       margin-top: 50px;
+       letter-spacing: 0.2px;
+       }
+}
 
 
 /* <!------------ main page fooder div ------------> */
@@ -371,7 +540,7 @@ ul{
     width: 100%;
     height: 400px;
     background-color: #1B2330;
-
+margin-top: -15px;
 }
 .main-div8 .div8-inner{
     width: 80%;
@@ -400,4 +569,22 @@ ul{
  margin-bottom: -12px;
  margin-top: -10px;
  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 500px){
+    .main-div8{
+        width: 100%;
+        height: auto;
+        background-color: #1B2330;
+        margin-top: -15px;
+    
+    }
+    .main-div8 .div8-inner{
+     
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        color: #d0c7c7;
+    }
 }
