@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="availabilty_nd_booking.css">
+    <title>Bus-Availability</title>
+    <script src="https://kit.fontawesome.com/792b524030.js" crossorigin="anonymous"></script>
+   
+</head>
+
+<body>
+    <nav>
+        <img src="https://s3.rdbuz.com/web/images/home/sgp/r_logo.png" alt="">
+        <h2 class="center">NavBar</h2>
+    </nav>
+    <div id="header">
+        <p>Delhi</p>
+        <p><i class="fa-solid fa-right-long"></i></p>
+        <p>Lucknow</p>
+        <p><i class="fa-solid fa-angle-left"></i></p>
+        <p>02 Aug</p>
+        <p><i class="fa-solid fa-angle-right"></i></p>
+        <button id="modify_btn">Modify</button>
+    </div>
+    <main>
+        <div class="left_section">
+            <h6>FILTER</h6>
+            <hr>
+            <div id="heading_line" class="filter_div">
+                <P>Live Tracking (15)</P>
+            </div>
+            <hr>
+            <div class="filter_div">
+                <h6>DEPARTURE TIME</h6>
+                <label for=""><input type="checkbox" value="">Before 6 am (0)</label>
+                <label for=""><input type="checkbox" value="">6 am to 12 pm (0)</label>
+                <label for=""><input type="checkbox" value="">12 pm to 6 pm (0/</label>
+                <label for=""><input type="checkbox" value="">After 6 pm (22)</label>
+            </div>
+            <div class="filter_div">
+                <h6>BUS TYPES</h6>
+                <label for=""><input type="checkbox" value="">SEATER (17)</label>
+                <label for=""><input type="checkbox" value="">SLEEPER (20)</label>
+                <label for=""><input type="checkbox" value="">AC (23)</label>
+            </div>
+            <div class="filter_div">
+                <h6>SEAT AVAILABILITY</h6>
+                <label for=""><input type="checkbox" value="">Single Seats (9)</label>
+            </div>
+            <div class="filter_div">
+                <h6>ARRIVAL TIME</h6>
+                <label for=""><input type="checkbox" value="">Before 6 am (5)</label>
+                <label for=""><input type="checkbox" value="">6 am to 12 pm (18)</label>
+                <label for=""><input type="checkbox" value="">12 pm to 6 pm (0)</label>
+                <label for=""><input type="checkbox" value="">After 6 pm (0)</label>
+            </div>
+            <div class="points_div">
+                <h6>BOARDING POINT</h6>
+                <label for=""><i class="fa-solid fa-magnifying-glass"></i><input type="text" name="" id=""
+                        placeholder="BOARDING POINT"></label>
+            </div>
+            <div class="points_div">
+                <h6>DROPPING POINT</h6>
+                <label for=""><i class="fa-solid fa-magnifying-glass"></i><input type="text" name="" id=""
+                        placeholder="DROPPING POINT"></label>
+            </div>
+            <div class="points_div">
+                <h6>OPERATOR</h6>
+                <label for=""><i class="fa-solid fa-magnifying-glass"></i><input type="text" name="" id=""
+                        placeholder="OPERATOR"></label>
+            </div>
+            <div class="points_div">
+                <h6>AMENITIES</h6>
+                <ul class="amenties">
+                    <li>WIFI (23)</li>
+                    <li>Water Bottle (23)</li>
+                    <li>Blankets (4)</li>
+                    <li>Charging Point (4)</li>
+                    <li>Movie (0)</li>
+                    <li>Track My Bus (4)</li>
+                    <li>Emergency Contact Nu... (1)</li>
+                    <li>Toilet (1)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right_section">
+            <ul id="header_images">
+                <img src="https://st.redbus.in/Images//ReddealsCards/IND/primo1_MainCard.png" alt="">
+                <img src="https://s3.rdbuz.com/Images/ReddealsCards/IND/Returnonward_MainCard.png" alt="">
+                <img src="https://s3.rdbuz.com/Images/ReddealsCards/IND/FlexiTicket_MainCard.png" alt="">
+                <img src="https://s3.rdbuz.com/Images/ReddealsCards/IND/2_10_MainCard.png" alt="">
+                <img src="https://s3.rdbuz.com/Images/ReddealsCards/IND/4_10_MainCard.png" alt="">
+            </ul>
+            <div id="heading_line">
+                <h4><i class="fa-solid fa-shield-virus"></i>All bus ratings include safety as a major factor</h4>
+                <hr class="heading_hr">
+            </div>
+            <div id="details_sorting_heading">
+                <p><span id="no_of_buses" class="bold">0 Buses </span> found</p>
+                <p class="bold">SORT BY:</p>
+                <p>Departure <span id="order_departure_icon"></span></p>
+                <p>Duration</p>
+                <p>Arrival</p>
+                <p>Ratings</p>
+                <p>Fare</p>
+                <p>Seats Available</p>
+                <hr>
+            </div>
+            <div id="bus_details_section">
+                <!-- Bus details box will be here  -->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- POP-UP , will make at last if have time -->
+    <!-- <div class="pop_up_div">
+        <h2>IMPORTANT TIP</h2>
+        <div id="content">
+            <img src="https://s3.rdbuz.com/images/carousel/coachmark-two.gif" alt="">
+            <p>Showing results from your searched boarding and drop location. Scroll down to see 99 more bus options from DELHI to LUCKNOW</p>
+            <button>Ok, got it</button>
+        </div>
+    </div> -->
+    <script src="availabilty_nd_booking.js"></script>
+</body>
+
+</html>
+
+<!-- https://echo.paw.cloud/ -->
+
+<!-- imges  -->
+<!-- https://s3.rdbuz.com/images/carousel/coachmark-two.gif -->
+<!-- https://s3.rdbuz.com/Web/Images/write.png -->
+<!-- https://s3.rdbuz.com/Web/Images/call_new.png -->
