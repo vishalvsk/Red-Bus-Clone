@@ -161,7 +161,41 @@ document.getElementById("price").addEventListener("click",()=>{
     document.getElementById("seat").addEventListener("click",()=>{
       sortSeat(data)
       })
+
+      // filter data //
+      document.getElementById("before-6am").addEventListener("click",()=>{
+        displayData(data)
+        })
+
+        document.getElementById("morning").addEventListener("click",()=>{
+          DisplayData(data)
+          
+          })
+          document.getElementById("evening").addEventListener("click",()=>{
+            DisplayEveData(data)
+            
+            })
+
+            // bus type
+
+            document.getElementById("seater").addEventListener("click",()=>{
+              seater(data)
+              
+              })
+
+              document.getElementById("sleeper").addEventListener("click",()=>{
+                sleeper(data)
+                
+                })
+
+            document.getElementById("ac").addEventListener("click",()=>{
+              AC(data)
+              
+              })
+
 };
+
+
 const sortData = (data)=>{
   let sortType = data.sort((a,b)=>{
   return b.rating-a.rating
@@ -188,3 +222,91 @@ const sortDepature = (data)=>{
     })
     display_buses(sortSea)
     }
+
+    
+function displayData(data){
+  let newData = data.filter(function(time){
+    if(time.time_in>"6"){
+      return true
+    }
+    else{
+      return false;
+    }
+  })
+
+  display_buses(newData)
+}
+
+function DisplayData(data){
+  let newData1 = data.filter(function(time){
+    if(time.time_in<"6" && time.time_in >= "12"){
+      return true
+    }
+    else{
+      return false;
+    }
+  })
+
+  display_buses(newData1)
+  // location.reload()
+}
+
+
+function DisplayEveData(data){
+  let newData2 = data.filter(function(time){
+    if(time.time_in <= "12" ){
+      return true
+    }
+    else{
+      return false;
+    }
+  })
+
+  display_buses(newData2)
+  // location.reload()
+}
+
+
+function seater(data){
+  let newData2 = data.filter(function(name){
+    if(name.bus_name <= "Seater" ){
+      return true
+    }
+    else{
+      return false;
+    }
+  })
+
+  display_buses(newData2)
+  // location.reload()
+}
+
+
+function sleeper(data){
+  bus_details_section.innerHTML = "";
+  let newData2 = data.filter(function(name){
+    if(name.bus_name <= "Sleeper" ){
+      return true
+    }
+    else{
+      return false;
+    }
+  })
+
+  display_buses(newData2)
+  // location.reload()
+}
+
+function AC(data){
+  let newData2 = data.filter(function(name){
+    if(name.bus_name <= "A/C" ){
+      return true
+    }
+    else{
+      return false;
+    }
+  })
+
+  display_buses(newData2)
+  // location.reload()
+}
