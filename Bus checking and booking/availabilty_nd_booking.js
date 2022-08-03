@@ -5,6 +5,7 @@ const getData = async () => {
     const data = await res.json();
     // console.log(data)
     display_buses(data);
+    return data
   } catch (err) {
     console.log(err);
   }
@@ -13,10 +14,12 @@ getData();
 
 const display_buses = (data) => {
  let no_of_buses = document.getElementById("no_of_buses");
+ let bus_details_section = document.getElementById("bus_details_section");
+ bus_details_section.innerHTML = "";
  no_of_buses.innerHTML=`${data.length} Buses`;
 
   data.forEach((bus) => {
-    let bus_details_section = document.getElementById("bus_details_section");
+  
     let bus_card=document.createElement("div");
     bus_card.setAttribute("class","bus_card");
 
@@ -143,4 +146,45 @@ bus_details_section.append(bus_card);
   document.querySelector(".see_setails_btn").addEventListener("click", () => {
     console.log("Button clicked");
   });
+  
+document.getElementById("rating").addEventListener("click",()=>{
+sortData(data)
+})
+
+document.getElementById("price").addEventListener("click",()=>{
+  sortPrice(data)
+  })
+  document.getElementById("departure").addEventListener("click",()=>{
+    sortDepature(data)
+    })
+
+    document.getElementById("seat").addEventListener("click",()=>{
+      sortSeat(data)
+      })
 };
+const sortData = (data)=>{
+  let sortType = data.sort((a,b)=>{
+  return b.rating-a.rating
+  })
+  display_buses(sortType)
+  }
+const sortPrice = (data)=>{
+
+let sortPrice = data.sort((a,b)=>{
+return a.price-b.price
+})
+display_buses(sortPrice)
+}
+const sortDepature = (data)=>{
+  let sortDep = data.sort((a,b)=>{
+  return b.time_in-a.time_in
+  })
+  display_buses(sortDep)
+  }
+
+  const sortSeat = (data)=>{
+    let sortSea = data.sort((a,b)=>{
+    return b.seat_available-a.seat_available
+    })
+    display_buses(sortSea)
+    }
