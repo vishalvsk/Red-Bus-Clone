@@ -43,7 +43,7 @@ document.getElementById("ButtonOTPvarification").addEventListener("click" ,funct
     if(GetOTP == GetInput){
         alert("Login Successfully")
         document.getElementById("invalidOTP").style.display = "none";
-        location.href = "./navbar.html"
+        location.href = "../pages/homePage.html";
     }
     else{
         let invalidOTP = document.getElementById("invalidOTP") 

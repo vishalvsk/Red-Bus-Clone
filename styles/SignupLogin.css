@@ -9,18 +9,28 @@ body {
 }
 
 #headerBlock {
+  display:block;
+  height: 60px;
   width: 100%;
   z-index: 1;
-  background: #d84f57;
-  position: relative;
+  background: #932127;
+  transform: none;
+  transition: all 1.5s linear 0s;
+  outline: rgb(193, 159, 151) dashed 0px;
+  box-sizing: border-box;
+  /* border: 1px solid; */
 }
 
 #headerBlock .container {
   display: flex;
-  width: 1200px;
-  margin: 0px auto;
-  height: 55px;
   align-items: center;
+  height: 65px;
+  width: 1300px;
+  margin: 0 146px 0 146px;
+  pad: 10px 0 10px 20px;
+  max-width: 1300px;
+  min-width: 1200px;
+  /* border: 1px solid; */
 }
 
 #headerBlock .container .leftNav {
@@ -30,8 +40,11 @@ body {
 /*-----------left menu block -------------*/
 .leftNav section {
   display: flex;
-  position: fixed;
+  position:relative;
   top: 1px;
+}
+.leftNav{
+  /* border: 1px solid; */
 }
 
 .leftNav ul
@@ -82,13 +95,13 @@ body {
 
 /* ---------------------rightNav---------------------------- */
 
-#headerBlock .container .rightNav {
-  flex: 1;
+ .rightNav {
+  display: block;
+  float: right;
+  height: 39px;
+  width: 400px;
   /* border: 1px solid; */
-  position: fixed;
-  display: flex;
-  left: 128vh;
-  top: 0vh;
+  margin-bottom: 10px;
 
 }
 .rightNav ul li a{
