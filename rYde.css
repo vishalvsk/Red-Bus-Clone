@@ -1,0 +1,158 @@
+.ryde-div1 .inner{
+    width: 70%;
+    margin: auto;
+}
+.ryde-div1 .inner .img{
+    display: block;
+    text-align: center;
+}
+.ryde-div1 .inner p{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #3e3e52;
+    margin-top: -5px;
+}
+.ryde-div1 .inner1{
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+ #p-tag{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: #3e3e52;
+}
+.ryde-div1 .inner1 #div{
+   display: flex;
+   justify-content: space-between;
+   height: 132px;
+   width: 330px;
+   margin: auto;
+   gap: 20px;
+}
+.ryde-div1 .inner1 #div h3{
+    color: #3e3e52;
+margin-left: 5px;
+}
+.ryde-div1 .inner1 #div p{
+    color: #828282;
+    line-height: 20px;
+    margin-left: 5px;
+}
+.ryde-div1 .inner1 #div:hover{
+border: 2px solid #828282;
+border-radius: 14px;
+}
+.ryde-div2 .inner #offers{
+    margin-left: 230px;
+    font-size: 16px;
+    font-weight: 650;
+    margin-top: 50px;
+}
+.ryde-div2 .inner #offers span{
+    color: #1034d9;
+    font-size: 14px;
+    font-weight: 650;
+}
+.ryde-div2 .inner .inner1{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+ overflow: auto hidden;
+}
+.ryde-div2 .inner #div1{
+    width: 210px;
+    height: 100px;
+    line-height: 5px;
+   border-radius: 10px;
+background: linear-gradient(260.04deg, rgb(183, 248, 219) 0%, rgb(80, 167, 194) 100%);;
+}
+.ryde-div2 .inner #div2{
+    width: 210px;
+    height: 100px;
+    line-height: 5px;
+   border-radius: 10px;
+   margin-left: 20px;
+background: linear-gradient(247.67deg, rgb(255, 220, 171) -7.22%, rgb(206, 119, 0) 83.33%)
+}
+.ryde-div2 .inner #div3{
+    width: 210px;
+    height: 100px;
+    line-height: 5px;
+   border-radius: 10px;
+   margin-left: 20px;
+background: linear-gradient(80.04deg, rgb(77, 49, 176) 0%, rgb(229, 179, 179) 100%);
+}
+
+.ryde-div2 .inner #div4{
+    width: 210px;
+    height: 100px;
+    line-height: 5px;
+   border-radius: 10px;
+   margin-left: 20px;
+   margin-left: 20px;
+background: linear-gradient(258.38deg, rgb(255, 134, 122) 2.88%, rgb(255, 129, 119) 2.88%, rgb(177, 42, 91) 103.25%);
+}
+.ryde-div2 .inner #div5{
+    width: 210px;
+    height: 100px;
+    line-height: 5px;
+   border-radius: 10px;
+   margin-left: 20px;
+background: linear-gradient(71.04deg, rgb(12, 57, 139) -6.92%, rgb(90, 110, 157) 109.43%);
+
+}
+.ryde-div2 .inner #div6{
+    width: 210px;
+    height: 100px;
+    line-height: 5px;
+   border-radius: 10px;
+   margin-left: 20px;
+background: linear-gradient(260.28deg, rgb(239, 89, 90) 1.92%, rgb(7, 48, 121) 101.82%);
+}
+.ryde-div2 .inner .p-tag{
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-left: 10px;
+}
+.ryde-div2 .inner .money{
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-left: 10px;
+}
+.ryde-div2 .inner  .details{
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.ryde-div3 .inner {
+width: 70%;
+margin: auto;
+display: flex;
+margin-top: 20px;
+}
+.ryde-div3 .inner p{
+ font-size: 18px;
+ font-weight: 700;
+
+    }
+    .ryde-div3 .inner1{
+        width: 68%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .ryde-div3 .inner1 div img{
+        height: 242px;
+        width: 178px;
+        
+    }
+    
