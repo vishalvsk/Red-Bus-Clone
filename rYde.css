@@ -155,4 +155,49 @@ margin-top: 20px;
         width: 178px;
         
     }
-    
+
+
+
+
+    /* <!-- vhicall you can book div --> */
+    .ryde-div4{
+        margin-top: 50px;
+    }
+    .ryde-div4 #p-tag1{
+font-size: 18px;
+font-weight: 750;
+margin-left: 240px;
+color: #3e3e52;
+    }
+.ryde-div4 .inner{
+    width: 68%;
+    margin: auto;
+  display: flex;
+  gap: 30px;
+}
+.ryde-div4 .inner #car{
+height: 235px;
+width: 220px;
+border-radius: 8px;
+    background:url(https://www.redbus.in/bushire/static/mwebv2/ryde/webhome/Group5.svg);
+}
+.ryde-div4 .inner #ford{
+    height: 235px;
+    width: 220px;
+    border-radius: 8px;
+    background: url(https://www.redbus.in/bushire/static/mwebv2/ryde/webhome/Group6.svg);
+}
+
+.ryde-div4 .inner #tempo{
+    height: 235px;
+    width: 220px;
+    border-radius: 8px;
+    background: url(https://www.redbus.in/bushire/static/mwebv2/ryde/webhome/Group7.svg);
+}
+
+.ryde-div4 .inner #ambu{
+    height: 235px;
+width: 220px;
+border-radius: 8px;
+    background: url(https://www.redbus.in/bushire/static/mwebv2/ryde/webhome/Group8.svg);
+}
