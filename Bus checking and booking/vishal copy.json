@@ -1000,4 +1000,607 @@
             "price": 334,
             "seat_available": 7
         },
-        
+        "seats": [
+            {
+              "id": 1,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 2,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 3,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 4,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 5,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 6,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 7,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 8,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 9,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 10,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 11,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 12,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 13,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 14,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 15,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 16,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 17,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 18,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 19,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 20,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 21,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 22,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 23,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 24,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 25,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 26,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 27,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 28,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 29,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 30,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 31,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 32,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 33,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 34,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 35,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 36,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 37,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 38,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 39,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 40,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 41,
+              "extra_price": 100,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 42,
+              "extra_price": 200,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 43,
+              "extra_price": 200,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 43,
+              "extra_price": 250,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 44,
+              "extra_price": 250,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 45,
+              "extra_price": 250,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 46,
+              "extra_price": 250,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 47,
+              "extra_price": 300,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 48,
+              "extra_price": 300,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 49,
+              "extra_price": 300,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 50,
+              "extra_price": 350,
+              "booked": false,
+              "Gender": "Female"
+            }
+          ],
+          "upperDeck_seats": [
+            {
+              "id": 1,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 2,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 3,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 4,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 5,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 6,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 7,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 8,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 9,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 10,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 11,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 12,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 13,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 14,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 15,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 16,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 17,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 18,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 19,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 20,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 21,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 22,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 23,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 24,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 25,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 26,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 27,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 28,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 29,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 30,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 31,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "male"
+            },
+            {
+              "id": 32,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 33,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 34,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 35,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 36,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 37,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 38,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 39,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 40,
+              "extra_price": 0,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 41,
+              "extra_price": 100,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 42,
+              "extra_price": 200,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 43,
+              "extra_price": 200,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 43,
+              "extra_price": 250,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 44,
+              "extra_price": 250,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 45,
+              "extra_price": 250,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 46,
+              "extra_price": 250,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 47,
+              "extra_price": 300,
+              "booked": false,
+              "Gender": "Female"
+            },
+            {
+              "id": 48,
+              "extra_price": 300,
+              "booked": false,
+              "Gender": "Female"
+            }
+          ],

@@ -6,27 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="availabilty_nd_booking.css">
+    <link rel="stylesheet" href="mobile.css">
     <title>Bus-Availability</title>
     <script src="https://kit.fontawesome.com/792b524030.js" crossorigin="anonymous"></script>
-   
+    <style>
+       
+    </style>
 </head>
 
 <body>
+    <div id="container">
+    <div class="nav_cover"> 
     <nav>
         <img src="https://s3.rdbuz.com/web/images/home/sgp/r_logo.png" alt="">
         <h2 class="center">NavBar</h2>
     </nav>
+</div>
+    <div id="header_cover">
     <div id="header">
         <p>Delhi</p>
         <p><i class="fa-solid fa-right-long"></i></p>
         <p>Lucknow</p>
-        <p><i class="fa-solid fa-angle-left"></i></p>
+        <p class="hide"><i class="fa-solid fa-angle-left"></i></p>
         <p>02 Aug</p>
-        <p><i class="fa-solid fa-angle-right"></i></p>
+        <p class="hide"><i class="fa-solid fa-angle-right"></i></p>
         <button id="modify_btn">Modify</button>
     </div>
+</div>
     <main>
+        <!-- <div id="left_section_coverDiv"> -->
         <div class="left_section">
+            <div>
             <h6>FILTER</h6>
             <hr>
             <div id="heading_line" class="filter_div">
@@ -86,6 +96,8 @@
                 </ul>
             </div>
         </div>
+    <!-- </div> -->
+    </div>
         <div class="right_section">
             <ul id="header_images">
                 <img src="https://st.redbus.in/Images//ReddealsCards/IND/primo1_MainCard.png" alt="">
@@ -104,17 +116,72 @@
                 <p>Departure <span id="order_departure_icon"></span></p>
                 <p>Duration</p>
                 <p>Arrival</p>
-                <p>Ratings</p>
+                <p id="rating">Ratings</p>
                 <p>Fare</p>
                 <p>Seats Available</p>
                 <hr>
             </div>
             <div id="bus_details_section">
                 <!-- Bus details box will be here  -->
-
             </div>
         </div>
     </main>
+
+    <!--============= Seat POP-UP code ============= -->
+    <div id="bg-modal">
+        <div id="pop-up_box" class="pop-up_box">
+            <p class="cross">+</p>
+            <span id="pop_line">Click on an available seat to proceed with your transaction</span>
+            <div id="seats_contents">
+                <div id="seats_contents_left">
+                    <p>Upper Deck</p>
+                 <div id="upper_deck_box">
+                   <!-- Seats wiil be here  ===============-->
+                  <p class="seat"></p>
+                 </div>
+                    <p>Lower Deck</p>
+                 <div id="lower_deck_box">
+                </div>
+                </div>
+                <div id="seats_contents_right">
+                  <h6>SEAT LEGEND</h6>
+                  <div id="seat_legends">
+                  <p><span  id="avl_seat"></span>Available </p>
+                  <p><span id="unavl_seat"></span>Unailable </p>
+                  <p> <span id="fem_seat"></span>Female </p>
+                  <p><span id="male_seat"></span> Male  </p>
+                   </div>
+                   <h6>ThIS BOOKING IS NON REFUNDABLE</h6>
+                </div>
+ 
+                <!--========= After selected the seat ======== -->
+                <div id="seats_contents_right-2">
+                  <div id="confirm_points">
+                    <div id="boardPoint_div" class="points_heading">
+                        <p>BOADING POINT</p>
+                    </div>
+                    <div id="dropPoint_div" class="points_heading">
+                        <p>DROPPING POINT</p>
+                    </div>
+                </div>
+                <div id="boarding-points" class="boarding-points">
+                    <!-- <div>
+                        <input type="checkbox"><p class="bold" id="pick_time">23:00 </p><p class="bold" id="boarding-point"> Kashmiri Gate</p>
+                    </div>        -->
+                </div>
+                  <button id="continue_btn" class="btn">Continue</button>
+                </div>
+                
+                <!--========= After contnue of points ======== -->
+                <div id="confirm_booiking_box">
+
+                </div>
+            
+            </div>
+            <!-- <button id="confirm_btn">confirm</button> -->
+        </div>
+    </div>
+</div>
 
     <!-- POP-UP , will make at last if have time -->
     <!-- <div class="pop_up_div">
@@ -125,14 +192,15 @@
             <button>Ok, got it</button>
         </div>
     </div> -->
-    <script src="availabilty_nd_booking.js"></script>
+    <script type="module" src="availabilty_nd_booking.js"></script>
+    <script type="module" src="./utilityFunctions/show_pop_up.js"></script>
+    <!-- <script type="module" src="seats_pop_up.js"></script> -->
+    <script>
+     
+    </script>
 </body>
 
 </html>
 
-<!-- https://echo.paw.cloud/ -->
-
 <!-- imges  -->
 <!-- https://s3.rdbuz.com/images/carousel/coachmark-two.gif -->
-<!-- https://s3.rdbuz.com/Web/Images/write.png -->
-<!-- https://s3.rdbuz.com/Web/Images/call_new.png -->

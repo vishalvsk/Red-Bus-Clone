@@ -9,10 +9,6 @@
      font-weight: bold;
  }
 
- .hide {
-     /* display: none; */
- }
-
  body {
      margin: 0px;
      padding: 0px;
@@ -21,30 +17,56 @@
      /* font-family: Montserrat; */
      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  }
+ #container{
+    position: relative;
+ }
 
  /*============ Navbar CSS =========== */
-
+/* .nav_cover{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height:50px;
+} */
  nav {
      height: 50px;
      background-color: red;
      color: white;
-     /* margin-top: -25px; */
+     width:100%;
      display: flex;
      justify-content: space-around;
      align-items: center;
+     overflow: hidden;
+     /* position: fixed; */
+     top: 0px;
+     left: 0px;
+     z-index: 1;
  }
 
  main {
      display: grid;
      grid-template-columns: 2fr 8fr;
- }
 
+ }
+ /* #header_cover{
+    position: relative;
+    top: 0px;
+    left: 0px;
+   
+
+ } */
+ 
  #header {
      display: flex;
      padding: 0px 20px;
      align-items: center;
      border-bottom: 1px solid grey;
-
+     background-color: rgba(255, 255, 255, 0.971);
+     width: 100%;
+     /* position: fixed; */
+    left: 0px;
+    z-index: 1;
+     /* background-color: yellow; */
  }
 
  #header p {
@@ -56,13 +78,21 @@
  #modify_btn {
      height: 32px;
      width: 103px;
-
  }
 
  /*============ Filter Section CSS =========== */
+ #left_section_coverDiv{
+    position: relative;
+    display: flex;
+    width: 290px;
+    margin-right: 50px;
+ }
+
  .left_section {
      padding: 18px;
-     position: sticky;
+     height: 900px;
+     /* position: fixed; */
+     left: 0px;
  }
 
  .filter_div {
@@ -119,15 +149,11 @@
 
  /*============ Bus Details Section CSS =========== */
  .right_section {
-     /* height: 500px; */
-     /* background-color: #ffe4c4; */
-     /* grid-column: 5fr; */
+    width: 100%;
      padding: 0px 5px;
-
  }
 
  #header_images {
-     /* margin: 9px 0px; */
      margin-top: 20px;
      padding: 0px;
  }
@@ -163,6 +189,7 @@
      padding-right: 10px;
      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
      border-radius: 8px;
+     width: 100%;
  }
 
  .bus_info {
@@ -218,18 +245,24 @@
  .price_nd_seat_div {
      margin-top: 20px;
      margin-right: 15px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
  }
 
  .price_nd_seat_div p {
 
      font-size: small;
  }
-
+.see_setails_sml_screen{
+    display: none;
+}
  .extra_features_row {
      display: grid;
      grid-template-columns: 1fr 2fr 2fr 7fr;
      gap: 40px;
      align-items: center;
+     width: 100%;
  }
 
  .facility_icons {
@@ -242,7 +275,10 @@
      margin-left: 15px;
  }
 
- .see_setails_btn {
+ #see_seat_btn_div{
+    position: relative;
+ }
+ .view_seat_btn{
      background-color: crimson;
      color: white;
      width: 120px;
@@ -256,11 +292,209 @@
      cursor: pointer;
  }
 
- .see_setails_btn:hover {
+ .view_seat_btn:hover {
      background-color: rgba(220, 20, 60, 0.665);
  }
 
- /*=== POP-UP style === */
+ /*===Initial message POP-UP style === */
  #pop_up_div {
      background-color: rgb(25, 23, 23);
  }
+
+
+ /*=========== select Seats Pop_up ===============*/
+ #bg-modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.pop-up_box {
+    width: 55%;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 9px;
+}
+
+.cross {
+    font-size: 40px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    margin-top: -10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#pop_line{
+    /* color: white; */
+    /* background-color: rgb(172, 77, 77); */
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left: 7px;
+    margin-right: 10px;
+    padding-right: -20px;
+    width: 70%;
+}
+#seats_contents{
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 30px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 70%;
+}
+#seats_contents_left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+#seats_contents_left{
+    /* background-color: yellow; */
+    padding: 0px 9px;
+}
+#seats_contents_left img{
+    width: 70%;
+    height: 60%;
+    }
+
+#upper_deck_box{
+   padding: 12px 7px;
+   width: 100%; 
+   /* background-color: bisque; */
+   background-color: rgb(170, 170, 170);
+   display: grid;
+   grid-template-columns: repeat(10,1fr);
+   border-radius: 7px;
+}
+#lower_deck_box{
+    padding: 12px 7px;
+    width: 100%; 
+    /* background-color:  bisque; */
+    background-color: rgb(170, 170, 170);
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    border-radius: 7px;
+ }
+.seat{
+    border: 1px solid black;
+    display: inline;
+    padding: 2px 7px;
+    margin: 3px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#seats_contents_right{
+    padding: 20px;
+    background-color: rgb(223, 217, 217);
+    border-radius: 10px;
+    /* display: none; */
+}
+#seats_contents_right h6{
+    background-color: brown;
+    color: wheat;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+#seat_legends{
+  display: grid;
+  /* background-color: yellow; */
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  
+}
+#seat_legends p span{
+    display: inline;
+    padding: 0px 16px;
+    margin-right: 6px;
+
+}
+#avl_seat{
+    border: 1px solid black;
+    background-color: white;
+}
+#unavl_seat{
+    border: 1px solid black;
+    background-color: red;
+}
+#fem_seat{
+    background-color: white;
+    border: 2px solid red;
+}
+#male_seat{
+    border: 1px solid black;
+    background-color: white;
+}
+.btn{
+    background-color: crimson;
+    color: wheat;
+    border: 0px;
+    border-radius: 9px;
+    padding: 5px 15px;
+    margin: auto;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: brown;
+}
+
+
+/* <!--========= After selected the seat ======== --> */
+ 
+#seats_contents_right-2{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15px;
+  border-radius: 9px;
+  display: none;
+}
+#confirm_points{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.points_heading{
+    border: 1px solid brown;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.points_heading:hover{
+    background-color: crimson;
+    color: white;
+}
+
+.boarding-points >div,.dropping-points>div{
+    margin-top: 7px;
+    display: flex;
+    flex-direction: row;
+}
+.boarding-points >div>p,.dropping-points>div>p{
+    margin: 7px 7px;
+}
+
+/* <!--========= After contnue of points ======== --> */
+
+#confirm_booiking_box{
+    display: none;
+    flex-direction: column;
+    border: 5px solid brown;
+    border-radius: 12px;
+    padding: 5px 9px;
+}
