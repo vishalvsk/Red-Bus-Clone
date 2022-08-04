@@ -4,7 +4,7 @@ function navbar(){
         <nav class="leftNav">
           <section>
             <div class="logo">
-              <img src="./images/logo.png" alt="">
+              <a href="homePage.html"><img src="./images/logo.png" alt=""></a>
             </div>
             <div class="leftmenu">
               <ul>
@@ -28,8 +28,8 @@ function navbar(){
               </a>
               <div class="dropdown-menu-booking">
                 <div>
-                  <a class="dropdown-item" href="#">Cancel Ticket</a><br>
-                  <a class="dropdown-item" href="#">Show My Ticket</a><br>
+                  <a class="dropdown-item" href="PageCancelTicket.html">Cancel Ticket</a><br>
+                  <a class="dropdown-item" href="PageShowTicket.html">Show My Ticket</a><br>
                   <a class="dropdown-item" href="#">Change Travel Date</a><br>
                 </div>
               </div>
@@ -45,10 +45,10 @@ function navbar(){
               </a>
               <div class="dropdown-menu">
                 <div>
-                   <a href="./mytrips.html">MY Trips</a><br>
-                <a href="./walletAndcard.html">Wallets</a><br>
-                <a href="./profile.html">MY Profile</a><br>
-                <a href="../SignupLogin.html">Sign Out</a><br>
+                <a href="PageMytrip.html">MY Trips</a><br>
+                <a href="PageWalletAndCard.html">Wallets</a><br>
+                <a href="PageMyProfile.html">MY Profile</a><br>
+                <a href="SignupLogin.html">Sign Out</a><br>
                 </div>          
               </div>
             </li>

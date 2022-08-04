@@ -21,6 +21,24 @@ body {
   /* border: 1px solid; */
 }
 
+@media only screen and (max-width: 500px){
+  .boxContainer{
+      width: 100%;
+      height: auto;
+      
+  
+  }
+  .boxContainer .leftPanel, .right-panel{
+   
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      color: #d0c7c7;
+  }
+}
+
+
+
 #headerBlock .container {
   display: flex;
   align-items: center;

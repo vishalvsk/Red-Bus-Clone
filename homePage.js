@@ -7,6 +7,8 @@ header.innerHTML = navbar();
 
 
 
+
+
 // manging 
 document.getElementById("dropup-menu-booking").addEventListener("dblclick",function(){
     document.querySelector(".dropdown-menu-booking").style.display = "flex";
