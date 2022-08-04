@@ -234,6 +234,10 @@ function displayData(data){
     }
   })
 
+  let value = document.getElementById("span1")
+  value.innerHTML = ""
+  value.append(newData.length)
+  // console.log(newData.length)
   display_buses(newData)
 }
 
@@ -246,7 +250,9 @@ function DisplayData(data){
       return false;
     }
   })
-
+  let value1 = document.getElementById("span2")
+  value1.innerHTML = ""
+  value1.append(newData1.length)
   display_buses(newData1)
   // location.reload()
 }
@@ -261,7 +267,9 @@ function DisplayEveData(data){
       return false;
     }
   })
-
+  let value2 = document.getElementById("span3")
+  value2.innerHTML = ""
+  value2.append(newData2.length)
   display_buses(newData2)
   // location.reload()
 }
@@ -277,6 +285,9 @@ function seater(data){
     }
   })
 
+  let value3 = document.getElementById("span4")
+  value3.innerHTML = ""
+  value3.append(newData2.length)
   display_buses(newData2)
   // location.reload()
 }
@@ -292,7 +303,9 @@ function sleeper(data){
       return false;
     }
   })
-
+  let value4 = document.getElementById("span5")
+  value4.innerHTML = ""
+  value4.append(newData2.length)
   display_buses(newData2)
   // location.reload()
 }
@@ -308,5 +321,5 @@ function AC(data){
   })
 
   display_buses(newData2)
-  // location.reload()
+  
 }
