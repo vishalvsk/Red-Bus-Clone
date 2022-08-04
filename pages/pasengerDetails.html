@@ -39,11 +39,11 @@
                     
                     <div class="gender_bottom">
                         <div>
-                            <input class="genderName" type="radio" name="gender" value="male">
+                            <input class="genderName" type="radio" name="gender" value="male" required>
                             <label for="">Male</label> 
                             </div>
                             <div>
-                            <input  class="genderName" type="radio" name="gender" value="female">
+                            <input  class="genderName" type="radio" name="gender" value="female" required>
                             <label for="">Female</label>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                             class="input-checkbox hide"><label for="RUCFeature" id="RUCFeatureCheckBox"
                             class="checkmark"></label><span class="ruc-txt">I have a GST number
                             (optional)?</span></label></div>
-            </div>
+        </div>
         </div>
         
         <div class="whatsApp_block"><label class="checkbox_css"><input type="checkbox" id="whatsAppFeature"
@@ -241,8 +241,9 @@
                     <div class="booking-amt-title fl">Total Amount : </div>
                     <div class="booking-amt fl ">INR<span class="f-bold">1500.00</span></div>
                 </div>
-                <div class="button-container fr"><input onclick="getData()" type="submit" class="button main-btn gtm-continueBooking"
-                        value="Proceed to pay"></div>
+                <div class="button-container fr">
+                    <input onclick="getData()" type="submit" class="button main-btn gtm-continueBooking" value="Proceed to pay">
+                </div>
             </div>
         </div>
         
@@ -270,20 +271,22 @@
         
         async function getData() {
            let name = document.getElementById("inputName").value;
-           let gender = document.getElementsByClassName("genderName").value;
+          let genderName = document.querySelector(`input[name="gender"]:checked`).value;
           let  age = document.querySelector("#input").value;
            let email = document.getElementById("email").value;
           let  phone = document.getElementById("phoneNumber").value;
 
             
-            console.log(name, age, email, phone);
+            console.log(name,genderName, age, email, phone);
            let  userDetails = {
                 name: name,
+                gender: genderName,
                 age: age,
                 email:email,
                 phone: phone
          
             }
+            
           let url = ` http://localhost:3000/userDetails`;
             let res = await fetch(url, {
                 method: 'POST',
@@ -295,9 +298,11 @@
 
 
             });
+
+            // location.href = "./header.html";
         }
        
-        location.href = 'go to payment page';
+        
 
         
 </script>
