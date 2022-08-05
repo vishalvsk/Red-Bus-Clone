@@ -7,8 +7,9 @@ const show_popups=(checked_id)=>{
     let bg_modal = document.querySelector("#bg-modal");
     bg_modal.style.display = "flex";
      body.style.overflow = "hidden";
-    init_lowerDeck();
     init_upperDeck();
+    init_lowerDeck();
+
 }
 // show_popups(5);
 

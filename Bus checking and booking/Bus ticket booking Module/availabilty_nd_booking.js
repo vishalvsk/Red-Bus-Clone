@@ -1,8 +1,8 @@
-import { show_popups } from "./utilityFunctions/show_pop_up.js";
-import getData from "./utilityFunctions/getBus_data.js";
-import { upperDeck, lowerDeck } from "./utilityFunctions/getSeats.js";
-import checking_point from "./utilityFunctions/checking_points_popUp.js"
-import { patchSeat_upper, patchSeat_lower } from "./utilityFunctions/patch_seatDetail.js";
+import { show_popups } from "../utilityFunctions/show_pop_up.js";
+import getData from "../utilityFunctions/getBus_data.js";
+import { upperDeck, lowerDeck } from "../utilityFunctions/getSeats.js";
+import checking_point from "../utilityFunctions/checking_points_popUp.js"
+import { patchSeat_upper, patchSeat_lower } from "../utilityFunctions/patch_seatDetail.js";
 
 init_busData();
 // show_popups();
@@ -29,7 +29,7 @@ pick.innerText = input_obj.pickPoint;
 document.getElementById("desti_point").innerText=input_obj.dropPoint;
 document.getElementById("date").innerText=input_obj.date;
  document.getElementById("modify_btn").addEventListener("click",()=>{
-   window.open("./Pages/landingPage.html", "_self");
+   window.open("../Pages/landingPage.html", "_self");
  });
 
 
@@ -42,6 +42,8 @@ function display_buses(data) {
   data.forEach((bus) => {
     let bus_card = document.createElement("div");
     bus_card.setAttribute("class", "bus_card");
+     let balance_avl_seats = bus.seat_available - bus.booked_seats.length;
+     if(balance_avl_seats== 0) balance_avl_seats="All Seats Booked";
     bus_card.innerHTML = `
     <div class="bus_info">
         <table>
@@ -67,7 +69,7 @@ function display_buses(data) {
         </table>
         <div class="price_nd_seat_div">
             <p>Starts from INR <span class="bold">${bus.price}</span></p>
-            <p>${bus.seat_available} Seats available</p>
+            <p>${balance_avl_seats} Seats available</p>
 
         </div>
     </div>

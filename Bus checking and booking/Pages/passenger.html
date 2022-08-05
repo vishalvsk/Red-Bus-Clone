@@ -11,13 +11,14 @@
 </head>
 
 <body>
+    <div id="main_container">
     <div id="container">
         <div class="passenger_details">
             <h2>Passenger Details</h2>
 
         </div>
         <div class="passenger_information">
-            <img src="/images/userLogo.png" alt="logo">
+            <!-- <img src="/images/userLogo.png" alt="logo"> -->
             <span>Passenger Information</span>
         </div>
 
@@ -68,7 +69,7 @@
 
         <!-- contact Details  -->
         <div id="contactDetails">
-            <img id="img" src="/images/contactDetail.png" alt="contactDetails">
+            <!-- <img id="img" src="/images/contactDetail.png" alt="contactDetails"> -->
             <span> &nbsp; <b>Contact Details</b></span>
         </div>
 
@@ -245,7 +246,7 @@
             <div class="pR">
                 <div class="booking-amt-details fl clearfix f-bold">
                     <div class="booking-amt-title fl">Total Amount : </div>
-                    <div class="booking-amt fl ">INR<span class="f-bold">1500.00</span></div>
+                    <div class="booking-amt fl ">INR<span id="tot_price" class="f-bold">1500.00</span></div>
                 </div>
                 <div class="button-container fr">
                     <input onclick="getData()" type="submit" class="button main-btn gtm-continueBooking"
@@ -254,16 +255,17 @@
             </div>
         </div>
     </div>
-    </div>
-    </div>
-    </div>
-    </div>
+</div>
+
 </body>
 
 </html>
 
 <script>
 
+let totalPrice_ticket= localStorage.getItem("totalPrice_ticket");
+console.log(totalPrice_ticket);
+document.getElementById("tot_price").innerHTML= totalPrice_ticket;
     async function getData() {
         let name = document.getElementById("inputName").value;
         let genderName = document.querySelector(`input[name="gender"]:checked`).value;
@@ -271,7 +273,8 @@
         let email = document.getElementById("email").value;
         let phone = document.getElementById("phoneNumber").value;
 
-        console.log(name, genderName, age, email, phone);
+       
+        // console.log(name, genderName, age, email, phone);
         let userDetails = {
             name: name,
             gender: genderName,
@@ -285,11 +288,9 @@
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
-
             },
             body: JSON.stringify(userDetails),
         });
-
         // location.href = "./header.html";
     }
 

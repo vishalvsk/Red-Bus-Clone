@@ -22,7 +22,7 @@ async function init_upperDeck() {
     let selected_bus=buses_data.filter((el)=>{
       if(selected_busID==el.id) return el;
   })   
-//    console.log(selected_busID,selected_bus);
+
     let upper_deck_box = document.getElementById("upper_deck_box");
     upper_deck_box.innerHTML="";
     data.forEach((seat) => {
@@ -52,7 +52,14 @@ async function init_upperDeck() {
       };
     });
   }
-  function show_lowerDeck(data) {
+
+  async function show_lowerDeck(data) {
+    let buses_data=await getData();
+    let selected_busID = localStorage.getItem("selected_busID");
+    let selected_bus=buses_data.filter((el)=>{
+      if(selected_busID==el.id) return el;
+    });
+
     let lower_deck_box = document.getElementById("lower_deck_box");
     lower_deck_box.innerHTML="";
     data.forEach((seat) => {
@@ -63,8 +70,14 @@ async function init_upperDeck() {
       if (seat.Gender == "Female") {
         seat_ele.style.border = "2px solid red";
       }
-      if (seat.booked) seat_ele.style.backgroundColor = "red";
-      else seat_ele.style.backgroundColor = "white";
+      if(selected_bus[0].booked_seats.includes(seat.id)){
+        seat_ele.style.color="white";
+        seat_ele.style.backgroundColor="red";
+        seat_ele.setAttribute("title", `No: ${seat.id} Booked`);
+       }else{
+        seat_ele.style.backgroundColor="white";
+       }
+       
       lower_deck_box.append(seat_ele);
       seat_ele.onclick = () => {
       
