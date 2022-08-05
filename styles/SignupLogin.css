@@ -18,24 +18,19 @@ body {
   transition: all 1.5s linear 0s;
   outline: rgb(193, 159, 151) dashed 0px;
   box-sizing: border-box;
-  /* border: 1px solid; */
+ 
 }
-
+/* 
 @media only screen and (max-width: 500px){
-  .boxContainer{
-      width: 100%;
-      height: auto;
-      
   
+  #headerBlock{
+      width: 100%;
+       z-index: 200; 
+      background-color: #030101;
+      height: auto;
+      display: flex;
   }
-  .boxContainer .leftPanel, .right-panel{
-   
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
-      color: #d0c7c7;
-  }
-}
+} */
 
 
 

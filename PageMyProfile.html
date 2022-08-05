@@ -48,34 +48,41 @@
             <span class="greyText">MY Profile</span>
 
             <div class="profiledetails">
-                <div class="editbutton"><button>EDIT</button></div>
-                <div class="userdetail1">
-                    <div class="inputName">
+                <div class="profileContainer">
+                    <div class="editbutton"><button>EDIT</button></div>
+                    <div class="userdetail1">
+                        <div class="inputName">
+                            <div>
+                                <label for="YOUR NAME">YOUR NAME</label><br>
+                                <input type="text" placeholder="" id="userName"/>
+                            </div>
+                            <div>
+                                <label for="DATE OF BIRTH">DATE OF BIRTH</label><br>
+                                <input type="date" name="Date" id="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="userdetail2">
+                        <p>GENDER</p>
+                        <select name="gender" id="gender">
+                            <option value="none" selected>Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <fieldset> <legend>CONTACT DETAILS</legend> </fieldset>
+                    <div class="userdetail3">
                         <div>
-                            <label for="YOUR NAME">YOUR NAME</label><br>
-                            <input type="text" placeholder="" id="userName"/>
+                            <label for="">EMAIL</label>
+                            <input type="text" placeholder="EMAIL" />
                         </div>
                         <div>
-                            <label for="DATE OF BIRTH">DATE OF BIRTH</label><br>
-                            <input type="date" name="Date" id="date">
+                            <label for="">MOBILE NO.</label>
+                            <input type= "text " placeholder="NUMBER">
                         </div>
                     </div>
                 </div>
-                <div class="userdetail2">
-                    <p>GENDER</p>
-                    <select name="gender" id="gender">
-                    	<option value="none" selected>Gender</option>
-                    	<option value="male">Male</option>
-                    	<option value="female">Female</option>
-                    </select>
-                </div>
-                <fieldset> <legend>CONTACT DETAILS</legend> </fieldset>
-                <div class="userdetail3">
-                    <input type="text" placeholder="EMAIL" />
-                    <input type= "text " placeholder="NUMBER">
-                </div>
             </div>
-        
         </div>
     </div>
 

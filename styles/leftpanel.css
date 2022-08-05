@@ -65,7 +65,7 @@ body{
     height: 360px;
     width: 991px;
     margin: 7px 0 15px 120px;
-    display: block;
+    display: flex;
     box-sizing: border-box;
     box-shadow: rgb(62, 67, 69) 0px 0px 10px 0px;
     border-top-left-radius: 6.66px;
@@ -76,7 +76,9 @@ body{
     font-size: 13.33px;
     font-family: Montserrat;
 }
+.profileContainer{
 
+}
 .editbutton{
     height: 28px;
     width: 990px;
@@ -160,7 +162,7 @@ legend{
     margin: 0 80px 0 80px;
     /* border: 1px solid; */
 }
-.userdetail3 > input{
+.userdetail3 > div > input{
     border: none;
     width: 180px;
     height: 20px;
