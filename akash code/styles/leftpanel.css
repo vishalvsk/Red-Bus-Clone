@@ -1,6 +1,6 @@
-body{
+/* body{
     background-color: #2d3031;
-}
+} */
 .boxContainer{
     height: 892px;
     width: 1591px;
@@ -72,7 +72,7 @@ body{
     border-top-right-radius: 6.66px;
     border-bottom-left-radius: 6.66px;
     border-bottom-right-radius: 6.66px;
-    background-color: #181a1b;
+    /* background-color: gray; */
     font-size: 13.33px;
     font-family: Montserrat;
 }
@@ -88,7 +88,7 @@ body{
 }
 .editbutton > button{
    
-    background-color: #037a03;
+    background-color: #53b053;
     height: 28px;
     width: 71px;
     float: right;
@@ -96,6 +96,7 @@ body{
     cursor: pointer;
     margin: 0 27px 0 0 ;
     border-radius: 2px;
+    color: white;
 }
 .userdetail1{
     height: 80px;

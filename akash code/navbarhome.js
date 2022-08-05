@@ -4,15 +4,15 @@ function navbar(){
         <nav class="leftNav">
           <section>
             <div class="logo">
-              <a href="homePage.html"><img src="./images/logo.png" alt=""></a>
+              <a href="homePage.html"><img src="https://st.redbus.in/Images/redrail/r_logo.png" alt=""></a>
             </div>
             <div class="leftmenu">
               <ul>
-                <li><a href="#" ></a>eBUS TICKETS</a></li>
+                <li><a href="./homePage.html"></a>BUS TICKETS</a></li>
                 <li>
-                  <a href="#">rYde<sup>new</sup></a>
+                  <a href="../rYde page/rYde.html" id="ryd">rYde<sup>new</sup></a>
                 </li>
-                <li><a href="#">redrail</a></li>
+                <li><a href="../redrail page/redrail.html">redrail</a></li>
               
               </ul>
             </div>
@@ -44,7 +44,7 @@ function navbar(){
                 </span>
               </a>
               <div class="dropdown-menu">
-                <div>
+                <div class="drop">
                 <a href="PageMytrip.html">MY Trips</a><br>
                 <a href="PageWalletAndCard.html">Wallets</a><br>
                 <a href="PageMyProfile.html">MY Profile</a><br>

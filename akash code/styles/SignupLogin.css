@@ -13,7 +13,7 @@ body {
   height: 60px;
   width: 100%;
   z-index: 1;
-  background: #932127;
+  background: #d84f57;
   transform: none;
   transition: all 1.5s linear 0s;
   outline: rgb(193, 159, 151) dashed 0px;
@@ -86,6 +86,10 @@ body {
 
 .leftmenu {
   flex: 8;
+  color: #fff;
+}
+.leftmenu #ryd{
+  margin-bottom: -15px;
 }
 
 .logo a {
@@ -138,24 +142,43 @@ body {
 }
 #dropup-menu-booking{
   display: flex;
+  color: #fff;
 }
 .dropdown-menu-booking{
   display: none;
+  background-color: black;
+}
+.dropdown-menu-booking .dropdown-item{
+  color: black;
+  font-size: 12px;
+  font-weight: 650;
+}
+.dropdown-menu .dropdown-item{
+  color: black;
+  font-size: 12px;
+  font-weight: 650;
 }
 
-.dropup-menu{
+.dropup-menu {
   display: flex;
+ 
+}
+.dropdown-menu .drop{
+  color: black;
 }
 
-.dropdown-menu{
+#dropdown-menu{
   display: none;
+  background-color: black;
 }
 
 
 .dropdown-item{
   /* border: 1px solid; */
   /* background-color: #fff; */
-  color: rgb(0, 0, 0);
+  /* color: rgb(0, 0, 0); */
+  /* background-color: #1f2122; */
+  color: black;
 }
 
 .fa-user-circle {
