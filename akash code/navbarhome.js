@@ -8,7 +8,7 @@ function navbar(){
             </div>
             <div class="leftmenu">
               <ul>
-                <li><a href="./homePage.html"></a>BUS TICKETS</a></li>
+                <li><a href="./homePage.html">BUS TICKETS</a></li>
                 <li>
                   <a href="../rYde page/rYde.html" id="ryd">rYde<sup>new</sup></a>
                 </li>
@@ -39,16 +39,14 @@ function navbar(){
             <li id="Signup">
               <a href="#" id="dropup-menu" >
                 <span><i class="far fa-user-circle"></i></span>
-                <span><i class="fas fa-chevron-down after_user_circle"></i>
-                        
-                </span>
+                <span><i class="fas fa-chevron-down after_user_circle"></i></span>
               </a>
               <div class="dropdown-menu">
                 <div class="drop">
-                <a href="PageMytrip.html">MY Trips</a><br>
-                <a href="PageWalletAndCard.html">Wallets</a><br>
-                <a href="PageMyProfile.html">MY Profile</a><br>
-                <a href="SignupLogin.html">Sign Out</a><br>
+                <a class="dropdown-item" href="PageMytrip.html">MY Trips</a><br>
+                <a class="dropdown-item" href="PageWalletAndCard.html">Wallets</a><br>
+                <a class="dropdown-item" href="PageMyProfile.html">MY Profile</a><br>
+                <a class="dropdown-item" href="SignupLogin.html">Sign Out</a><br>
                 </div>          
               </div>
             </li>
