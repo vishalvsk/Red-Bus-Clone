@@ -163,9 +163,32 @@ document.getElementById("price").addEventListener("click",()=>{
       })
 
       // filter data //
-      document.getElementById("before-6am").addEventListener("click",()=>{
-        displayData(data)
+      let selecter= document.getElementById("before-6am")
+      selecter.addEventListener("change",(e)=>{
+        if(e.target.checked){
+          let newData = data.filter(function(time){
+            if(time.time_in>"6"){
+              return true
+            }
+            else{
+              return false;
+            }
+          })
+        
+          let value = document.getElementById("span1")
+          value.innerHTML = ""
+          value.append(newData.length)
+          // console.log(newData.length)
+          display_buses(newData)
+
+        }else{
+          // displayData(data)
+          console.log("data2",data)
+        }
+        
         })
+
+       
 
         document.getElementById("morning").addEventListener("click",()=>{
           DisplayData(data)
@@ -225,20 +248,20 @@ const sortDepature = (data)=>{
 
     
 function displayData(data){
-  let newData = data.filter(function(time){
-    if(time.time_in>"6"){
-      return true
-    }
-    else{
-      return false;
-    }
-  })
+  // let newData = data.filter(function(time){
+  //   if(time.time_in>"6"){
+  //     return true
+  //   }
+  //   else{
+  //     return false;
+  //   }
+  // })
 
-  let value = document.getElementById("span1")
-  value.innerHTML = ""
-  value.append(newData.length)
-  // console.log(newData.length)
-  display_buses(newData)
+  // let value = document.getElementById("span1")
+  // value.innerHTML = ""
+  // value.append(newData.length)
+  // // console.log(newData.length)
+  // display_buses(newData)
 }
 
 function DisplayData(data){
