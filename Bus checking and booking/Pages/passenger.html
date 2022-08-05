@@ -18,7 +18,7 @@
 
         </div>
         <div class="passenger_information">
-            <!-- <img src="/images/userLogo.png" alt="logo"> -->
+            <img src="../images/userLogo.png" alt="logo">
             <span>Passenger Information</span>
         </div>
 
@@ -69,7 +69,7 @@
 
         <!-- contact Details  -->
         <div id="contactDetails">
-            <!-- <img id="img" src="/images/contactDetail.png" alt="contactDetails"> -->
+            <img id="img" src="../images/contactDetail.png" alt="contactDetails">
             <span> &nbsp; <b>Contact Details</b></span>
         </div>
 
@@ -249,7 +249,7 @@
                     <div class="booking-amt fl ">INR<span id="tot_price" class="f-bold">1500.00</span></div>
                 </div>
                 <div class="button-container fr">
-                    <input onclick="getData()" type="submit" class="button main-btn gtm-continueBooking"
+                    <input onclick="postData()" type="submit" class="button main-btn gtm-continueBooking"
                         value="Proceed to pay">
                 </div>
             </div>
@@ -263,35 +263,45 @@
 
 <script>
 
-let totalPrice_ticket= localStorage.getItem("totalPrice_ticket");
-console.log(totalPrice_ticket);
-document.getElementById("tot_price").innerHTML= totalPrice_ticket;
-    async function getData() {
+     let booking_details = JSON.parse(localStorage.getItem("booking_details"));
+      let today = new Date();
+      let time = today.getHours()+":"+today.getMinutes();
+      let date = today.getDay()+"-"+today.getMonth()+"-"+today.getFullYear();
+      let date_time= time+" "+date;
+     
+    document.getElementById("tot_price").innerHTML= booking_details.tot_price;
+
+
+    async function postData() {
+
         let name = document.getElementById("inputName").value;
         let genderName = document.querySelector(`input[name="gender"]:checked`).value;
         let age = document.querySelector("#input").value;
         let email = document.getElementById("email").value;
         let phone = document.getElementById("phoneNumber").value;
-
-       
-        // console.log(name, genderName, age, email, phone);
+ 
         let userDetails = {
             name: name,
             gender: genderName,
             age: age,
             email: email,
-            phone: phone
+            phone: phone,
+            booked_busID: booking_details.booked_busID,
+            booked_seatID: booking_details.booked_seatID,
+            booked_price: booking_details.tot_price,
+            cur_Dt_time: date_time
         }
-
-        let url = ` http://localhost:3000/userDetails`;
+    //    console.log(userDetails);
+        let url = `http://localhost:3000/user-Details`;
         let res = await fetch(url, {
             method: 'POST',
+            body: JSON.stringify(userDetails),
             headers: {
                 'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(userDetails),
+            }
         });
-        // location.href = "./header.html";
+          location.href = "../Bus ticket booking Module/availabilty_nd_booking.html";
+          
     }
 
 </script>

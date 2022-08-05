@@ -59,7 +59,12 @@ async function checking_point() {
       } else {
         let upd_bus = selected_bus;
         upd_bus[0].booked_seats.push(seatNo);
-        localStorage.setItem("totalPrice_ticket", sum_price);
+        let booking_details={
+          tot_price: sum_price,
+          booked_busID: seatNo,
+          booked_seatID: selected_busID
+        }
+        localStorage.setItem("booking_details", JSON.stringify(booking_details));
         window.open("../Pages/passenger.html");
         patch_ele(upd_bus[0], selected_busID);
       }

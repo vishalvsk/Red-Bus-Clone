@@ -12,7 +12,8 @@
       "booked_seats": [
         26,
         5,
-        85
+        85,
+        10
       ]
     },
     {
@@ -59,7 +60,8 @@
       "price": 599,
       "seat_available": 87,
       "booked_seats": [
-        12
+        12,
+        14
       ]
     },
     {
@@ -1871,23 +1873,26 @@
       "Gender": "Female"
     }
   ],
-  "user-Details": {
-    "username": "username",
-    "gender": "",
-    "age": "",
-    "email": "",
-    "phone": ""
-  },
+  "user-Details": [
+    {
+      "name": "Akram",
+      "gender": "male",
+      "age": "22",
+      "email": "mygm@g.com",
+      "phone": "234567890",
+      "booked_busID": 7,
+      "booked_seatID": "1",
+      "booked_price": 112,
+      "cur_Dt_time": "0:53 6-7-2022",
+      "id": 1
+    }
+  ],
   "test_obj": [
     {
       "id": 1,
       "ele": [
         2,
-        3,
-        4,
-        5,
-        6,
-        7
+        3
       ]
     },
     {
