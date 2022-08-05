@@ -17,6 +17,7 @@
     display: flex;
     width: 70%;
     margin: auto;
+    
 }
  #p-tag{
     text-align: center;
@@ -46,6 +47,7 @@ margin-left: 5px;
 border: 2px solid #828282;
 border-radius: 14px;
 }
+
 .ryde-div2 .inner #offers{
     margin-left: 230px;
     font-size: 16px;
@@ -56,6 +58,9 @@ border-radius: 14px;
     color: #1034d9;
     font-size: 14px;
     font-weight: 650;
+}
+.ryde-div2 .inner1{
+    overflow-x: scroll;
 }
 .ryde-div2 .inner .inner1{
     width: 70%;
@@ -200,4 +205,78 @@ border-radius: 8px;
 width: 220px;
 border-radius: 8px;
     background: url(https://www.redbus.in/bushire/static/mwebv2/ryde/webhome/Group8.svg);
+}
+
+.ryde-div4 .inner p:nth-child(1){
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 8px;
+    color: #3e3e52;
+}
+.ryde-div4 .inner p:nth-child(2){
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: -10px;
+    margin-left: 8px;
+    color: #3e3e52;
+}
+
+
+
+
+/* <!-- coustumer review div --> */
+
+.ryde-div5 .inner{
+    width: 70%;
+    margin: auto;
+/* margin-top: 50px; */
+display: grid;
+grid-template-columns: repeat(4,1fr);
+overflow-y: hidden;
+gap: 20px;
+}
+.ryde-div5 .inner .p{
+    width: 150px;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 10px;
+}
+.ryde-div5 .inner .p p:nth-child(1){
+    width: 50px;
+    height: 25px;
+    background-color: #38b88c;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+.ryde-div5 .inner .p p:nth-child(2){
+    font-size: 14px;
+    font-weight: 700;
+    color: #3e3e52;
+}
+.ryde-div5 .inner .inn1{
+    height: 188px;
+    width: 283px;
+    border: 1px solid rgb(212, 202, 202);
+    border-radius: 10px;
+   padding: 10px;
+}
+.ryde-div5 .inner p:nth-child(2){
+    font-size: 12px;
+    color: #828282;
+    line-height: 20px;
+}
+.ryde-div5 .inner p:nth-child(3){
+    font-size: 14px;
+    color: #3e3e52;
+    line-height: 20px;
+}
+.ryde-div5 #p{
+    margin-left: 235px;
+    font-size: 18px;
+    font-weight: 650;
+    color: #3e3e52;
+    margin-top: 50px;
 }
