@@ -4,7 +4,7 @@ function navbar(){
         <nav class="leftNav">
           <section>
             <div class="logo">
-              <img src="./images/logo.png" alt="">
+              <img src="https://st.redbus.in/Images/redrail/r_logo.png" alt="">
             </div>
             <div class="leftmenu">
               <ul>

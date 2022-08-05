@@ -102,6 +102,7 @@ justify-content: space-between;
     font-size: 30px;
     font-weight: 600;
     color: #4a4a4a;
+    margin-top: 50px;
 }
 .div2-inner div #contant{
     height: 223px;
@@ -110,6 +111,7 @@ justify-content: space-between;
  word-spacing: 1px;
  color: #4a4a4a;
 font-weight: 400;
+
 }
 .input-div{
     display: flex;
@@ -122,9 +124,9 @@ font-weight: 400;
     width: 76px;
     border-radius: 4px;
 }
-.input-div .input input{
+.input-div .input #inputq{
     width: 60%;
-    height: 20px;
+    height: 50px;
     /* border-radius: 4px; */
 }
 .input-div .btn-div button{
@@ -187,7 +189,7 @@ font-weight: 600;
     font-size: 30px;
     font-weight: 600;
     color: #333333;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 10px;
     }
 
@@ -212,6 +214,7 @@ font-weight: 600;
         font-weight: 400;
         line-height: 10px;
         color: #4a4a4a;
+        margin-top: 25px;
     }
     .main-div3 .div3-inner .benifit-service p:nth-child(3){
         font-size: 14px;
@@ -405,6 +408,7 @@ font-weight: 600;
         font-weight: 600;
         text-align: center;
         color: #4a4a4a;
+        margin-top: 20px;
     }
     .main-div6 .div6Inner{
         display: flex;
@@ -414,14 +418,18 @@ font-weight: 600;
         width: 419px;
         text-align: center;
         color: #737373;
+        line-height: 25px;
      }
     .main-div6 .div6Inner .red-tag{
         color: #da4e52;
         font-size: 46px;
         line-height: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .main-div6 .div6Inner div p:nth-child(3){
         color: #333333;
+        margin-top: 20px;
     }
 
     @media only screen and (max-width: 500px){
