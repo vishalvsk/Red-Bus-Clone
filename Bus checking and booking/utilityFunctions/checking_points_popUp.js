@@ -6,7 +6,6 @@ async function checking_point() {
     let selected_seat_id = localStorage.getItem("selected_seat_id");
      selected_seat_id=+selected_seat_id;
 
-
      let buses_data = await getData();
      let seats_data =await upperDeck();
 
@@ -54,11 +53,32 @@ async function checking_point() {
       <button class="btn" id="proceed_btn">Proceed to Book</button>
       `;
       let proceed_btn = document.getElementById("proceed_btn");
-       console.log(proceed_btn)
-       proceed_btn.addEventListener("click", () => {
-        window.open("./Pages/passenger.html")
+       proceed_btn.addEventListener("click", () => {  
+
+        // Patching booked seat in debugger.json
+          seatNo=parseInt(seatNo);      
+         let upd_bus=selected_bus;
+        upd_bus[0].booked_seats.push(seatNo);
+         patch_ele(upd_bus[0],selected_busID);
+        // window.open("./Pages/passenger.html")
        });
     });
+  }
+
+  // http://localhost:3000/redbus
+
+  async function patch_ele(updObj,selected_busID){
+    try{
+      let res = await fetch(`http://localhost:3000/redbus/${selected_busID}`,{
+        method : "PATCH",
+        body : JSON.stringify(updObj),
+        headers:{
+            "Content-Type": "application/json",
+        },
+      })
+    }catch(err){
+        console.log(err);
+    }
   }
 
   export default checking_point;

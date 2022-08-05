@@ -6,14 +6,13 @@ import { patchSeat_upper, patchSeat_lower } from "./utilityFunctions/patch_seatD
 
 init_busData();
 // show_popups();
-init_upperDeck();
-init_lowerDeck();
-
+// init_upperDeck();
+// init_lowerDeck();
 async function init_busData() {
   let data = await getData();
   display_buses(data);
 }
-
+/*
 async function init_upperDeck() {
   let data = await upperDeck();
   show_upperDeck(data);
@@ -22,9 +21,19 @@ async function init_upperDeck() {
 async function init_lowerDeck() {
   let data = await lowerDeck();
   show_lowerDeck(data);
-}
+} */
+// ================ Header section JS ======================
+let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
+let pick = document.getElementById("piclup_point");
+pick.innerText = input_obj.pickPoint;
+document.getElementById("desti_point").innerText=input_obj.dropPoint;
+document.getElementById("date").innerText=input_obj.date;
+ document.getElementById("modify_btn").addEventListener("click",()=>{
+   window.open("./Pages/landingPage.html", "_self");
+ });
 
 
+//  display_buses function =================
 function display_buses(data) {
   let no_of_buses = document.getElementById("no_of_buses");
   let bus_details_section = document.getElementById("bus_details_section");
@@ -50,9 +59,9 @@ function display_buses(data) {
             </tr>
             <tr>
                 <td>${bus.bus_name}</td>
-                <td id="pickup_point">Kashimiri Gate</td>  
+                <td id="pickup_point">${input_obj.pickPoint}</td>  
                 <td id="icon"><i class="fa-solid fa-arrow-right"></i></td>
-                <td id="dept_point">Lucknow</td>
+                <td id="dept_point">${input_obj.dropPoint}</td>
                 <td class="members"><i class="fa-solid fa-people-group"></i>200</td>
             </tr>
         </table>
@@ -80,8 +89,8 @@ function display_buses(data) {
 
     let view_seat_btn = document.getElementById(`${bus.id}`);
     view_seat_btn.addEventListener("click", () => {
-      window.scrollTo(0, 0);
       localStorage.setItem("selected_busID", bus.id);
+      window.scrollTo(0, 0);
       show_popups();
     });
   });
@@ -176,7 +185,7 @@ const sortDepature = (data) => {
   let sortDep = data.sort((a, b) => {
     return b.time_in - a.time_in
   })
-  display_buses(sortDep)
+  display_buses(sortDep);
 }
 
 const sortSeat = (data) => {
@@ -269,8 +278,14 @@ function AC(data) {
 
 
 
-
-function show_upperDeck(data) {
+/*
+async function show_upperDeck(data) {
+  let buses_data=await getData();
+  let selected_busID = localStorage.getItem("selected_busID");
+  let selected_bus=buses_data.filter((el)=>{
+    if(selected_busID==el.id) return el;
+})   
+ console.log(selected_busID,selected_bus);
   let upper_deck_box = document.getElementById("upper_deck_box");
   data.forEach((seat) => {
     let seat_ele = document.createElement("p");
@@ -280,18 +295,18 @@ function show_upperDeck(data) {
     if (seat.Gender == "Female") {
       seat_ele.style.border = "2px solid red";
     }
-    if (seat.booked) seat_ele.style.backgroundColor = "red";
-    else seat_ele.style.backgroundColor = "white";
+    
+   if(selected_bus[0].booked_seats.includes(seat.id)){
+    seat_ele.style.color="white";
+    seat_ele.style.backgroundColor="red";
+    seat_ele.setAttribute("title", `No: ${seat.id} Booked`);
+   }else{
+    seat_ele.style.backgroundColor="white";
+   }
+
     upper_deck_box.append(seat_ele);
     seat_ele.onclick = () => {
-      /*
-      event.preventDefault();
-    seat_ele.style.backgroundColor = "red";
-    let obj = {
-      booked: true,
-    };
-    patchSeat_upper(obj, seat.id);
-    */
+ 
       checking_point();
       localStorage.setItem("selected_seat_id", seat.id);
       document.querySelector("#seats_contents_right").style.display = "none";
@@ -299,7 +314,8 @@ function show_upperDeck(data) {
       document.querySelector("#confirm_booiking_box").style.display = "none";
     };
   });
-}
+} */
+/*
 function show_lowerDeck(data) {
   let lower_deck_box = document.getElementById("lower_deck_box");
   data.forEach((seat) => {
@@ -314,14 +330,7 @@ function show_lowerDeck(data) {
     else seat_ele.style.backgroundColor = "white";
     lower_deck_box.append(seat_ele);
     seat_ele.onclick = () => {
-      /*
-      event.preventDefault();
-    seat_ele.style.backgroundColor = "red";
-    let obj = {
-      booked: true,
-    }; 
-    patchSeat_lower(obj, seat.id);
-    */
+   
       checking_point();
       localStorage.setItem("selected_seat_id", seat.id);
       document.querySelector("#seats_contents_right").style.display = "none";
@@ -330,40 +339,7 @@ function show_lowerDeck(data) {
     };
   });
 }
-
-// checking_point fun
-/*
-function checking_point() {
-  let boardPoint_div = document.getElementById("boardPoint_div");
-  let dropPoint_div = document.getElementById("dropPoint_div");
-  let boarding_points = document.querySelector(".boarding-points");
-  let continue_btn = document.getElementById("continue_btn");
-  let div1 = document.createElement("div");
-  div1.innerHTML = `<input type="checkbox"><p class="bold" id="pick_time">23:00 </p><p class="bold" id="boarding-point"> Kashmiri Gate</p>`;
-  let div2 = document.createElement("div");
-  div2.innerHTML = `<input type="checkbox"><p class="bold" id="pick_time">06:00 </p><p class="bold" id="dropping-point"> Lucknow Gate</p>`;
-  boarding_points.append(div1);
-  boardPoint_div.addEventListener("click", () => {
-    boarding_points.innerHTML = "";
-    boarding_points.append(div1);
-  });
-  dropPoint_div.addEventListener("click", () => {
-    boarding_points.innerHTML = "";
-    boarding_points.append(div2);
-  });
-  continue_btn.addEventListener("click", () => {
-    document.querySelector("#seats_contents_right-2").style.display = "none";
-    let confirm_booking = document.querySelector("#confirm_booiking_box");
-    confirm_booking.style.display = "flex";
-    let seatNo = localStorage.getItem("selected_seat_id");
-
-    confirm_booking.innerHTML = `
-    <p>Boarding Point - <span id="b_point">Kashmiri Gate</span></p><span id="b_time">23:00</span>
-    <p>Dropping Point - <span id="b_point">Lucknow Gate</span></p><span id="d_time">06:00</span>
-    <p>Seat No. : ${seatNo}</p>
-    <p>Fare : <span id="fare">899</span></p>
-    <button class="btn">Proceed to Book</button>
-    `;
-  });
-}
 */
+
+
+

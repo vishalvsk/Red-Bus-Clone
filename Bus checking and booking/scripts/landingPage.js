@@ -1,3 +1,4 @@
+
 function animate() {
     var reveals = document.querySelectorAll(".animate");
  
@@ -17,19 +18,38 @@ function animate() {
    
    
  
- 
- 
- 
- let from, to, onwardDate, returnDate;
+
+ let from, to, Date;
+ document.querySelector("#search").addEventListener("click",()=>{
+  from = document.querySelector("#input-label-from").value;
+  to = document.querySelector("#input-label-to").value;
+  Date = document.querySelector("#input-label-onward-date").value;
+
+  let obj ={
+    pickPoint : from,
+    dropPoint: to,
+    date : Date
+  }
+
+  localStorage.setItem("user_inputs",JSON.stringify(obj));
+// console.log(JSON.parse(localStorage.getItem("user_inputs")));
+// window.open("../availabilty_nd_booking.html", "_self");
+ })
+
+ /*
      function searchBtn() {
          from = document.querySelector("#input-label-from").value;
          to = document.querySelector("#input-label-to").value;
-         onwardDate = document.querySelector("#input-label-onward-date").value;
-         returnDate = document.querySelector("#input-label-return-date").value;
+         Date = document.querySelector("#input-label-onward-date").value;
  
-         localStorage.setItem("from",from);
-         localStorage.setItem("to",to);
-         localStorage.setItem("onwardDate",onwardDate);
-         localStorage.setItem("returnDate",returnDate);
-         
+         let obj ={
+           pickPoint : from,
+           dropPoint: to,
+           date : Date
+         }
+
+         localStorage.setItem("user_inputs",JSON.stringify(obj));
+     console.log(JSON.parse(localStorage.getItem("user_inputs")));
+     window.open("../availabilty_nd_booking.html", "_self");
      }
+     */

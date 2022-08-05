@@ -4,21 +4,31 @@
       "id": 1,
       "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
       "company": "VRL Travels",
-      "time_in": "4:42",
-      "time_out": "15:36",
-      "rating": 4.8,
-      "price": 625,
-      "seat_available": 2
+      "time_in": "10:25",
+      "time_out": "14:33",
+      "rating": 3.9,
+      "price": 112,
+      "seat_available": 87,
+      "booked_seats": [
+        26,
+        5
+      ]
     },
     {
       "id": 2,
-      "bus_name": "A/C Sleeper",
-      "company": "Paulo travels",
-      "time_in": "21:03",
-      "time_out": "10:11",
-      "rating": 2,
-      "price": 225,
-      "seat_available": 3
+      "bus_name": "Volvo Multi-Axle Sleeper A/C",
+      "company": "Jakhar Travels",
+      "time_in": "0:15",
+      "time_out": "6:23",
+      "rating": 4.8,
+      "price": 741,
+      "seat_available": 87,
+      "booked_seats": [
+        5,
+        26,
+        7,
+        9
+      ]
     },
     {
       "id": 3,
@@ -28,7 +38,10 @@
       "time_out": "20:54",
       "rating": 4.4,
       "price": 935,
-      "seat_available": 4
+      "seat_available": 87,
+      "booked_seats": [
+        3
+      ]
     },
     {
       "id": 4,
@@ -38,7 +51,8 @@
       "time_out": "7:37",
       "rating": 4,
       "price": 599,
-      "seat_available": 3
+      "seat_available": 87,
+      "booked_seats": []
     },
     {
       "id": 5,
@@ -48,7 +62,8 @@
       "time_out": "12:08",
       "rating": 1.3,
       "price": 344,
-      "seat_available": 15
+      "seat_available": 87,
+      "booked_seats": []
     },
     {
       "id": 6,
@@ -58,7 +73,7 @@
       "time_out": "12:22",
       "rating": 3,
       "price": 1029,
-      "seat_available": 6
+      "seat_available": 87
     },
     {
       "id": 7,
@@ -68,7 +83,7 @@
       "time_out": "8:07",
       "rating": 2,
       "price": 582,
-      "seat_available": 2
+      "seat_available": 87
     },
     {
       "id": 8,
@@ -78,7 +93,7 @@
       "time_out": "4:22",
       "rating": 3.8,
       "price": 741,
-      "seat_available": 9
+      "seat_available": 87
     },
     {
       "id": 9,
@@ -88,7 +103,7 @@
       "time_out": "23:05",
       "rating": 2.3,
       "price": 972,
-      "seat_available": 2
+      "seat_available": 87
     },
     {
       "id": 10,
@@ -98,7 +113,7 @@
       "time_out": "14:02",
       "rating": 1.3,
       "price": 874,
-      "seat_available": 13
+      "seat_available": 87
     },
     {
       "id": 11,
@@ -108,7 +123,7 @@
       "time_out": "12:56",
       "rating": 3.3,
       "price": 635,
-      "seat_available": 4
+      "seat_available": 87
     },
     {
       "id": 12,
@@ -118,7 +133,7 @@
       "time_out": "19:46",
       "rating": 2,
       "price": 249,
-      "seat_available": 7
+      "seat_available": 87
     },
     {
       "id": 13,
@@ -128,7 +143,7 @@
       "time_out": "17:15",
       "rating": 2.2,
       "price": 229,
-      "seat_available": 12
+      "seat_available": 87
     },
     {
       "id": 14,
@@ -138,7 +153,7 @@
       "time_out": "21:52",
       "rating": 4,
       "price": 946,
-      "seat_available": 9
+      "seat_available": 87
     },
     {
       "id": 15,
@@ -148,7 +163,7 @@
       "time_out": "19:46",
       "rating": 2.9,
       "price": 388,
-      "seat_available": 11
+      "seat_available": 87
     },
     {
       "id": 16,
@@ -158,7 +173,7 @@
       "time_out": "23:56",
       "rating": 4.9,
       "price": 561,
-      "seat_available": 14
+      "seat_available": 87
     },
     {
       "id": 17,
@@ -168,7 +183,7 @@
       "time_out": "8:51",
       "rating": 1.9,
       "price": 985,
-      "seat_available": 14
+      "seat_available": 87
     },
     {
       "id": 18,
@@ -178,7 +193,7 @@
       "time_out": "11:50",
       "rating": 3.4,
       "price": 711,
-      "seat_available": 10
+      "seat_available": 87
     },
     {
       "id": 19,
@@ -188,7 +203,7 @@
       "time_out": "16:34",
       "rating": 2.8,
       "price": 870,
-      "seat_available": 2
+      "seat_available": 87
     },
     {
       "id": 20,
@@ -198,7 +213,7 @@
       "time_out": "10:58",
       "rating": 2.2,
       "price": 478,
-      "seat_available": 6
+      "seat_available": 87
     },
     {
       "id": 21,
@@ -208,7 +223,7 @@
       "time_out": "14:53",
       "rating": 2.3,
       "price": 955,
-      "seat_available": 3
+      "seat_available": 87
     },
     {
       "id": 22,
@@ -218,7 +233,7 @@
       "time_out": "5:58",
       "rating": 1.8,
       "price": 263,
-      "seat_available": 3
+      "seat_available": 87
     },
     {
       "id": 23,
@@ -227,8 +242,8 @@
       "time_in": "10:25",
       "time_out": "14:33",
       "rating": 3.9,
-      "price": 1127,
-      "seat_available": 5
+      "price": 112,
+      "seat_available": 87
     },
     {
       "id": 24,
@@ -238,7 +253,7 @@
       "time_out": "21:48",
       "rating": 4.1,
       "price": 788,
-      "seat_available": 14
+      "seat_available": 87
     },
     {
       "id": 25,
@@ -248,7 +263,7 @@
       "time_out": "21:57",
       "rating": 3.3,
       "price": 535,
-      "seat_available": 12
+      "seat_available": 87
     },
     {
       "id": 26,
@@ -258,7 +273,7 @@
       "time_out": "3:11",
       "rating": 3.4,
       "price": 1145,
-      "seat_available": 7
+      "seat_available": 87
     },
     {
       "id": 27,
@@ -268,7 +283,7 @@
       "time_out": "12:15",
       "rating": 3.4,
       "price": 277,
-      "seat_available": 11
+      "seat_available": 87
     },
     {
       "id": 28,
@@ -278,7 +293,7 @@
       "time_out": "21:07",
       "rating": 2.6,
       "price": 1134,
-      "seat_available": 11
+      "seat_available": 87
     },
     {
       "id": 29,
@@ -288,7 +303,7 @@
       "time_out": "17:32",
       "rating": 3.6,
       "price": 853,
-      "seat_available": 1
+      "seat_available": 87
     },
     {
       "id": 30,
@@ -298,7 +313,7 @@
       "time_out": "11:33",
       "rating": 3.1,
       "price": 498,
-      "seat_available": 15
+      "seat_available": 87
     },
     {
       "id": 31,
@@ -308,7 +323,7 @@
       "time_out": "13:12",
       "rating": 4.4,
       "price": 523,
-      "seat_available": 11
+      "seat_available": 87
     },
     {
       "id": 32,
@@ -318,7 +333,7 @@
       "time_out": "7:18",
       "rating": 3.7,
       "price": 512,
-      "seat_available": 4
+      "seat_available": 87
     },
     {
       "id": 33,
@@ -328,7 +343,7 @@
       "time_out": "2:13",
       "rating": 5,
       "price": 813,
-      "seat_available": 12
+      "seat_available": 87
     },
     {
       "id": 34,
@@ -338,7 +353,7 @@
       "time_out": "8:33",
       "rating": 4.9,
       "price": 374,
-      "seat_available": 6
+      "seat_available": 87
     },
     {
       "id": 35,
@@ -348,7 +363,7 @@
       "time_out": "9:15",
       "rating": 4.3,
       "price": 516,
-      "seat_available": 2
+      "seat_available": 87
     },
     {
       "id": 36,
@@ -358,7 +373,7 @@
       "time_out": "0:42",
       "rating": 1.4,
       "price": 1161,
-      "seat_available": 5
+      "seat_available": 87
     },
     {
       "id": 37,
@@ -368,7 +383,7 @@
       "time_out": "2:56",
       "rating": 2.1,
       "price": 554,
-      "seat_available": 2
+      "seat_available": 87
     },
     {
       "id": 38,
@@ -378,7 +393,7 @@
       "time_out": "6:23",
       "rating": 4.8,
       "price": 741,
-      "seat_available": 5
+      "seat_available": 87
     },
     {
       "id": 39,
@@ -388,7 +403,7 @@
       "time_out": "6:15",
       "rating": 3.5,
       "price": 628,
-      "seat_available": 9
+      "seat_available": 87
     },
     {
       "id": 40,
@@ -398,7 +413,7 @@
       "time_out": "17:03",
       "rating": 3.4,
       "price": 352,
-      "seat_available": 13
+      "seat_available": 187
     },
     {
       "id": 41,
@@ -408,7 +423,7 @@
       "time_out": "20:35",
       "rating": 2.1,
       "price": 1137,
-      "seat_available": 9
+      "seat_available": 87
     },
     {
       "id": 42,
@@ -418,7 +433,7 @@
       "time_out": "0:58",
       "rating": 3.4,
       "price": 599,
-      "seat_available": 4
+      "seat_available": 87
     },
     {
       "id": 43,
@@ -428,7 +443,7 @@
       "time_out": "20:35",
       "rating": 2.4,
       "price": 1193,
-      "seat_available": 8
+      "seat_available": 87
     },
     {
       "id": 44,
@@ -438,7 +453,7 @@
       "time_out": "11:45",
       "rating": 4.2,
       "price": 294,
-      "seat_available": 2
+      "seat_available": 87
     },
     {
       "id": 45,
@@ -448,7 +463,7 @@
       "time_out": "8:02",
       "rating": 1.1,
       "price": 415,
-      "seat_available": 6
+      "seat_available": 87
     },
     {
       "id": 46,
@@ -458,7 +473,7 @@
       "time_out": "6:59",
       "rating": 1.9,
       "price": 480,
-      "seat_available": 15
+      "seat_available": 187
     },
     {
       "id": 47,
@@ -468,7 +483,7 @@
       "time_out": "8:17",
       "rating": 4.1,
       "price": 713,
-      "seat_available": 3
+      "seat_available": 87
     },
     {
       "id": 48,
@@ -478,7 +493,7 @@
       "time_out": "11:44",
       "rating": 1.2,
       "price": 1115,
-      "seat_available": 2
+      "seat_available": 87
     },
     {
       "id": 49,
@@ -488,7 +503,7 @@
       "time_out": "13:50",
       "rating": 2.7,
       "price": 257,
-      "seat_available": 15
+      "seat_available": 187
     },
     {
       "id": 50,
@@ -498,7 +513,7 @@
       "time_out": "17:19",
       "rating": 3,
       "price": 439,
-      "seat_available": 2
+      "seat_available": 87
     },
     {
       "id": 51,
@@ -508,7 +523,7 @@
       "time_out": "20:38",
       "rating": 2.8,
       "price": 724,
-      "seat_available": 5
+      "seat_available": 87
     },
     {
       "id": 52,
@@ -518,7 +533,7 @@
       "time_out": "10:05",
       "rating": 1.1,
       "price": 432,
-      "seat_available": 13
+      "seat_available": 187
     },
     {
       "id": 53,
@@ -528,7 +543,7 @@
       "time_out": "1:02",
       "rating": 3.1,
       "price": 1002,
-      "seat_available": 2
+      "seat_available": 87
     },
     {
       "id": 54,
@@ -538,7 +553,7 @@
       "time_out": "1:59",
       "rating": 1,
       "price": 449,
-      "seat_available": 7
+      "seat_available": 87
     },
     {
       "id": 55,
@@ -548,7 +563,7 @@
       "time_out": "7:22",
       "rating": 3.5,
       "price": 848,
-      "seat_available": 15
+      "seat_available": 187
     },
     {
       "id": 56,
@@ -558,7 +573,7 @@
       "time_out": "22:57",
       "rating": 2.1,
       "price": 706,
-      "seat_available": 3
+      "seat_available": 87
     },
     {
       "id": 57,
@@ -568,7 +583,7 @@
       "time_out": "19:36",
       "rating": 4.3,
       "price": 895,
-      "seat_available": 7
+      "seat_available": 87
     },
     {
       "id": 58,
@@ -578,7 +593,7 @@
       "time_out": "17:39",
       "rating": 2.1,
       "price": 989,
-      "seat_available": 5
+      "seat_available": 87
     },
     {
       "id": 59,
@@ -588,7 +603,7 @@
       "time_out": "14:49",
       "rating": 4.9,
       "price": 341,
-      "seat_available": 8
+      "seat_available": 87
     },
     {
       "id": 60,
@@ -598,7 +613,7 @@
       "time_out": "17:55",
       "rating": 3.6,
       "price": 391,
-      "seat_available": 11
+      "seat_available": 187
     },
     {
       "id": 61,
@@ -608,7 +623,7 @@
       "time_out": "17:32",
       "rating": 1.9,
       "price": 645,
-      "seat_available": 12
+      "seat_available": 187
     },
     {
       "id": 62,
@@ -618,7 +633,7 @@
       "time_out": "23:06",
       "rating": 3.9,
       "price": 1052,
-      "seat_available": 7
+      "seat_available": 87
     },
     {
       "id": 63,
@@ -628,7 +643,7 @@
       "time_out": "18:13",
       "rating": 2.3,
       "price": 812,
-      "seat_available": 14
+      "seat_available": 187
     },
     {
       "id": 64,
@@ -638,7 +653,7 @@
       "time_out": "15:41",
       "rating": 3,
       "price": 1031,
-      "seat_available": 3
+      "seat_available": 87
     },
     {
       "id": 65,
@@ -648,7 +663,7 @@
       "time_out": "6:57",
       "rating": 1.3,
       "price": 727,
-      "seat_available": 5
+      "seat_available": 87
     },
     {
       "id": 66,
@@ -658,7 +673,7 @@
       "time_out": "7:42",
       "rating": 2.5,
       "price": 771,
-      "seat_available": 2
+      "seat_available": 87
     },
     {
       "id": 67,
@@ -668,7 +683,7 @@
       "time_out": "11:40",
       "rating": 3.2,
       "price": 429,
-      "seat_available": 3
+      "seat_available": 87
     },
     {
       "id": 68,
@@ -678,7 +693,7 @@
       "time_out": "5:18",
       "rating": 3.3,
       "price": 1108,
-      "seat_available": 6
+      "seat_available": 87
     },
     {
       "id": 69,
@@ -688,7 +703,7 @@
       "time_out": "5:45",
       "rating": 3.8,
       "price": 256,
-      "seat_available": 4
+      "seat_available": 87
     },
     {
       "id": 70,
@@ -698,7 +713,7 @@
       "time_out": "17:52",
       "rating": 1.2,
       "price": 800,
-      "seat_available": 2
+      "seat_available": 87
     },
     {
       "id": 71,
@@ -708,7 +723,7 @@
       "time_out": "23:07",
       "rating": 3.3,
       "price": 886,
-      "seat_available": 13
+      "seat_available": 187
     },
     {
       "id": 72,
@@ -718,7 +733,7 @@
       "time_out": "13:13",
       "rating": 4.2,
       "price": 807,
-      "seat_available": 15
+      "seat_available": 187
     },
     {
       "id": 73,
@@ -728,7 +743,7 @@
       "time_out": "2:19",
       "rating": 2,
       "price": 355,
-      "seat_available": 12
+      "seat_available": 187
     },
     {
       "id": 74,
@@ -738,7 +753,7 @@
       "time_out": "3:53",
       "rating": 3.1,
       "price": 569,
-      "seat_available": 13
+      "seat_available": 187
     },
     {
       "id": 75,
@@ -748,7 +763,7 @@
       "time_out": "15:47",
       "rating": 3,
       "price": 275,
-      "seat_available": 6
+      "seat_available": 87
     },
     {
       "id": 76,
@@ -758,7 +773,7 @@
       "time_out": "20:39",
       "rating": 2.4,
       "price": 979,
-      "seat_available": 10
+      "seat_available": 187
     },
     {
       "id": 77,
@@ -768,7 +783,7 @@
       "time_out": "19:33",
       "rating": 4.7,
       "price": 676,
-      "seat_available": 1
+      "seat_available": 87
     },
     {
       "id": 78,
@@ -778,7 +793,7 @@
       "time_out": "3:36",
       "rating": 3.2,
       "price": 895,
-      "seat_available": 7
+      "seat_available": 87
     },
     {
       "id": 79,
@@ -788,7 +803,7 @@
       "time_out": "4:11",
       "rating": 2.8,
       "price": 1133,
-      "seat_available": 11
+      "seat_available": 87
     },
     {
       "id": 80,
@@ -798,7 +813,7 @@
       "time_out": "15:44",
       "rating": 4.1,
       "price": 700,
-      "seat_available": 7
+      "seat_available": 87
     },
     {
       "id": 81,
@@ -808,7 +823,7 @@
       "time_out": "18:49",
       "rating": 1.6,
       "price": 508,
-      "seat_available": 12
+      "seat_available": 87
     },
     {
       "id": 82,
@@ -818,7 +833,387 @@
       "time_out": "7:39",
       "rating": 5,
       "price": 1182,
-      "seat_available": 5
+      "seat_available": 87
+    },
+    {
+      "id": 83,
+      "bus_name": "Bharat Benz A/C Sleeper",
+      "company": "Anand Travels",
+      "time_in": "13:11",
+      "time_out": "15:57",
+      "rating": 3.4,
+      "price": 227,
+      "seat_available": 87
+    },
+    {
+      "id": 84,
+      "bus_name": "Bharat Benz A/C Sleeper",
+      "company": "VRL Travels",
+      "time_in": "4:14",
+      "time_out": "20:03",
+      "rating": 4.2,
+      "price": 995,
+      "seat_available": 87
+    },
+    {
+      "id": 85,
+      "bus_name": "Volvo Multi-Axle Sleeper A/C",
+      "company": "Jakhar Travels",
+      "time_in": "12:23",
+      "time_out": "8:32",
+      "rating": 2.3,
+      "price": 436,
+      "seat_available": 87
+    },
+    {
+      "id": 86,
+      "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
+      "company": "M R Travels",
+      "time_in": "18:11",
+      "time_out": "4:28",
+      "rating": 2.7,
+      "price": 720,
+      "seat_available": 87
+    },
+    {
+      "id": 87,
+      "bus_name": "Volvo Multi-Axle Sleeper A/C",
+      "company": "M R Travels",
+      "time_in": "2:01",
+      "time_out": "17:20",
+      "rating": 4.5,
+      "price": 375,
+      "seat_available": 87
+    },
+    {
+      "id": 88,
+      "bus_name": "A/C Seater / Sleeper",
+      "company": "M R Travels",
+      "time_in": "20:10",
+      "time_out": "16:16",
+      "rating": 2.1,
+      "price": 421,
+      "seat_available": 87
+    },
+    {
+      "id": 89,
+      "bus_name": "A/C Sleeper",
+      "company": "Orange Tours And Travels",
+      "time_in": "6:27",
+      "time_out": "0:53",
+      "rating": 2.6,
+      "price": 1104,
+      "seat_available": 87
+    },
+    {
+      "id": 90,
+      "bus_name": "A/C Sleeper",
+      "company": "M R Travels",
+      "time_in": "9:41",
+      "time_out": "19:03",
+      "rating": 4.7,
+      "price": 784,
+      "seat_available": 87
+    },
+    {
+      "id": 91,
+      "bus_name": "Volvo Multi-Axle Sleeper A/C",
+      "company": "Jakhar Travels",
+      "time_in": "13:58",
+      "time_out": "18:19",
+      "rating": 4.9,
+      "price": 1072,
+      "seat_available": 87
+    },
+    {
+      "id": 92,
+      "bus_name": "NON A/C Sleeper",
+      "company": "Paulo travels",
+      "time_in": "16:24",
+      "time_out": "10:02",
+      "rating": 4,
+      "price": 290,
+      "seat_available": 87
+    },
+    {
+      "id": 93,
+      "bus_name": "A/C Sleeper",
+      "company": "M R Travels",
+      "time_in": "16:27",
+      "time_out": "10:12",
+      "rating": 2.5,
+      "price": 903,
+      "seat_available": 87
+    },
+    {
+      "id": 94,
+      "bus_name": "Bharat Benz A/C Sleeper",
+      "company": "Anand Travels",
+      "time_in": "7:07",
+      "time_out": "17:41",
+      "rating": 2,
+      "price": 576,
+      "seat_available": 87
+    },
+    {
+      "id": 95,
+      "bus_name": "NON A/C Sleeper",
+      "company": "Jakhar Travels",
+      "time_in": "13:51",
+      "time_out": "1:46",
+      "rating": 1.6,
+      "price": 850,
+      "seat_available": 87
+    },
+    {
+      "id": 96,
+      "bus_name": "Volvo Multi-Axle Sleeper A/C",
+      "company": "Orange Tours And Travels",
+      "time_in": "2:03",
+      "time_out": "0:35",
+      "rating": 2.9,
+      "price": 352,
+      "seat_available": 87
+    },
+    {
+      "id": 97,
+      "bus_name": "A/C Seater / Sleeper",
+      "company": "SRS Travels",
+      "time_in": "19:02",
+      "time_out": "11:59",
+      "rating": 2.6,
+      "price": 778,
+      "seat_available": 87
+    },
+    {
+      "id": 98,
+      "bus_name": "Bharat Benz A/C Sleeper",
+      "company": "M R Travels",
+      "time_in": "5:09",
+      "time_out": "3:24",
+      "rating": 1.5,
+      "price": 243,
+      "seat_available": 87
+    },
+    {
+      "id": 99,
+      "bus_name": "A/C Seater / Sleeper",
+      "company": "Jakhar Travels",
+      "time_in": "6:53",
+      "time_out": "15:38",
+      "rating": 2.5,
+      "price": 339,
+      "seat_available": 87
+    },
+    {
+      "id": 100,
+      "bus_name": "Volvo Multi-Axle Sleeper A/C",
+      "company": "SRS Travels",
+      "time_in": "3:52",
+      "time_out": "17:45",
+      "rating": 1.1,
+      "price": 334,
+      "seat_available": 87
+    },
+    {
+      "id": 101,
+      "bus_name": "Bharat Benz A/C Sleeper",
+      "company": "Orange Tours And Travels",
+      "time_in": "7:54",
+      "time_out": "19:32",
+      "rating": 3.4,
+      "price": 1088,
+      "seat_available": 87
+    },
+    {
+      "id": 102,
+      "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
+      "company": "Orange Tours And Travels",
+      "time_in": "19:07",
+      "time_out": "22:21",
+      "rating": 2.6,
+      "price": 854,
+      "seat_available": 87
+    },
+    {
+      "id": 103,
+      "bus_name": "NON A/C Sleeper",
+      "company": "Jakhar Travels",
+      "time_in": "8:43",
+      "time_out": "12:33",
+      "rating": 2.6,
+      "price": 1091,
+      "seat_available": 87
+    },
+    {
+      "id": 104,
+      "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
+      "company": "Jakhar Travels",
+      "time_in": "16:19",
+      "time_out": "15:37",
+      "rating": 1.6,
+      "price": 998,
+      "seat_available": 87
+    },
+    {
+      "id": 105,
+      "bus_name": "Volvo Multi-Axle Sleeper A/C",
+      "company": "VRL Travels",
+      "time_in": "7:53",
+      "time_out": "10:35",
+      "rating": 4.4,
+      "price": 995,
+      "seat_available": 87
+    },
+    {
+      "id": 106,
+      "bus_name": "A/C Sleeper",
+      "company": "Anand Travels",
+      "time_in": "14:48",
+      "time_out": "12:15",
+      "rating": 1.2,
+      "price": 492,
+      "seat_available": 87
+    },
+    {
+      "id": 107,
+      "bus_name": "A/C Sleeper",
+      "company": "Paulo travels",
+      "time_in": "10:35",
+      "time_out": "15:03",
+      "rating": 3.7,
+      "price": 920,
+      "seat_available": 87
+    },
+    {
+      "id": 108,
+      "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
+      "company": "SRS Travels",
+      "time_in": "19:56",
+      "time_out": "16:33",
+      "rating": 1.1,
+      "price": 802,
+      "seat_available": 87
+    },
+    {
+      "id": 109,
+      "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
+      "company": "Paulo travels",
+      "time_in": "9:41",
+      "time_out": "22:23",
+      "rating": 3.4,
+      "price": 293,
+      "seat_available": 87
+    },
+    {
+      "id": 110,
+      "bus_name": "A/C Sleeper",
+      "company": "Jakhar Travels",
+      "time_in": "8:29",
+      "time_out": "4:43",
+      "rating": 1.2,
+      "price": 743,
+      "seat_available": 87
+    },
+    {
+      "id": 111,
+      "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
+      "company": "VRL Travels",
+      "time_in": "4:51",
+      "time_out": "9:18",
+      "rating": 2.5,
+      "price": 923,
+      "seat_available": 87
+    },
+    {
+      "id": 112,
+      "bus_name": "Bharat Benz A/C Sleeper",
+      "company": "Jakhar Travels",
+      "time_in": "18:14",
+      "time_out": "6:28",
+      "rating": 5,
+      "price": 1165,
+      "seat_available": 87
+    },
+    {
+      "id": 113,
+      "bus_name": "NON A/C Sleeper",
+      "company": "SRS Travels",
+      "time_in": "12:36",
+      "time_out": "20:37",
+      "rating": 4.5,
+      "price": 1033,
+      "seat_available": 87
+    },
+    {
+      "id": 114,
+      "bus_name": "Bharat Benz A/C Sleeper",
+      "company": "M R Travels",
+      "time_in": "20:23",
+      "time_out": "5:45",
+      "rating": 3.4,
+      "price": 590,
+      "seat_available": 87
+    },
+    {
+      "id": 115,
+      "bus_name": "NON A/C Sleeper",
+      "company": "M R Travels",
+      "time_in": "18:34",
+      "time_out": "12:24",
+      "rating": 2.2,
+      "price": 268,
+      "seat_available": 87
+    },
+    {
+      "id": 116,
+      "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
+      "company": "Orange Tours And Travels",
+      "time_in": "16:09",
+      "time_out": "18:03",
+      "rating": 3.9,
+      "price": 725,
+      "seat_available": 87
+    },
+    {
+      "id": 117,
+      "bus_name": "A/C Seater / Sleeper",
+      "company": "VRL Travels",
+      "time_in": "12:15",
+      "time_out": "13:36",
+      "rating": 3.5,
+      "price": 605,
+      "seat_available": 87
+    },
+    {
+      "id": 118,
+      "bus_name": "A/C Sleeper",
+      "company": "Anand Travels",
+      "time_in": "4:05",
+      "time_out": "12:38",
+      "rating": 1.7,
+      "price": 207,
+      "seat_available": 87
+    },
+    {
+      "id": 119,
+      "bus_name": "Volvo Multi-Axle Sleeper A/C",
+      "company": "Orange Tours And Travels",
+      "time_in": "23:11",
+      "time_out": "21:55",
+      "rating": 4.9,
+      "price": 213,
+      "seat_available": 87
+    },
+    {
+      "id": 120,
+      "bus_name": "A/C Sleeper",
+      "company": "M R Travels",
+      "time_in": "6:45",
+      "time_out": "21:40",
+      "rating": 2.9,
+      "price": 930,
+      "seat_available": 87
     }
   ],
   "upperDeck_seats": [
@@ -1046,19 +1441,19 @@
     },
     {
       "id": 38,
-      "extra_price": 0,
+      "extra_price": 200,
       "booked": false,
       "Gender": "Female"
     },
     {
       "id": 39,
-      "extra_price": 0,
+      "extra_price": 200,
       "booked": false,
       "Gender": "Female"
     },
     {
       "id": 40,
-      "extra_price": 0,
+      "extra_price": 250,
       "booked": false,
       "Gender": "Female"
     },
@@ -1300,31 +1695,31 @@
     },
     {
       "id": 79,
-      "extra_price": 0,
+      "extra_price": 200,
       "booked": false,
       "Gender": "Female"
     },
     {
       "id": 80,
-      "extra_price": 0,
+      "extra_price": 200,
       "booked": false,
       "Gender": "Female"
     },
     {
       "id": 81,
-      "extra_price": 0,
+      "extra_price": 200,
       "booked": false,
       "Gender": "Female"
     },
     {
       "id": 82,
-      "extra_price": 0,
+      "extra_price": 200,
       "booked": false,
       "Gender": "Female"
     },
     {
       "id": 83,
-      "extra_price": 0,
+      "extra_price": 200,
       "booked": false,
       "Gender": "Female"
     },
@@ -1353,7 +1748,32 @@
       "Gender": "Female"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "user-Details": {
+    "username": "username",
+    "gender": "",
+    "age": "",
+    "email": "",
+    "phone": ""
+  },
+  "test_obj": [
+    {
+      "id": 1,
+      "ele": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "booked_seats": [
+        2,
+        3,
+        15
+      ],
+      "id": 2
+    }
+  ]
 }
