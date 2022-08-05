@@ -1,0 +1,252 @@
+const getData = async () => {
+  try {
+    let url = "http://localhost:3000/redbus";
+    const res = await fetch(url);
+    const data = await res.json();
+    // console.log(data)
+    display_buses(data);
+    return data
+  } catch (err) {
+    console.log(err);
+  }
+};
+getData();
+
+const display_buses = (data) => {
+  let no_of_buses = document.getElementById("no_of_buses");
+  let bus_details_section = document.getElementById("bus_details_section");
+  bus_details_section.innerHTML = "";
+  no_of_buses.innerHTML = `${data.length} Buses`;
+
+  data.forEach((bus) => {
+
+    let bus_card = document.createElement("div");
+    bus_card.setAttribute("class", "bus_card");
+
+    bus_card.innerHTML = `
+    <div class="bus_info">
+        <table>
+            <tr>
+                <td class="bold"><img class="operator_logo" src="https://www.redbus.in/images/reviews/primo_logo.svg" alt=""></td>
+            </tr>
+            <tr>
+                <td class="bold">${bus.company}</td>
+                <td class="bold">${bus.time_in}</td>
+                <td class="font">07:30</td>
+                <td>${bus.time_out}</td>
+                <td>
+                    <p class="rating"><i class="fa-regular fa-star"></i>${bus.rating}</p>
+                </td>
+            </tr>
+            <tr>
+                <td>${bus.bus_name}</td>
+                <td>Kashimiri Gate</td>  
+                <td><i class="fa-solid fa-arrow-right"></i></td>
+                <td>Lucknow</td>
+                <td class="members"><i class="fa-solid fa-people-group"></i>200</td>
+            </tr>
+        </table>
+        <div class="price_nd_seat_div">
+            <p>Starts from INR <span class="bold">${bus.price}</span></p>
+            <p>${bus.seat_available} Seats available</p>
+        </div>
+    </div>
+    <div class="extra_features_row">
+        <ul class="facility_icons">
+            <li title="Snacks"><i class=" fa-solid fa-cookie"></i></li>
+            <li title="Water Bottle"><i class="fa-solid fa-bottle-water"></i></li>
+            <li title="Charging Point"><i class="fa-solid fa-plug"></i></li>
+            <li title="Toilet"><i class="fa-solid fa-restroom"></i></li>
+        </ul>
+        <p><i class="fa-solid fa-right-long"></i> Primo</p>
+        <p><i class="fa-solid fa-map-location-dot"></i>Live Tracking</p>
+        <button class="see_setails_btn">See Seats</button>
+    </div>
+    `;
+    bus_details_section.append(bus_card);
+  });
+
+  document.querySelector(".see_setails_btn").addEventListener("click", () => {
+    console.log("Button clicked");
+  });
+
+  document.getElementById("rating").addEventListener("click", () => {
+    sortData(data)
+  })
+
+  document.getElementById("price").addEventListener("click", () => {
+    sortPrice(data)
+  })
+  document.getElementById("departure").addEventListener("click", () => {
+    sortDepature(data)
+  })
+
+  document.getElementById("seat").addEventListener("click", () => {
+    sortSeat(data)
+  })
+
+  // filter data //
+  let selecter = document.getElementById("before-6am")
+  selecter.addEventListener("change", (e) => {
+    if (e.target.checked) {
+      let newData = data.filter(function (time) {
+        if (time.time_in > "6") {
+          return true
+        }
+        else {
+          return false;
+        }
+      })
+
+      let value = document.getElementById("span1")
+      value.innerHTML = ""
+      value.append(newData.length)
+      // console.log(newData.length)
+      display_buses(newData)
+
+    } else {
+      // displayData(data)
+      console.log("data2", data)
+    }
+
+  })
+
+
+
+  document.getElementById("morning").addEventListener("click", () => {
+    DisplayData(data)
+
+  })
+  document.getElementById("evening").addEventListener("click", () => {
+    DisplayEveData(data)
+
+  })
+
+  // bus type
+
+  document.getElementById("seater").addEventListener("click", () => {
+    seater(data)
+
+  })
+
+  document.getElementById("sleeper").addEventListener("click", () => {
+    sleeper(data)
+
+  })
+
+  document.getElementById("ac").addEventListener("click", () => {
+    AC(data)
+
+  })
+
+};
+
+
+const sortData = (data) => {
+  let sortType = data.sort((a, b) => {
+    return b.rating - a.rating
+  })
+  display_buses(sortType)
+}
+
+const sortPrice = (data) => {
+  let sortPrice = data.sort((a, b) => {
+    return a.price - b.price
+  })
+  display_buses(sortPrice)
+}
+
+const sortDepature = (data) => {
+  let sortDep = data.sort((a, b) => {
+    return b.time_in - a.time_in
+  })
+  display_buses(sortDep)
+}
+
+const sortSeat = (data) => {
+  let sortSea = data.sort((a, b) => {
+    return b.seat_available - a.seat_available
+  })
+  display_buses(sortSea)
+}
+
+
+function DisplayData(data) {
+  let newData1 = data.filter(function (time) {
+    if (time.time_in < "6" && time.time_in >= "12") {
+      return true
+    }
+    else {
+      return false;
+    }
+  })
+  let value1 = document.getElementById("span2")
+  value1.innerHTML = ""
+  value1.append(newData1.length)
+  display_buses(newData1)
+  // location.reload()
+}
+
+
+function DisplayEveData(data) {
+  let newData2 = data.filter(function (time) {
+    if (time.time_in <= "12") {
+      return true
+    }
+    else {
+      return false;
+    }
+  })
+  let value2 = document.getElementById("span3")
+  value2.innerHTML = ""
+  value2.append(newData2.length)
+  display_buses(newData2)
+  // location.reload()
+}
+
+
+function seater(data) {
+  let newData2 = data.filter(function (name) {
+    if (name.bus_name <= "Seater") {
+      return true
+    }
+    else {
+      return false;
+    }
+  })
+  let value3 = document.getElementById("span4")
+  value3.innerHTML = ""
+  value3.append(newData2.length)
+  display_buses(newData2)
+  // location.reload()
+}
+
+
+function sleeper(data) {
+  bus_details_section.innerHTML = "";
+  let newData2 = data.filter(function (name) {
+    if (name.bus_name <= "Sleeper") {
+      return true
+    }
+    else {
+      return false;
+    }
+  })
+  let value4 = document.getElementById("span5")
+  value4.innerHTML = ""
+  value4.append(newData2.length)
+  display_buses(newData2)
+  // location.reload()
+}
+
+function AC(data) {
+  let newData2 = data.filter(function (name) {
+    if (name.bus_name <= "A/C") {
+      return true
+    }
+    else {
+      return false;
+    }
+  })
+  display_buses(newData2)
+}

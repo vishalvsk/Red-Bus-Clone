@@ -62,10 +62,10 @@
      align-items: center;
      border-bottom: 1px solid grey;
      background-color: rgba(255, 255, 255, 0.971);
-     width: 100%;
+     /* width: 100%; */
      /* position: fixed; */
-    left: 0px;
-    z-index: 1;
+    /* left: 0px; */
+    /* z-index: 1; */
      /* background-color: yellow; */
  }
 
@@ -81,12 +81,6 @@
  }
 
  /*============ Filter Section CSS =========== */
- #left_section_coverDiv{
-    position: relative;
-    display: flex;
-    width: 290px;
-    margin-right: 50px;
- }
 
  .left_section {
      padding: 18px;
@@ -149,7 +143,6 @@
 
  /*============ Bus Details Section CSS =========== */
  .right_section {
-    width: 100%;
      padding: 0px 5px;
  }
 
@@ -177,7 +170,7 @@
  #details_sorting_heading {
      margin-top: 20px;
      display: grid;
-     grid-template-columns: 2fr 1fr 1.5fr 1.2fr 1fr 1.5fr 1.3fr 1fr;
+     grid-template-columns: 1fr 1.4fr 1.7fr 1.2fr 1.5fr 1.5fr 1.3fr 1fr;
  }
  #details_sorting_heading p:hover{
      cursor: pointer;

@@ -13,7 +13,6 @@ async function checking_point() {
      if(selected_seat_id <= 48)  seats_data = await upperDeck();
      else seats_data = await lowerDeck();
     
-    
      let selected_bus=buses_data.filter((el)=>{
          if(selected_busID==el.id) return el;
      })     
@@ -52,8 +51,13 @@ async function checking_point() {
       <p>Dropping Point - <span id="b_point">Lucknow Gate</span></p><span id="d_time">${selected_bus[0].time_out}</span>
       <p>Seat No. : ${seatNo}</p>
       <p>Fare : <span id="fare" class=""bold>${selected_bus[0].price}+Extra Seat Price (${selected_seat[0].extra_price}) = ${sum_price}</span></p>
-      <button class="btn">Proceed to Book</button>
+      <button class="btn" id="proceed_btn">Proceed to Book</button>
       `;
+      let proceed_btn = document.getElementById("proceed_btn");
+       console.log(proceed_btn)
+       proceed_btn.addEventListener("click", () => {
+        window.open("./Pages/passenger.html")
+       });
     });
   }
 

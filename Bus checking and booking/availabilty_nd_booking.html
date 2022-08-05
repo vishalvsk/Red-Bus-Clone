@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="availabilty_nd_booking.css">
-    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="./styles/availabilty_nd_booking.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
     <title>Bus-Availability</title>
     <script src="https://kit.fontawesome.com/792b524030.js" crossorigin="anonymous"></script>
     <style>
@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- <iframe src="../Vishal Codes/passenger.html" frameborder="0"></iframe> -->
     <div id="container">
     <div class="nav_cover"> 
     <nav>
@@ -35,69 +36,66 @@
 </div>
     <main>
         <!-- <div id="left_section_coverDiv"> -->
-        <div class="left_section">
-            <div>
-            <h6>FILTER</h6>
-            <hr>
-            <div id="heading_line" class="filter_div">
-                <P>Live Tracking (15)</P>
+            <div class="left_section">
+                <h6>FILTER</h6>
+                <hr>
+                <div id="heading_line" class="filter_div">
+                    <P>Live Tracking (15)</P>
+                </div>
+                <hr>
+                <div class="filter_div">
+                    <h6>DEPARTURE TIME</h6>
+                    <label for=""><input type="checkbox" value="" id="before-6am">Before 6 am (<span id="span1">0</span>)</label>
+                    <label for=""><input type="checkbox" value="" id="morning">6 am to 12 pm (<span id="span2">0</span>)</label>
+                    <label for=""><input type="checkbox" value="" id="evening">12 pm to 6 pm (<span id="span3">0</span>)</label>
+                    <label for=""><input type="checkbox" value="">After 6 pm (0)</label>
+                </div>
+                <div class="filter_div">
+                    <h6>BUS TYPES</h6>
+                    <label for=""><input type="checkbox" value="" id="seater">SEATER (<span id="span4">0</span>)</label>
+                    <label for=""><input type="checkbox" value="" id="sleeper">SLEEPER (<span id="span5">0</span>)</label>
+                    <label for=""><input type="checkbox" value="" id="ac">AC (23)</label>
+                </div>
+                <div class="filter_div">
+                    <h6>SEAT AVAILABILITY</h6>
+                    <label for=""><input type="checkbox" value="">Single Seats (9)</label>
+                </div>
+                <div class="filter_div">
+                    <h6>ARRIVAL TIME</h6>
+                    <label for="" ><input type="checkbox" value="" >Before 6 am (5)</label>
+                    <label for=""><input type="checkbox" value="">6 am to 12 pm (18)</label>
+                    <label for=""><input type="checkbox" value="">12 pm to 6 pm (0)</label>
+                    <label for=""><input type="checkbox" value="">After 6 pm (0)</label>
+                </div>
+                <div class="points_div">
+                    <h6>BOARDING POINT</h6>
+                    <label for=""><i class="fa-solid fa-magnifying-glass"></i><input type="text" name="" id=""
+                            placeholder="BOARDING POINT"></label>
+                </div>
+                <div class="points_div">
+                    <h6>DROPPING POINT</h6>
+                    <label for=""><i class="fa-solid fa-magnifying-glass"></i><input type="text" name="" id=""
+                            placeholder="DROPPING POINT"></label>
+                </div>
+                <div class="points_div">
+                    <h6>OPERATOR</h6>
+                    <label for=""><i class="fa-solid fa-magnifying-glass"></i><input type="text" name="" id=""
+                            placeholder="OPERATOR"></label>
+                </div>
+                <div class="points_div">
+                    <h6>AMENITIES</h6>
+                    <ul class="amenties">
+                        <li>WIFI (23)</li>
+                        <li>Water Bottle (23)</li>
+                        <li>Blankets (4)</li>
+                        <li>Charging Point (4)</li>
+                        <li>Movie (0)</li>
+                        <li>Track My Bus (4)</li>
+                        <li>Emergency Contact Nu... (1)</li>
+                        <li>Toilet (1)</li>
+                    </ul>
+                </div>
             </div>
-            <hr>
-            <div class="filter_div">
-                <h6>DEPARTURE TIME</h6>
-                <label for=""><input type="checkbox" value="">Before 6 am (0)</label>
-                <label for=""><input type="checkbox" value="">6 am to 12 pm (0)</label>
-                <label for=""><input type="checkbox" value="">12 pm to 6 pm (0/</label>
-                <label for=""><input type="checkbox" value="">After 6 pm (22)</label>
-            </div>
-            <div class="filter_div">
-                <h6>BUS TYPES</h6>
-                <label for=""><input type="checkbox" value="">SEATER (17)</label>
-                <label for=""><input type="checkbox" value="">SLEEPER (20)</label>
-                <label for=""><input type="checkbox" value="">AC (23)</label>
-            </div>
-            <div class="filter_div">
-                <h6>SEAT AVAILABILITY</h6>
-                <label for=""><input type="checkbox" value="">Single Seats (9)</label>
-            </div>
-            <div class="filter_div">
-                <h6>ARRIVAL TIME</h6>
-                <label for=""><input type="checkbox" value="">Before 6 am (5)</label>
-                <label for=""><input type="checkbox" value="">6 am to 12 pm (18)</label>
-                <label for=""><input type="checkbox" value="">12 pm to 6 pm (0)</label>
-                <label for=""><input type="checkbox" value="">After 6 pm (0)</label>
-            </div>
-            <div class="points_div">
-                <h6>BOARDING POINT</h6>
-                <label for=""><i class="fa-solid fa-magnifying-glass"></i><input type="text" name="" id=""
-                        placeholder="BOARDING POINT"></label>
-            </div>
-            <div class="points_div">
-                <h6>DROPPING POINT</h6>
-                <label for=""><i class="fa-solid fa-magnifying-glass"></i><input type="text" name="" id=""
-                        placeholder="DROPPING POINT"></label>
-            </div>
-            <div class="points_div">
-                <h6>OPERATOR</h6>
-                <label for=""><i class="fa-solid fa-magnifying-glass"></i><input type="text" name="" id=""
-                        placeholder="OPERATOR"></label>
-            </div>
-            <div class="points_div">
-                <h6>AMENITIES</h6>
-                <ul class="amenties">
-                    <li>WIFI (23)</li>
-                    <li>Water Bottle (23)</li>
-                    <li>Blankets (4)</li>
-                    <li>Charging Point (4)</li>
-                    <li>Movie (0)</li>
-                    <li>Track My Bus (4)</li>
-                    <li>Emergency Contact Nu... (1)</li>
-                    <li>Toilet (1)</li>
-                </ul>
-            </div>
-        </div>
-    <!-- </div> -->
-    </div>
         <div class="right_section">
             <ul id="header_images">
                 <img src="https://st.redbus.in/Images//ReddealsCards/IND/primo1_MainCard.png" alt="">
@@ -113,12 +111,12 @@
             <div id="details_sorting_heading">
                 <p><span id="no_of_buses" class="bold">0 Buses </span> found</p>
                 <p class="bold">SORT BY:</p>
-                <p>Departure <span id="order_departure_icon"></span></p>
-                <p>Duration</p>
-                <p>Arrival</p>
+                <p id="departure">Departure <span id="order_departure_icon"></span></p>
+                <p id="duration">Duration</p>
+                <p id="arrival">Arrival</p>
                 <p id="rating">Ratings</p>
-                <p>Fare</p>
-                <p>Seats Available</p>
+                <p id="price">Fare</p>
+                <p id="seat">Seats Available</p>
                 <hr>
             </div>
             <div id="bus_details_section">
@@ -174,9 +172,8 @@
                 
                 <!--========= After contnue of points ======== -->
                 <div id="confirm_booiking_box">
-
-                </div>
-            
+                   
+                </div>      
             </div>
             <!-- <button id="confirm_btn">confirm</button> -->
         </div>

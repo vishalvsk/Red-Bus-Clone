@@ -2,12 +2,12 @@ import { show_popups } from "./utilityFunctions/show_pop_up.js";
 import getData from "./utilityFunctions/getBus_data.js";
 import { upperDeck, lowerDeck } from "./utilityFunctions/getSeats.js";
 import checking_point from "./utilityFunctions/checking_points_popUp.js"
-import {patchSeat_upper,patchSeat_lower} from "./utilityFunctions/patch_seatDetail.js";
+import { patchSeat_upper, patchSeat_lower } from "./utilityFunctions/patch_seatDetail.js";
 
 init_busData();
 // show_popups();
- init_upperDeck();
- init_lowerDeck();
+init_upperDeck();
+init_lowerDeck();
 
 async function init_busData() {
   let data = await getData();
@@ -16,12 +16,12 @@ async function init_busData() {
 
 async function init_upperDeck() {
   let data = await upperDeck();
-   show_upperDeck(data);
+  show_upperDeck(data);
 }
 
 async function init_lowerDeck() {
   let data = await lowerDeck();
-   show_lowerDeck(data);
+  show_lowerDeck(data);
 }
 
 
@@ -76,29 +76,199 @@ function display_buses(data) {
         </div>
     </div>
     `;
-  
     bus_details_section.append(bus_card);
+
     let view_seat_btn = document.getElementById(`${bus.id}`);
-      view_seat_btn.addEventListener("click", () => {
-      localStorage.setItem("selected_busID",bus.id);
+    view_seat_btn.addEventListener("click", () => {
+      window.scrollTo(0, 0);
+      localStorage.setItem("selected_busID", bus.id);
       show_popups();
     });
-    
-  }); 
-  
-
-  document.getElementById("rating").addEventListener("click", () => {
-    sortData(data);
   });
+
+  // Sorting functionalities ===========================================
+  
+  document.getElementById("rating").addEventListener("click", () => {
+    sortData(data)
+  })
+
+  document.getElementById("price").addEventListener("click", () => {
+    sortPrice(data)
+  })
+  document.getElementById("departure").addEventListener("click", () => {
+    sortDepature(data)
+  })
+
+  document.getElementById("seat").addEventListener("click", () => {
+    sortSeat(data)
+  })
+
+  // Filtering functionalities ===========================================
+  
+  let selecter = document.getElementById("before-6am")
+  selecter.addEventListener("change", (e) => {
+    if (e.target.checked) {
+      let newData = data.filter(function (time) {
+        if (time.time_in > "6") {
+          return true
+        }
+        else {
+          return false;
+        }
+      })
+
+      let value = document.getElementById("span1")
+      value.innerHTML = ""
+      value.append(newData.length)
+      // console.log(newData.length)
+      display_buses(newData)
+
+    } else {
+      // displayData(data)
+      console.log("data2", data)
+    }
+
+  })
+
+  document.getElementById("morning").addEventListener("click", () => {
+    DisplayData(data)
+
+  })
+  document.getElementById("evening").addEventListener("click", () => {
+    DisplayEveData(data)
+
+  })
+
+  // bus type
+
+  document.getElementById("seater").addEventListener("click", () => {
+    seater(data)
+
+  })
+
+  document.getElementById("sleeper").addEventListener("click", () => {
+    sleeper(data)
+
+  })
+
+  document.getElementById("ac").addEventListener("click", () => {
+    AC(data)
+
+  })
+
 }
 
 const sortData = (data) => {
-  // console.log("inside sorting")
-  let sorted = data.sort((x, y) => {
-    return x.rating - y.rating;
-  });
-  display_buses(sorted);
-};
+  let sortType = data.sort((a, b) => {
+    return b.rating - a.rating
+  })
+  display_buses(sortType)
+}
+
+const sortPrice = (data) => {
+  let sortPrice = data.sort((a, b) => {
+    return a.price - b.price
+  })
+  display_buses(sortPrice)
+}
+
+const sortDepature = (data) => {
+  let sortDep = data.sort((a, b) => {
+    return b.time_in - a.time_in
+  })
+  display_buses(sortDep)
+}
+
+const sortSeat = (data) => {
+  let sortSea = data.sort((a, b) => {
+    return b.seat_available - a.seat_available
+  })
+  display_buses(sortSea)
+}
+
+
+function DisplayData(data) {
+  let newData1 = data.filter(function (time) {
+    if (time.time_in < "6" && time.time_in >= "12") {
+      return true
+    }
+    else {
+      return false;
+    }
+  })
+  let value1 = document.getElementById("span2")
+  value1.innerHTML = ""
+  value1.append(newData1.length)
+  display_buses(newData1)
+  // location.reload()
+}
+
+
+function DisplayEveData(data) {
+  let newData2 = data.filter(function (time) {
+    if (time.time_in <= "12") {
+      return true
+    }
+    else {
+      return false;
+    }
+  })
+  let value2 = document.getElementById("span3")
+  value2.innerHTML = ""
+  value2.append(newData2.length)
+  display_buses(newData2)
+  // location.reload()
+}
+
+
+function seater(data) {
+  let newData2 = data.filter(function (name) {
+    if (name.bus_name <= "Seater") {
+      return true
+    }
+    else {
+      return false;
+    }
+  })
+  let value3 = document.getElementById("span4")
+  value3.innerHTML = ""
+  value3.append(newData2.length)
+  display_buses(newData2)
+  // location.reload()
+}
+
+
+function sleeper(data) {
+  bus_details_section.innerHTML = "";
+  let newData2 = data.filter(function (name) {
+    if (name.bus_name <= "Sleeper") {
+      return true
+    }
+    else {
+      return false;
+    }
+  })
+  let value4 = document.getElementById("span5")
+  value4.innerHTML = ""
+  value4.append(newData2.length)
+  display_buses(newData2)
+  // location.reload()
+}
+
+function AC(data) {
+  let newData2 = data.filter(function (name) {
+    if (name.bus_name <= "A/C") {
+      return true
+    }
+    else {
+      return false;
+    }
+  })
+  display_buses(newData2)
+}
+
+
+
 
 function show_upperDeck(data) {
   let upper_deck_box = document.getElementById("upper_deck_box");
@@ -114,14 +284,14 @@ function show_upperDeck(data) {
     else seat_ele.style.backgroundColor = "white";
     upper_deck_box.append(seat_ele);
     seat_ele.onclick = () => {
-        /*
-        event.preventDefault();
-      seat_ele.style.backgroundColor = "red";
-      let obj = {
-        booked: true,
-      };
-      patchSeat_upper(obj, seat.id);
-      */
+      /*
+      event.preventDefault();
+    seat_ele.style.backgroundColor = "red";
+    let obj = {
+      booked: true,
+    };
+    patchSeat_upper(obj, seat.id);
+    */
       checking_point();
       localStorage.setItem("selected_seat_id", seat.id);
       document.querySelector("#seats_contents_right").style.display = "none";
@@ -144,14 +314,14 @@ function show_lowerDeck(data) {
     else seat_ele.style.backgroundColor = "white";
     lower_deck_box.append(seat_ele);
     seat_ele.onclick = () => {
-        /*
-        event.preventDefault();
-      seat_ele.style.backgroundColor = "red";
-      let obj = {
-        booked: true,
-      }; 
-      patchSeat_lower(obj, seat.id);
-      */
+      /*
+      event.preventDefault();
+    seat_ele.style.backgroundColor = "red";
+    let obj = {
+      booked: true,
+    }; 
+    patchSeat_lower(obj, seat.id);
+    */
       checking_point();
       localStorage.setItem("selected_seat_id", seat.id);
       document.querySelector("#seats_contents_right").style.display = "none";
