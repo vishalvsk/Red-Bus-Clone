@@ -1,7 +1,11 @@
 import getData from "./getBus_data.js";
 import { upperDeck, lowerDeck } from "./getSeats.js";
 
+
 async function checking_point() {
+
+let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
+
   let selected_busID = localStorage.getItem("selected_busID");
   let selected_seat_id = localStorage.getItem("selected_seat_id");
   selected_seat_id = +selected_seat_id;
@@ -44,8 +48,8 @@ async function checking_point() {
     let seatNo = localStorage.getItem("selected_seat_id");
     let sum_price = selected_seat[0].extra_price + selected_bus[0].price;
     confirm_booking.innerHTML = `
-      <p>Boarding Point - <span id="b_point">Kashmiri Gate</span></p><span id="b_time">${selected_bus[0].time_in}</span>
-      <p>Dropping Point - <span id="b_point">Lucknow Gate</span></p><span id="d_time">${selected_bus[0].time_out}</span>
+      <p>Boarding Point - <span id="b_point">${input_obj.pickPoint}</span></p><span id="b_time">${selected_bus[0].time_in}</span>
+      <p>Dropping Point - <span id="b_point">${input_obj.dropPoint}</span></p><span id="d_time">${selected_bus[0].time_out}</span>
       <p>Seat No. : ${seatNo}</p>
       <p>Fare : <span id="fare" class=""bold>${selected_bus[0].price}+Extra Seat Price (${selected_seat[0].extra_price}) = ${sum_price}</span></p>
       <button class="btn" id="proceed_btn">Proceed to Book</button>
@@ -65,7 +69,7 @@ async function checking_point() {
           booked_seatID: selected_busID
         }
         localStorage.setItem("booking_details", JSON.stringify(booking_details));
-        window.open("../Pages/passenger.html");
+         window.open("../Pages/passenger.html");
         patch_ele(upd_bus[0], selected_busID);
       }
     });
