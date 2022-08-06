@@ -15,12 +15,12 @@ document.querySelector("#dropup-menu-booking").addEventListener("click",function
 });
 
 
-// ------------double click on profile:- signUp open----------------------
+// ------------double click on profile:- profile menu open----------------------
 document.getElementById("dropup-menu").addEventListener("dblclick",function(){
     document.querySelector(".dropdown-menu").style.display = "flex";
-    document.querySelector(".dropdown-menu").style.backgroundColor = 'white';
+    // document.querySelector(".dropdown-menu").style.backgroundColor = 'white';
 });
-// // ------ click on profile:- signUp close-------
+// // ------ click on profile:- profile menu close-------
 document.getElementById("dropup-menu").addEventListener("click",function(){
     document.querySelector(".dropdown-menu").style.display = "none";
 });
@@ -44,31 +44,3 @@ document.getElementById("ButtonSigup").addEventListener("click",function(){
 document.getElementById("closetwo").addEventListener("click",function(){
     document.querySelector(".popuptwo").style.display = "none";
 })
-
-
-
-
-// dropdown-menu-booking
-
-// let OTPButton = document.getElementById("ButtonSigup");
-
-
-// OTPButton.addEventListener("click", async function(){
-//     try {
-//         let input = document.getElementById("inputName").value;
-
-//         let res = await fetch(`` , {
-//             method: "POST",
-//             body:JSON.stringify(input),
-//             headers:{
-//                 "Content-Type" : "application/json",
-//             },
-//         });
-
-
-
-//         console.log(input);
-//     } catch (error) {
-//         console.log(error)
-//     }
-// })

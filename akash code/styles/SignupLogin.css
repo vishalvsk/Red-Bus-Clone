@@ -48,6 +48,7 @@ body {
   pad: 10px 0 10px 20px;
   max-width: 1300px;
   min-width: 1200px;
+  font-size: 14px;
   /* border: 1px solid; */
 }
 
@@ -71,22 +72,38 @@ body {
   display: flex;
 }
 
+
 .leftNav ul li a
 {
   color: #fff;
+  text-align: left;
+  letter-spacing: 0.2px;
+  line-height: 0px;
+  margin: 0 5px 0 5px;
   text-decoration: none;
-  padding: 14px;
-  font-size: 14px;
-  display: inline-block;
+  padding: 3px 7px 3px 7px;
+  font-size: 13px;
+  display: inline;
+  /* border: 1px solid; */
 }
 
 .logo {
   flex: 1;
+
+}
+.logo > a{
+  /* border: 1px solid; */
+  float: right;
 }
 
 .leftmenu {
   flex: 8;
   color: #fff;
+  float: left;
+  width: 238px; 
+  padding: 10px 10px 10px 10px;
+  display: block;
+  /* border: 1px solid; */
 }
 .leftmenu #ryd{
   margin-bottom: -15px;
@@ -122,6 +139,8 @@ body {
   width: 400px;
   /* border: 1px solid; */
   margin-bottom: 10px;
+  font-size: 12px;
+  word-spacing: 0px;
 
 }
 .rightNav ul li a{
@@ -138,6 +157,7 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
+  float: right;
 
 }
 #dropup-menu-booking{
@@ -146,17 +166,22 @@ body {
 }
 .dropdown-menu-booking{
   display: none;
-  background-color: black;
+  border: 1px solid #3e4446;
+  background-color: #ffffff;
+  box-shadow: rgb(0, 0, 0) 0px 1px 5px 0px;
+
 }
 .dropdown-menu-booking .dropdown-item{
-  color: black;
+  color: #000000;
   font-size: 12px;
   font-weight: 650;
+  cursor: pointer;
 }
 .dropdown-menu .dropdown-item{
-  color: black;
+  color: #000000;
   font-size: 12px;
   font-weight: 650;
+  cursor: pointer;
 }
 
 .dropup-menu {
@@ -167,9 +192,13 @@ body {
   color: black;
 }
 
-#dropdown-menu{
+.dropdown-menu{
   display: none;
-  background-color: black;
+  border: 1px solid #3e4446;
+  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow: rgb(0, 0, 0) 0px 1px 5px 0px;
+
 }
 
 
@@ -218,7 +247,7 @@ body {
   transition: 0.10s;
 }
 .containerSignup{
-  /* background-color:#1f2122; */
+  background-color:whitesmoke;
   border: 5px solid #303335;
   border-radius: 5px;
   height: 62vh;
@@ -247,7 +276,24 @@ body {
   
   /* line-height: 25px; */
 }
+.inputSignUP {
+  background-color: #fff;
+  margin-left: -20px;
+  width: 400px;
+  height: 520px;
+  /* margin-top: 10px; */
+}
+.inputSignUP div img{
+  background-color: gray;
+  height: 60px;
+ border-radius: 12px;
 
+}
+.inputSignUP div h3{
+  font-size: 15px;
+  font-weight: 500;
+ 
+} 
 .inputSignUP > div > * {
   padding: 10px;
   margin-top: 10px;
@@ -261,19 +307,23 @@ body {
   width: 300px;
   height: 30px;
   font-size: 16px;
-  background-color: #1f2122;
   border: 1px solid;
   opacity: 0.6;
+  margin-top: -50px;
 }
 .buttton{
   width: 300px;
   height: 38px;
-  background-color: rgb(148, 44, 44);
+  background-color: rgb(174, 114, 114);
   opacity: 0.6;
+  margin-top: -50px;
 }
 .inputSignUP > div > button{
-  background-color: rgb(0, 89, 255);
+  background-color: rgb(174, 111, 111);
   border-radius: 5px;
+  border: none;
+  color: #fff;
+
 }
 
 
@@ -291,10 +341,7 @@ body {
   align-items: center;
   text-align: center;
   transition: 0.10s;
-  
 }
-
-
 #invalidOTP{
   display: flex;
   color: rgb(167, 48, 48);
@@ -303,7 +350,8 @@ body {
 .close{
   position: absolute;
   cursor: pointer;
-  top: 170px;
-  right: 450px;
+  top: 100px;
+  right: 400px;
   background-color: #1f2122;
+  
 }
