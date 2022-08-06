@@ -33,7 +33,7 @@ function animate() {
 
   localStorage.setItem("user_inputs",JSON.stringify(obj));
 // console.log(JSON.parse(localStorage.getItem("user_inputs")));
-// window.open("../availabilty_nd_booking.html", "_self");
+//  window.open("../availabilty_nd_booking.html", "_self");
  })
 
  /*

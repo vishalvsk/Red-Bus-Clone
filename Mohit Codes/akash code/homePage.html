@@ -1,134 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <!-- Responsive Meta Tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Adding Bootstrap CDN - Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Adding Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- Adding CSS -->
-    <link rel="stylesheet" type="text/css" href="../styles/landingPage.css">
-    <title>redBus</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Adding Font Awesome -- -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./styles/SignupLogin.css">
+    <link rel="stylesheet" href="../redbus landing page/index.css">
+    <link rel="stylesheet" href="../vishal code/landingPage.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top">
-        <div class="container">
-            <!-- Brand -->
-            <!-- <a class="navbar-brand" href="#"><img src="/images/redbus.png" alt="redBus"
-                    width="60px"></a> -->
-
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-nav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="menu-nav">
-                <!-- Left-aligned nav (default) -->
-                <div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-white text-uppercase" href="#">Bus Tickets</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white text-uppercase" href="#">Hotels</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white text-uppercase" href="#">Bus Hire</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white text-uppercase" href="#">Pilgrimages</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Right-aligned nav -->
-                <div class="collapse navbar-collapse justify-content-end" id="menu-nav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Help</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown">
-                                Manage Booking
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Cancel</a>
-                                <a class="dropdown-item" href="#">Show Tickets</a>
-                                <a class="dropdown-item" href="#">Dropmenu</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown">
-                                <i class="fas fa-user-circle"></i>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="sign in page">Sign In/Sign Up</a>
-                                     
-                                </select>
-                               
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </nav>
+    <div id="header"></div>  
 
     <!-- Main Home Banner and Input Search Container -->
-    <div class="position-relative">
-        <div>
-            <div class="home-banner"></div>
-        </div>
-
-        <div class="input-search-container">
-            <form class="d-flex justify-content-center">
-                <div class="d-inline-block position-relative">
-                    <span class="inputIcon"><i class="far fa-building"></i></span>
-                    <label class="inputLabel-default" for="input-label-from"></label>
-                    <input id="input-label-from" class="inputForm" type="text" list="input-from-list" placeholder="From">
-                    <datalist id="input-from-list">
-                        <!-- <option value="Gurgaon"></option> -->
-                    </datalist>
-                </div>
-
-                <div class="d-inline-block position-relative">
-                    <span class="inputIcon"><i class="far fa-building"></i></span>
-                    <label class="inputLabel-default" for="input-label-to"></label>
-                    <input id="input-label-to" class="inputForm" type="text" list="input-to-list" placeholder="To">
-                    <datalist id="input-to-list">
-                        <!-- <option value="Delhi"></option> -->
-                    </datalist>
-                </div>
-
-                <div class="d-inline-block position-relative">
-                    <span class="inputIcon"><i class="fas fa-calendar-alt"></i></span>
-                    <label class="inputLabel-default" for="input-label-onward-date"></label>
-                    <input id="input-label-onward-date" class="inputForm" type="text" placeholder="Date">
-                </div>
-
-                <div class="d-inline-block position-relative">
-                    <!-- <input onclick="searchBtn()" class="btn btn-danger rounded-0 pl-3 pr-3 pb-2" type="submit" value="Search Buses"> -->
-                   <button id="search" onclick="searchBtn()"><a href="../Bus ticket booking Module/availabilty_nd_booking.html"  class="btn"> Search buses</a></button>
-                </div>
-            </form>
-        </div>
+ <div class="position-relative">
+    <div>
+        <div class="home-banner"></div>
     </div>
-
-    <!-- banner  -->
-    <!-- <div id="poster_container">
-        
-         <a href="../availabilty_nd_booking.html"></a> 
-
-    </div>  -->
-    <!-- main-div1 -->
-    <!-- <div class="main-div1">
+  
+    <div class="input-search-container">
+        <form class="d-flex justify-content-center">
+            <div class="d-inline-block position-relative">
+                <span class="inputIcon"><i class="far fa-building"></i></span>
+                <label class="inputLabel-default" for="input-label-from"></label>
+                <input id="input-label-from" class="inputForm" type="text" list="input-from-list" placeholder="From">
+                <datalist id="input-from-list">
+                    <!-- <option value="Gurgaon"></option> -->
+                </datalist>
+            </div>
+  
+            <div class="d-inline-block position-relative">
+                <span class="inputIcon"><i class="far fa-building"></i></span>
+                <label class="inputLabel-default" for="input-label-to"></label>
+                <input id="input-label-to" class="inputForm" type="text" list="input-to-list" placeholder="To">
+                <datalist id="input-to-list">
+                    <!-- <option value="Delhi"></option> -->
+                </datalist>
+            </div>
+  
+            <div class="d-inline-block position-relative">
+                <span class="inputIcon"><i class="fas fa-calendar-alt"></i></span>
+                <label class="inputLabel-default" for="input-label-onward-date"></label>
+                <input id="input-label-onward-date" class="inputForm" type="date" placeholder="Onward-Date">
+            </div>
+  
+  
+            <div class="d-inline-block position-relative">
+                <input onclick="searchBtn()" class="btn btn-danger rounded-0 pl-3 pr-3 pb-2" type="submit" value="Search Buses">
+            </div>
+        </form>
+    </div>
+  </div>
+  
+  <!-- banner  -->
+  <div id="poster_container">
+    
+  
+  </div>
+    <div class="main-div1">
         <div class="div1-inner ">
             <div>
                 <p>Save up to Rs 200 in Delhi & North India</p>
@@ -148,12 +81,12 @@
                 </p>
             </div>
         </div>
-    </div> -->
+    </div>
 
 
     <!-- main-div2 -->
 
-<!-- <div class="back">
+<div class="back">
     <div class="main-div2">
        
         <div class="div2-inner ">
@@ -181,8 +114,8 @@
                 <div class="btn-div">
                     <button>SEND ME THE LINK</button>
                     <div class="img-div">
-                        <img src="./indexImages/Screenshot 2022-07-31 100243.png" alt="">
-                        <img src="./indexImages/googleplay.png" alt="">
+                        <img src="../indexImages/Screenshot 2022-07-31 100243.png" alt="">
+                        <img src="../indexImages/googleplay.png" alt="">
                     </div>
                 </div>
                 
@@ -194,13 +127,13 @@
         </div>
     </div>
 <img src="" alt="" id="img">
-</div> -->
+</div>
    
 
 
        <!------- main-div3 ------>
 
-       <!-- <div class="main-div3">
+       <div class="main-div3">
         <div class="div3-inner animate">
                 <img src="https://s1.rdbuz.com/web/images/home/promise.png" alt="">
                 <p>WE PROMISE TO DELIVER</p>
@@ -229,13 +162,13 @@
             </div>
             
         </div>
-       </div> -->
+       </div>
 
 
 
        <!-------- Award recogination div ----------->
 
-    <!-- <div class="main-div4">
+    <div class="main-div4">
         <div class="div4-inner animate">
             <p>AWARDS & RECOGNITION</p>
             <div class="img-box">
@@ -254,14 +187,14 @@
             </div>
             
         </div>
-    </div> -->
+    </div>
 
     
 
     <!--------------- India flag div ----------------->
 
 
-    <!-- <div class="main-div5">
+    <div class="main-div5">
         <div class="div5-inner animate">
             <div class="p-tag">
                 <p> <br>
@@ -269,37 +202,39 @@
             </div>
             <div class="flag-div">
                 <div>
-                    <img src="./indexImages/colambia.png" alt="">
+                    <img src="../indexImages/colambia.png" alt="">
                     <p>COLOMBIA</p>
                 </div>
                 <div>
-                    <img src="./indexImages/india.png" alt="">
+                    <img src="../indexImages/india.png" alt="">
                     <p>INDIA</p>
                 </div>
                 <div>
-                    <img src="./indexImages/indo.png" alt="">
+                    <img src="../indexImages/indo.png" alt="">
                     <p>INDONESIA</p>
                 </div>
                 <div>
-                    <img src="./indexImages/malyshiy.png" alt="">
+                    <img src="../indexImages/malyshiy.png" alt="">
                     <p>MALAYSIA</p>
                 </div>
                 <div>
-                    <img src="./indexImages/peru.png" alt="">
+                    <img src="../indexImages/peru.png" alt="">
                     <p>PERU</p>
                 </div>
                 <div>
-                    <img src="./indexImages/singapur.png" alt="">
+                    <img src="../indexImages/singapur.png" alt="">
                     <p>SINGAPUR</p>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
+
+
 
 
     <!--------- THE NUMBERS ARE GROWING! div ------------>
 
-    <!-- <div class="main-div6">
+    <div class="main-div6">
         <p class="p-tag">THE NUMBERS ARE GROWING!</p>
         <div class="div6Inner animate">
            
@@ -325,13 +260,13 @@
                 </p>
             </div>
         </div>
-    </div> -->
+    </div>
 
 
     <!-------- bus route and all city div  --------->
 
 
-    <!-- <div class="main-div7">
+    <div class="main-div7">
         <div class="div7-inner animate">
             <div>
                 <ul style="list-style-type:none">
@@ -393,11 +328,11 @@
                 SRM Travels | Infant Jesus | Patel Travels | JBT travels | Shatabdi Travels | Egal Travels | Kanker Roadwars | Komitla | Sri Krishna travels | <br> Humsafar Travels |  Mahasagar Travels | Raj  Express | Sharma Travels | Shrinath Travels | Universal Travels | Verma Travels | Gujrat Travels | <br> Madurai Travels | Patel Tour And Travels | Paulo Travels | Royal Travels | Amarnath Travels | Vaibhav Travels |  Ganesh Travels | Jabbar Travels | <br> Jain Travels |  Manish Travels |  Pradhan Travels | YBM Travels | Hebron Transport |  Mahalaxmi Travels | MR Travels | <br>  Vivegam travels | VST Travels | Jaksha Travels | Mahendra Travels | Neeta Tours And Travels | Yamini Travels | Arthi Travels</p>
                 <p>All Oprator ></p>
          </div>
-    </div> -->
+    </div>
 
 
 <!------------ main page fooder div ------------>
-<!-- <div class="main-div8">
+<div class="main-div8">
     <div class="div8-inner">
         <div>
         <ul>
@@ -454,9 +389,10 @@
             <p>Ⓒ 2022 ibibogroup All rights reserved</p>
         </div>
     </div>
-</div> -->
-<script src="../scripts/landingPage.js"></script>
+</div>
 </body>
 </html>
-
-   
+<script src="./homePage.js" type="module"></script>
+<script src="./SignupLogin.js" ></script>
+<script src="../redbus landing page/index.js"></script>
+<script src="../vishal code/lsndingPage.js"></script>

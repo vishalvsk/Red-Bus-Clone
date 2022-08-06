@@ -73,7 +73,10 @@
       "rating": 1.3,
       "price": 344,
       "seat_available": 87,
-      "booked_seats": []
+      "booked_seats": [
+        46,
+        85
+      ]
     },
     {
       "id": 6,
@@ -1885,6 +1888,18 @@
       "booked_price": 112,
       "cur_Dt_time": "0:53 6-7-2022",
       "id": 1
+    },
+    {
+      "name": "Mohit",
+      "gender": "male",
+      "age": "45",
+      "email": "mohit@g.com",
+      "phone": "234567890",
+      "booked_busID": 46,
+      "booked_seatID": "5",
+      "booked_price": 344,
+      "cur_Dt_time": "12:5 6-7-2022",
+      "id": 2
     }
   ],
   "test_obj": [
