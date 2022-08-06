@@ -394,7 +394,9 @@
       "rating": 5,
       "price": 813,
       "seat_available": 87,
-      "booked_seats": []
+      "booked_seats": [
+        2
+      ]
     },
     {
       "id": 34,
@@ -2052,6 +2054,38 @@
       },
       "ticketN0": 208,
       "id": 4
+    },
+    {
+      "name": "Dummy",
+      "gender": "female",
+      "age": "23",
+      "email": "dummyher@gm.com",
+      "phone": "2345234567",
+      "booked_bus": [
+        {
+          "id": 33,
+          "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
+          "company": "Anand Travels",
+          "time_in": "15:21",
+          "time_out": "2:13",
+          "rating": 5,
+          "price": 813,
+          "seat_available": 87,
+          "booked_seats": [
+            2
+          ]
+        }
+      ],
+      "booked_seatID": 7,
+      "booked_price": 813,
+      "cur_Dt_time": "2:2 0-7-2022",
+      "user_points_input": {
+        "pickPoint": "Gurgaon",
+        "dropPoint": "Jaipur",
+        "date": "2022-08-07"
+      },
+      "ticketN0": 235,
+      "id": 5
     }
   ],
   "test_obj": [
