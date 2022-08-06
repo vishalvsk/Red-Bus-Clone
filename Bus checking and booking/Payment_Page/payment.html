@@ -9,10 +9,8 @@
 </head>
 <body>
   
-
    <section id="rh_main">
      <div id="sticky_phantom" class="hide"></div>
-
   <header id="rh_header" class="home-only-header fixer1">
     <div class="main-header-row" id="">
       <div class="main-header clearfix">
@@ -398,8 +396,10 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <script>
-        let start = document.getElementById("city_start").innerHTML = localStorage.getItem("from");
-        let end = document.getElementById("city_end").innerHTML = localStorage.getItem("to");
+        let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
+        console.log(input_obj)
+        let start = document.getElementById("city_start").innerHTML =input_obj.pickPoint;
+        let end = document.getElementById("city_end").innerHTML = input_obj.dropPoint;
 
         //  payment through upi id 
            function check (input){
@@ -428,7 +428,7 @@
                     icon: "success",
                   });
                  setTimeout(() =>{
-                      location.href = `./header.html`; 
+                      location.href = `../../Mohit Codes/akash code/homePage.html`; 
                  }, 2000);
           
           }

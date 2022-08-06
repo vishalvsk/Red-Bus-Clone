@@ -14,7 +14,9 @@
         5,
         85,
         10,
-        40
+        40,
+        28,
+        48
       ]
     },
     {
@@ -48,7 +50,8 @@
       "seat_available": 87,
       "booked_seats": [
         3,
-        45
+        45,
+        6
       ]
     },
     {
@@ -1914,6 +1917,59 @@
       "booked_price": 599,
       "cur_Dt_time": "13:36 6-7-2022",
       "id": 3
+    },
+    {
+      "name": "Akash",
+      "gender": "male",
+      "age": "20",
+      "email": "akash@g.com",
+      "phone": "234567890",
+      "booked_busID": 28,
+      "booked_seatID": "1",
+      "booked_price": 112,
+      "cur_Dt_time": "13:50 6-7-2022",
+      "user_points_input": {
+        "pickPoint": "DL ",
+        "dropPoint": "PNP",
+        "date": "34567"
+      },
+      "id": 4
+    },
+    {
+      "name": "dummy",
+      "gender": "female",
+      "age": "24",
+      "email": "my@gm.com",
+      "phone": "234567890",
+      "booked_busID": "1",
+      "booked_seatID": 48,
+      "booked_price": 412,
+      "cur_Dt_time": "20:39 6-7-2022",
+      "user_points_input": {
+        "pickPoint": "PNP",
+        "dropPoint": "DL",
+        "date": "2022-08-06"
+      },
+      "ticketN0": 49,
+      "id": 5
+    },
+    {
+      "name": "Dummy2",
+      "gender": "male",
+      "age": "24",
+      "email": "smple@gm.com",
+      "phone": "234567890",
+      "booked_busID": "3",
+      "booked_seatID": 48,
+      "booked_price": 1235,
+      "cur_Dt_time": "22:22 6-7-2022",
+      "user_points_input": {
+        "pickPoint": "Pune",
+        "dropPoint": "Delhi",
+        "date": "2022-08-06"
+      },
+      "ticketN0": 9,
+      "id": 6
     }
   ],
   "test_obj": [

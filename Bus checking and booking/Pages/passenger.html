@@ -273,13 +273,17 @@
 
 
     async function postData() {
-
+        let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
         let name = document.getElementById("inputName").value;
         let genderName = document.querySelector(`input[name="gender"]:checked`).value;
         let age = document.querySelector("#input").value;
         let email = document.getElementById("email").value;
         let phone = document.getElementById("phoneNumber").value;
  
+        let seatNo = localStorage.getItem("selected_seat_id");
+        let busNo = localStorage.getItem("selected_busID");
+        seatNo = parseInt(seatNo);
+        busNo = parseInt(busNo);
         let userDetails = {
             name: name,
             gender: genderName,
@@ -289,7 +293,9 @@
             booked_busID: booking_details.booked_busID,
             booked_seatID: booking_details.booked_seatID,
             booked_price: booking_details.tot_price,
-            cur_Dt_time: date_time
+            cur_Dt_time: date_time,
+            user_points_input:input_obj,
+            ticketN0:seatNo+busNo
         }
     //    console.log(userDetails);
         let url = `http://localhost:3000/user-Details`;

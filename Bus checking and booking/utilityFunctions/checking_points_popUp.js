@@ -45,7 +45,7 @@ let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
     document.querySelector("#seats_contents_right-2").style.display = "none";
     let confirm_booking = document.querySelector("#confirm_booiking_box");
     confirm_booking.style.display = "flex";
-    let seatNo = localStorage.getItem("selected_seat_id");
+     let seatNo = localStorage.getItem("selected_seat_id");
     let sum_price = selected_seat[0].extra_price + selected_bus[0].price;
     confirm_booking.innerHTML = `
       <p>Boarding Point - <span id="b_point">${input_obj.pickPoint}</span></p><span id="b_time">${selected_bus[0].time_in}</span>
@@ -57,7 +57,7 @@ let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
     let proceed_btn = document.getElementById("proceed_btn");
     proceed_btn.addEventListener("click", () => {
       // Patching booked seat in debugger.json
-      seatNo = parseInt(seatNo);
+       seatNo = parseInt(seatNo);
       if (selected_bus[0].booked_seats.includes(seatNo)) {
         alert("Selected Seat Already Booked!!");
       } else {
@@ -65,8 +65,8 @@ let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
         upd_bus[0].booked_seats.push(seatNo);
         let booking_details={
           tot_price: sum_price,
-          booked_busID: seatNo,
-          booked_seatID: selected_busID
+          booked_busID: selected_busID,
+          booked_seatID: selected_seat_id
         }
         localStorage.setItem("booking_details", JSON.stringify(booking_details));
          window.open("../Pages/passenger.html");
