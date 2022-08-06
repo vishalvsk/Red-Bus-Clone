@@ -1,15 +1,15 @@
 #root{
-    height: 720px;
+    /* height: 720px; */
     width: 1580px;
-    min-height: 720px;
-    display: block;
+    /* min-height: 720px; */
+    /* display: block; */
     /* border: 1px solid; */
     display: flex;
     justify-content: center;
   /* background-color: #202324; */
 }
 .cancelfromMain{
-    height: 261px;
+    /* height: 261px; */
     width: 720px;
     margin: 0 140px 0 140px;
     text-align: center;
@@ -35,7 +35,7 @@
 
 .cancel-container{
     width: 720px;
-    height: 143px;
+    /* height: 143px; */
     display: flex;
     align-items: center;
     justify-content: center;
