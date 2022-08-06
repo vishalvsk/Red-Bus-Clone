@@ -62,10 +62,9 @@
     display: inline-block;
 }
 .profiledetails{
-    height: 360px;
-    width: 991px;
+    width: 100 !important;
     margin: 7px 0 15px 120px;
-    display: block;
+    display: flex;
     box-sizing: border-box;
     box-shadow: rgb(62, 67, 69) 0px 0px 10px 0px;
     border-top-left-radius: 6.66px;
@@ -202,8 +201,8 @@ ul{
  .main-div8{
     width: 100%;
     background-color: #1B2330;
-    position: absolute;
-    top: 550px;
+    /* position: absolute; */
+    /* top: 550px; */
  }
  .main-div8 > .div8-inner{
      width: 80%;
