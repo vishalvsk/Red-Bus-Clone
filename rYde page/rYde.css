@@ -1,6 +1,7 @@
 .ryde-div1 .inner{
     width: 70%;
     margin: auto;
+    margin-top: 70px;
 }
 .ryde-div1 .inner .img{
     display: block;
@@ -279,4 +280,44 @@ gap: 20px;
     font-weight: 650;
     color: #3e3e52;
     margin-top: 50px;
+}
+
+
+
+
+/* <!------------------ sefty div ------------------> */
+.ryde-div6 {
+    margin-top: 50px;
+}
+.ryde-div6 .inner{
+    width: 70%;
+    margin: auto;
+   
+}
+.ryde-div6 .inner .inner1 .img{
+    display: flex;
+}
+.ryde-div6 .inner .inner1{
+    display: flex;
+    justify-content: space-between;
+}
+.ryde-div6 .inner .inner1 .img p{
+   font-size: 21px;
+   font-weight: 700;
+   color: #3e3e52;
+
+}
+.ryde-div6 .inner .inner1 .img img{
+    width: 30px;
+}
+#p-tag{
+font-size: 12px;
+font-weight: 700;
+color: #1034d9;
+letter-spacing: 0px;
+}
+#p{
+margin-top: -10px;
+font-size: 16px;
+color: #3e3e52;
 }
