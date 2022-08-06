@@ -352,6 +352,7 @@ body {
   cursor: pointer;
   top: 100px;
   right: 400px;
-  background-color: #1f2122;
-  
+  /* background-color: #1f2122; */
+  background: none;
+  border: none;
 }

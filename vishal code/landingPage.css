@@ -26,23 +26,49 @@ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
 
 .input-search-container {
   position: absolute;
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  right: 50%;
+  right: 50%; */
+  margin-top: -230px;
+  margin-left: 230px;
+  display: flex;
 }
-
+form{
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+.btn{
+  background-color: #d74f57;
+  color: whitesmoke;
+  border: none;
+  height: 40px;
+  width: 144px;
+  cursor: pointer;
+}
+  /* .inputIcon{
+  margin-right: -100px;
+ } */
 .inputIcon {
   position: absolute;
-  left: 5px;
+  /* left: 5px; */
   font-size: 25px;
   vertical-align: middle;
   color: #AAA;
 }
-
+@media only screen and (max-width: 500px){
+  form{
+    display: block;
+    width: 100%;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+}
 .inputForm {
   width: 225px;
   height: 40px;
   padding-left: 28px;
+margin-bottom: 15px;
 }
 
 .inputLabel-default {
@@ -53,6 +79,7 @@ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
   font-size: 15px;
   margin-top: 8px;
   transition-duration: 0.3s;
+  margin-bottom: 100px;
 }
 
 .inputLabel-focusIn {
