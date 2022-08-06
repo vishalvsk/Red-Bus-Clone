@@ -12,7 +12,7 @@ header.innerHTML = navbar();
 import footer from "./footer.js";
 
 let foot = document.getElementById("footer");
-foot.innerHTML = footer();
+// foot.innerHTML = footer();
 
 
 

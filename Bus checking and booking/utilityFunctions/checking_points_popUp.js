@@ -65,11 +65,11 @@ let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
         upd_bus[0].booked_seats.push(seatNo);
         let booking_details={
           tot_price: sum_price,
-          booked_busID: selected_busID,
+          booked_bus: selected_bus,
           booked_seatID: selected_seat_id
         }
         localStorage.setItem("booking_details", JSON.stringify(booking_details));
-         window.open("../Pages/passenger.html");
+         window.open("../Pages/passenger.html","_self");
         patch_ele(upd_bus[0], selected_busID);
       }
     });

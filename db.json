@@ -16,7 +16,12 @@
         10,
         40,
         28,
-        48
+        48,
+        1,
+        2,
+        3,
+        6,
+        7
       ]
     },
     {
@@ -1886,90 +1891,167 @@
       "name": "Akram",
       "gender": "male",
       "age": "22",
-      "email": "mygm@g.com",
+      "email": "mygm@c.com",
       "phone": "234567890",
-      "booked_busID": 7,
-      "booked_seatID": "1",
+      "booked_bus": [
+        {
+          "id": 1,
+          "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
+          "company": "VRL Travels",
+          "time_in": "10:25",
+          "time_out": "14:33",
+          "rating": 3.9,
+          "price": 112,
+          "seat_available": 87,
+          "booked_seats": [
+            26,
+            5,
+            85,
+            10,
+            40,
+            28,
+            48,
+            1,
+            2
+          ]
+        }
+      ],
+      "booked_seatID": 1,
       "booked_price": 112,
-      "cur_Dt_time": "0:53 6-7-2022",
+      "cur_Dt_time": "0:14 0-7-2022",
+      "user_points_input": {
+        "pickPoint": "Goa",
+        "dropPoint": "Bangalore",
+        "date": "2022-08-14"
+      },
+      "ticketN0": 23,
       "id": 1
     },
     {
       "name": "Mohit",
       "gender": "male",
-      "age": "45",
-      "email": "mohit@g.com",
-      "phone": "234567890",
-      "booked_busID": 46,
-      "booked_seatID": "5",
-      "booked_price": 344,
-      "cur_Dt_time": "12:5 6-7-2022",
+      "age": "23",
+      "email": "mohit@gm.com",
+      "phone": "3456789090",
+      "booked_bus": [
+        {
+          "id": 1,
+          "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
+          "company": "VRL Travels",
+          "time_in": "10:25",
+          "time_out": "14:33",
+          "rating": 3.9,
+          "price": 112,
+          "seat_available": 87,
+          "booked_seats": [
+            26,
+            5,
+            85,
+            10,
+            40,
+            28,
+            48,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "booked_seatID": 2,
+      "booked_price": 112,
+      "cur_Dt_time": "0:22 0-7-2022",
+      "user_points_input": {
+        "pickPoint": "Goa",
+        "dropPoint": "Bangalore",
+        "date": "2022-08-14"
+      },
+      "ticketN0": 24,
       "id": 2
-    },
-    {
-      "name": "Rahul",
-      "gender": "male",
-      "age": "22",
-      "email": "rahu@g.com",
-      "phone": "234567890",
-      "booked_busID": 11,
-      "booked_seatID": "4",
-      "booked_price": 599,
-      "cur_Dt_time": "13:36 6-7-2022",
-      "id": 3
     },
     {
       "name": "Akash",
       "gender": "male",
-      "age": "20",
-      "email": "akash@g.com",
-      "phone": "234567890",
-      "booked_busID": 28,
-      "booked_seatID": "1",
+      "age": "23",
+      "email": "aakash@dm.com",
+      "phone": "34567890890",
+      "booked_bus": [
+        {
+          "id": 1,
+          "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
+          "company": "VRL Travels",
+          "time_in": "10:25",
+          "time_out": "14:33",
+          "rating": 3.9,
+          "price": 112,
+          "seat_available": 87,
+          "booked_seats": [
+            26,
+            5,
+            85,
+            10,
+            40,
+            28,
+            48,
+            1,
+            2,
+            3,
+            6
+          ]
+        }
+      ],
+      "booked_seatID": 3,
       "booked_price": 112,
-      "cur_Dt_time": "13:50 6-7-2022",
+      "cur_Dt_time": "0:27 0-7-2022",
       "user_points_input": {
-        "pickPoint": "DL ",
-        "dropPoint": "PNP",
-        "date": "34567"
+        "pickPoint": "Srinagar",
+        "dropPoint": "Lucknow",
+        "date": "2022-08-07"
       },
-      "id": 4
+      "ticketN0": 27,
+      "id": 3
     },
     {
-      "name": "dummy",
-      "gender": "female",
-      "age": "24",
-      "email": "my@gm.com",
-      "phone": "234567890",
-      "booked_busID": "1",
-      "booked_seatID": 48,
-      "booked_price": 412,
-      "cur_Dt_time": "20:39 6-7-2022",
-      "user_points_input": {
-        "pickPoint": "PNP",
-        "dropPoint": "DL",
-        "date": "2022-08-06"
-      },
-      "ticketN0": 49,
-      "id": 5
-    },
-    {
-      "name": "Dummy2",
+      "name": "Vishal",
       "gender": "male",
       "age": "24",
-      "email": "smple@gm.com",
-      "phone": "234567890",
-      "booked_busID": "3",
-      "booked_seatID": 48,
-      "booked_price": 1235,
-      "cur_Dt_time": "22:22 6-7-2022",
+      "email": "vishal@me.com",
+      "phone": "",
+      "booked_bus": [
+        {
+          "id": 1,
+          "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
+          "company": "VRL Travels",
+          "time_in": "10:25",
+          "time_out": "14:33",
+          "rating": 3.9,
+          "price": 112,
+          "seat_available": 87,
+          "booked_seats": [
+            26,
+            5,
+            85,
+            10,
+            40,
+            28,
+            48,
+            1,
+            2,
+            3,
+            6,
+            7
+          ]
+        }
+      ],
+      "booked_seatID": 6,
+      "booked_price": 112,
+      "cur_Dt_time": "0:43 0-7-2022",
       "user_points_input": {
-        "pickPoint": "Pune",
-        "dropPoint": "Delhi",
-        "date": "2022-08-06"
+        "pickPoint": "MP",
+        "dropPoint": "UP",
+        "date": "2022-08-07"
       },
-      "ticketN0": 9,
-      "id": 6
+      "ticketN0": 208,
+      "id": 4
     }
   ],
   "test_obj": [

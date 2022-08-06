@@ -283,18 +283,20 @@
         let busNo = localStorage.getItem("selected_busID");
         seatNo = parseInt(seatNo);
         busNo = parseInt(busNo);
+        let ticketNo= 200+seatNo+busNo;
+        localStorage.setItem("ticketNo",ticketNo)
         let ticketDetails = {
             name: name,
             gender: genderName,
             age: age,
             email: email,
             phone: phone,
-            booked_busID: booking_details.booked_busID,
+            booked_bus: booking_details.booked_bus,
             booked_seatID: booking_details.booked_seatID,
             booked_price: booking_details.tot_price,
             cur_Dt_time: date_time,
             user_points_input:input_obj,
-            ticketN0:seatNo+busNo
+            ticketN0: ticketNo
         }
     //    console.log(userDetails);
         let url = `http://localhost:3000/Tickets`;
@@ -305,7 +307,7 @@
                 'Content-Type': 'application/json'
             }
         });
-        window.open("../Payment_Page/payment.html");
+        window.open("../Payment_Page/payment.html", "_self");
     }
 
 </script>

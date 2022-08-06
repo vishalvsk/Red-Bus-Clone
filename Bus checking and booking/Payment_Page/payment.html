@@ -397,12 +397,12 @@
 
 <script>
         let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
-        console.log(input_obj)
         let start = document.getElementById("city_start").innerHTML =input_obj.pickPoint;
         let end = document.getElementById("city_end").innerHTML = input_obj.dropPoint;
 
         //  payment through upi id 
-           function check (input){
+        console.log(input)
+      /*     function check (input){
           for(var i=0;i<input.length;i++){
                   if(input[i] == "@"){
                     return true;
@@ -410,25 +410,26 @@
             }
             return false;
           }
-
+*/
         let paynow = document.getElementById("paynow");
         paynow.addEventListener("click", () => {
-          
+        let ticketNo = localStorage.getItem("ticketNo");
         let input = document.getElementById("input_upi").value;
-          if(check(input) == false){
+          // if(check(input) == false){
+          if(input != "@"){
                     swal({
                     title: "warning!",
-                    text: "You have entered wrong Upi ID!",
+                    text: "You have entered wrong UPI ID!",
                     icon: "warning",
                   });
           }else{
              swal({
                     title: "Good job!",
-                    text: "Your Payment is Successful!",
+                    text: `Your Ticket has been booked! Ticket No : ${ticketNo}`,
                     icon: "success",
                   });
                  setTimeout(() =>{
-                      location.href = `../../Mohit Codes/akash code/homePage.html`; 
+                      // window.open(`../../Mohit Codes/akash code/homePage.html`,"_self"); 
                  }, 2000);
           }
         });
