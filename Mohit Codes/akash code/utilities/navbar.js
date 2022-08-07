@@ -15,13 +15,13 @@ function navbar(){
                 <a href="../rYde page/rYde.html" id="ryd">rYde<sup>new</sup></a>
               </li>
               <li><a href="../redrail page/redrail.html">redrail</a></li>
-
             
             </ul>
           </div>
         </section>
       </nav>
-      <!----right side menu-->
+ 
+ 
       <nav class="rightNav">
         <ul>
           <li><a href="#">Help</a></li>
@@ -31,9 +31,7 @@ function navbar(){
             </a>
             <div class="dropdown-menu-booking">
               <div>
-                <a class="dropdown-item" href="PageCancelTicket.html">Cancel Ticket</a><br>
-                <a class="dropdown-item" href="PageShowTicket.html">Show My Ticket</a><br>
-                <a class="dropdown-item" href="#">Change Travel Date</a><br>
+              <a class="dropdown-item" href="#">Sign In First</a>
               </div>
             </div>
            

@@ -11,10 +11,7 @@ function OTPagain() {
         console.log(OTP)
         localStorage.setItem("OTP", JSON.stringify(OTP))
     },2000)
-
 }
-
-
 
 document.getElementById("ButtonSigup").addEventListener("click",function(){
     setTimeout( () =>{

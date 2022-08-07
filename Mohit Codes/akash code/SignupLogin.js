@@ -40,7 +40,12 @@ document.getElementById("close").addEventListener("click",function(){
 document.getElementById("ButtonSigup").addEventListener("click",function(){
     document.querySelector(".popup").style.display = "none";
     document.querySelector(".popuptwo").style.display = "flex";
+
+    let Number = document.getElementById("inputName").value;
+    localStorage.setItem("number",JSON.stringify(Number)
+    )
 });
 document.getElementById("closetwo").addEventListener("click",function(){
     document.querySelector(".popuptwo").style.display = "none";
 })
+

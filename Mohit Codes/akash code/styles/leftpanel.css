@@ -54,7 +54,6 @@
     display: block;
     min-height: 520px;
     /* border: 1px solid; */
-    z-index: -1;
 }
 .greyText{
     height: 23px;
@@ -62,10 +61,11 @@
     margin: 30px 0 17px 120px;
     display: inline-block;
 }
-.profiledetails,.trips_det{
-    width: 100 !important;
+.profiledetails{
+    height: 360px;
+    width: 991px;
     margin: 7px 0 15px 120px;
-    display: flex;
+    display: block;
     box-sizing: border-box;
     box-shadow: rgb(62, 67, 69) 0px 0px 10px 0px;
     border-top-left-radius: 6.66px;
@@ -202,8 +202,8 @@ ul{
  .main-div8{
     width: 100%;
     background-color: #1B2330;
-    /* position: absolute; */
-    /* top: 550px; */
+    position: absolute;
+    top: 550px;
  }
  .main-div8 > .div8-inner{
      width: 80%;
