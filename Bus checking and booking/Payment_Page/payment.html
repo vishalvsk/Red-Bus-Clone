@@ -8,9 +8,15 @@
     <link rel="stylesheet" href="./payment.css">
 </head>
 <body>
-  
+    
+
+
+
+
+
    <section id="rh_main">
      <div id="sticky_phantom" class="hide"></div>
+
   <header id="rh_header" class="home-only-header fixer1">
     <div class="main-header-row" id="">
       <div class="main-header clearfix">
@@ -396,40 +402,41 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <script>
-        let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
-        let start = document.getElementById("city_start").innerHTML =input_obj.pickPoint;
-        let end = document.getElementById("city_end").innerHTML = input_obj.dropPoint;
+        let start = document.getElementById("city_start").innerHTML = localStorage.getItem("from");
+        let end = document.getElementById("city_end").innerHTML = localStorage.getItem("to");
 
         //  payment through upi id 
-
-        function check (input){
+           function check (input){
           for(var i=0;i<input.length;i++){
                   if(input[i] == "@"){
                     return true;
                   }
+
             }
             return false;
           }
 
         let paynow = document.getElementById("paynow");
         paynow.addEventListener("click", () => {
-        let ticketNo = localStorage.getItem("ticketNo");
+          
         let input = document.getElementById("input_upi").value;
           if(check(input) == false){
                     swal({
                     title: "warning!",
-                    text: "You have entered wrong UPI ID!",
+                    text: "You have entered wrong Upi ID!",
                     icon: "warning",
                   });
           }else{
              swal({
                     title: "Good job!",
-                    text: `Your Ticket has been booked! Ticket No : ${ticketNo}`,
+                    text: "Your Payment is Successful!",
                     icon: "success",
                   });
                  setTimeout(() =>{
-                     window.open(`../../Mohit Codes/akash code/homePage.html`,"_self"); 
+                      location.href = "../Mohit Codes/redbus Landing page"; 
                  }, 2000);
+          
           }
+
         });
 </script>
