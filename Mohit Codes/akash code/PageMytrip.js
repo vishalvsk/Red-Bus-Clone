@@ -32,7 +32,7 @@ function show_all_trips(trips){
         <h3 class="center"><span>${trip.user_points_input.pickPoint}</span> to <span>${trip.user_points_input.dropPoint}</span></h3>
         <p class="center">Bus Name : <span>${bus.bus_name}</span></p>
         <div id="tickNo_price" class="row">
-            <p class="bold">trip No : <span>${trip.ticketN0}</span></p>
+            <p class="bold">Ticket No : <span>${trip.ticketN0}</span></p>
             <p class="bold">Total Price : <span class="bold">Rs. <span class="bold">${trip.booked_price}</span></span></p>
         </div>
         <div id="times" class="row">

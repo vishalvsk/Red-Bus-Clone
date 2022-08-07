@@ -42,14 +42,16 @@ async function init_upperDeck() {
       seat_ele.style.backgroundColor="white";
      }
   
-      upper_deck_box.append(seat_ele);
       seat_ele.onclick = () => {
-        checking_point();
+        // console.log(seat.id)  
         localStorage.setItem("selected_seat_id", seat.id);
+        checking_point();
+        
         document.querySelector("#seats_contents_right").style.display = "none";
         document.querySelector("#seats_contents_right-2").style.display = "flex";
         document.querySelector("#confirm_booiking_box").style.display = "none";
       };
+      upper_deck_box.append(seat_ele);
     });
   }
 
@@ -78,15 +80,15 @@ async function init_upperDeck() {
         seat_ele.style.backgroundColor="white";
        }
        
-      lower_deck_box.append(seat_ele);
       seat_ele.onclick = () => {
-      
-        checking_point();
         localStorage.setItem("selected_seat_id", seat.id);
+        checking_point();
+      
         document.querySelector("#seats_contents_right").style.display = "none";
         document.querySelector("#seats_contents_right-2").style.display = "flex";
         document.querySelector("#confirm_booiking_box").style.display = "none";
       };
+      lower_deck_box.append(seat_ele);
     });
   }
 

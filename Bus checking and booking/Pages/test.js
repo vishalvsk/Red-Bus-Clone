@@ -43,3 +43,10 @@ let test_obj={
         },
     }); 
   */
+/*
+ let test=[2,3,4,5,6,7];
+ let ind = test.indexOf(4);
+ console.log(test);
+ test.splice(ind,1);
+ console.log(test);
+*/
