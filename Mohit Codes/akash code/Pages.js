@@ -43,7 +43,7 @@ async function gettrips(){
 
 gettrips()
 function show_all_trips(trips){
-    let tripsContainer = document.querySelector(".profiledetails");
+    let tripsContainer = document.querySelector(".trips_det");
     tripsContainer.innerHTML="";
        if(!trips){
           let msg = document.createElement("p");

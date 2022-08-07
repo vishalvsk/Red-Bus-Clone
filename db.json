@@ -21,7 +21,8 @@
         2,
         3,
         6,
-        7
+        7,
+        11
       ]
     },
     {
@@ -2086,6 +2087,95 @@
       },
       "ticketN0": 235,
       "id": 5
+    },
+    {
+      "name": "dumm2",
+      "gender": "male",
+      "age": "24",
+      "email": "dumy3@gm.com",
+      "phone": "2323454567",
+      "booked_bus": [
+        {
+          "id": 1,
+          "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
+          "company": "VRL Travels",
+          "time_in": "10:25",
+          "time_out": "14:33",
+          "rating": 3.9,
+          "price": 112,
+          "seat_available": 87,
+          "booked_seats": [
+            26,
+            5,
+            85,
+            10,
+            40,
+            28,
+            48,
+            1,
+            2,
+            3,
+            6,
+            7,
+            11
+          ]
+        }
+      ],
+      "booked_seatID": 2,
+      "booked_price": 112,
+      "cur_Dt_time": "11:10 0-7-2022",
+      "user_points_input": {
+        "pickPoint": "DL",
+        "dropPoint": "MP",
+        "date": "2022-08-07"
+      },
+      "ticketN0": 212,
+      "id": 6
+    },
+    {
+      "name": "Dummy-4",
+      "gender": "male",
+      "age": "23",
+      "email": "Dummy-4@lm.com",
+      "phone": "2345678978",
+      "booked_bus": [
+        {
+          "id": 1,
+          "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
+          "company": "VRL Travels",
+          "time_in": "10:25",
+          "time_out": "14:33",
+          "rating": 3.9,
+          "price": 112,
+          "seat_available": 87,
+          "booked_seats": [
+            26,
+            5,
+            85,
+            10,
+            40,
+            28,
+            48,
+            1,
+            2,
+            3,
+            6,
+            7,
+            11,
+            12
+          ]
+        }
+      ],
+      "booked_seatID": 2,
+      "booked_price": 112,
+      "cur_Dt_time": "12:42 0-7-2022",
+      "user_points_input": {
+        "pickPoint": "SR",
+        "dropPoint": "KL",
+        "date": "2022-08-08"
+      },
+      "ticketN0": 213,
+      "id": 7
     }
   ],
   "test_obj": [

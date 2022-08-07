@@ -8,6 +8,11 @@
     <title>pasenger Details</title>
     <link rel="stylesheet" href="../styles/passengerDetails.css">
     <link rel="stylesheet" href="../styles/passenger.css">
+    <style>
+        .button-container{
+            background-color: yellow;
+        }
+    </style>
 </head>
 
 <body>
@@ -241,16 +246,18 @@
 
         <div class="clearfix continue-booking withpptclink">
             <div class="pptnc-link">By clicking on proceed, I agree that I have read and understood the <a
-                    href="/info/termscondition" target="_blank">TnCs</a> and the <a href="/info/privacypolicy"
+                    href="/info/termscondition" target="_blank">TnCs</a> and  the <a href="/info/privacypolicy"
                     target="_blank">Privacy Policy</a></div>
             <div class="pR">
                 <div class="booking-amt-details fl clearfix f-bold">
                     <div class="booking-amt-title fl">Total Amount : </div>
                     <div class="booking-amt fl ">INR<span id="tot_price" class="f-bold">1500.00</span></div>
                 </div>
+
                 <div class="button-container fr">
-                    <input onclick="postData()" type="submit" class="button main-btn gtm-continueBooking"
-                        value="Proceed to pay">
+                    <!-- <button onclick="postData()" type="submit" class="button main-btn gtm-continueBooking"
+                        value="Proceed to pay"> -->
+                        <button id="submit_btn"  onclick="postData()"  class="button main-btn gtm-continueBooking">Proceed to pay</button>
                 </div>
             </div>
         </div>
@@ -271,10 +278,10 @@
      
     document.getElementById("tot_price").innerHTML= booking_details.tot_price;
 
-    async function postData() {
+ async function postData() {
         let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
         let name = document.getElementById("inputName").value;
-        let genderName = document.querySelector(`input[name="gender"]:checked`).value;
+         let genderName = document.querySelector(`input[name="gender"]:checked`).value;
         let age = document.querySelector("#input").value;
         let email = document.getElementById("email").value;
         let phone = document.getElementById("phoneNumber").value;
@@ -285,6 +292,7 @@
         busNo = parseInt(busNo);
         let ticketNo= 200+seatNo+busNo;
         localStorage.setItem("ticketNo",ticketNo)
+        
         let ticketDetails = {
             name: name,
             gender: genderName,
@@ -306,7 +314,7 @@
             headers: {
                 'Content-Type': 'application/json'
             }
-        });
+        }); 
         window.open("../Payment_Page/payment.html", "_self");
     }
 
