@@ -281,7 +281,7 @@
  async function postData() {
         let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
         let name = document.getElementById("inputName").value;
-         let genderName = document.querySelector(`input[name="gender"]:checked`).value;
+        //  let genderName = document.querySelector(`input[name="gender"]:checked`).value;
         let age = document.querySelector("#input").value;
         let email = document.getElementById("email").value;
         let phone = document.getElementById("phoneNumber").value;
@@ -295,7 +295,7 @@
         
         let ticketDetails = {
             name: name,
-            gender: genderName,
+            // gender: genderName,
             age: age,
             email: email,
             phone: phone,
