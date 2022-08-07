@@ -70,7 +70,7 @@
               <div class="timer-text"></div>
               <div>
                 <img
-                  src="https://s3.rdbuz.com/Images/webplatform/Common/Payment/timer.svg"
+                  src=""
                 />
               </div>
               <div></div>
@@ -198,8 +198,8 @@
                 <div class="trip-container">
                   <div class="travel-info">
                     <div class="travel-operator-info">
-                      <div class="travel-title">VRL Travels</div>
-                      <div class="travel-lbl">
+                      <div class="travel-title" id="company_name" >VRL Travels</div>
+                      <div class="travel-lbl" id="bus-name">
                         Volvo Multi-Axle I-Shift A/C Sleeper (2+1)
                       </div>
                     </div>
@@ -211,16 +211,16 @@
                         <div class="cal-icon"></div>
                       </div>
                       <div class="trip-data">
-                        <div class="trip-lbls">Departure</div>
-                        <div class="trip-subtitle">
-                          05/Aug/2022<b style="padding-left: 10px">7:30 pm</b>
+                        <div class="trip-lbls" >Departure</div>
+                        <div class="trip-subtitle" id="date">
+                          05/Aug/2022<b style="padding-left: 10px" id="departure">7:30 pm</b>
                         </div>
                       </div>
                     </div>
                     <div class="trip-info-right">
                       <div class="trip-lbls">Seats</div>
                       <div class="trip-subtitle" style="text-align: end">
-                        <b>L16</b>
+                        <b id="seat_no" >L16</b>
                       </div>
                     </div>
                   </div>
@@ -232,7 +232,7 @@
                       </div>
                       <div class="trip-data">
                         <div class="trip-lbls">Boarding Point</div>
-                        <div class="trip-subtitle"><b>Pune</b></div>
+                        <div class="trip-subtitle"><b id="city_name">Pune</b></div>
                         <div class="trip-subtitle" style="text-align: start">
                           PRADHIKARAN, OPP AKURDI RAILWAY STATION. (M)
                         </div>
@@ -240,7 +240,7 @@
                     </div>
                     <div class="bpdp-info-right">
                       <div class="trip-lbls">Dropping Point</div>
-                      <div class="trip-subtitle"><b>Bangalore</b></div>
+                      <div class="trip-subtitle"><b id="city_end1">Bangalore</b></div>
                       <div class="trip-subtitle" style="text-align: end">
                         Nelamangala
                       </div>
@@ -253,7 +253,7 @@
                       <div class="icon-div">
                         <div class="passengers-info-icon"></div>
                       </div>
-                      <div class="passengers-name">vishal (24,M)</div>
+                      <div class="passengers-name" id="name_age">vishal (24)</div>
                     </div>
                   </div>
                 </div>
@@ -276,11 +276,11 @@
                   <div>
                     <div class="fareBreakupComp">
                       <div>Onward Fare</div>
-                      <div>INR 3255</div>
+                      <div id="total_price1">INR 3255</div>
                     </div>
                     <div class="fareBreakupComp">
                       <div class="breakup-lbl">Total Payable</div>
-                      <div class="breakup-lbl">INR 3255</div>
+                      <div class="breakup-lbl" id="total_price">INR 3255</div>
                     </div>
                   </div>
                 </div>
@@ -300,11 +300,11 @@
           background: url(https://h.online-metrix.net/fp/clear.png?org_id=k8vif92e&amp;session_id=cybs_etb_mmt85524b50-8d77-4e0b-ab4c-0f46eb51916a637952213855064248&amp;m=1);
         "
       ></p>
-      <img
+      <!-- <img
         src="https://h.online-metrix.net/fp/clear.png?org_id=k8vif92e&amp;session_id=cybs_etb_mmt85524b50-8d77-4e0b-ab4c-0f46eb51916a637952213855064248&amp;m=2"
         alt=""
         style="display: none"
-      />
+      /> -->
     </div>
     <div class="hide clearfix">
       <form id="redbus_payment_form" action="" method="POST">
@@ -404,6 +404,7 @@
 <script>
         let start = document.getElementById("city_start").innerHTML = localStorage.getItem("from");
         let end = document.getElementById("city_end").innerHTML = localStorage.getItem("to");
+        console.log(end);
 
         //  payment through upi id 
            function check (input){
@@ -439,4 +440,27 @@
           }
 
         });
+
+
+
+        //  profile details through local storage
+        function profile_Details() {
+          let bookingDetails = JSON.parse(localStorage.getItem("booking_details"));
+          console.log(bookingDetails.booked_seatID);
+          let company_name = document.getElementById("company_name").innerHTML = bookingDetails.booked_bus[0].company;
+          let bus_name = document.getElementById("bus-name").innerHTML = bookingDetails.booked_bus[0].bus_name;
+          let departure = document.getElementById("departure").innerHTML = bookingDetails.booked_bus[0].time_in;
+          let onwardDate = localStorage.getItem("onwardDate");
+          document.getElementById("date").innerHTML = onwardDate;
+          let name_age = JSON.parse(localStorage.getItem("user_data"));
+          let name_obj = document.getElementById("name_age").innerHTML = `${name_age.name}(${name_age.age})`;
+
+          let seat_no = document.getElementById("seat_no").innerHTML = bookingDetails.booked_seatID;
+          let total_price = document.getElementById("total_price").innerHTML =  `INR ${bookingDetails.tot_price}`;
+          let total_price1 = document.getElementById("total_price1").innerHTML = `INR ${bookingDetails.tot_price}`;
+          let city_name = document.getElementById("city_name").innerHTML = start;
+          document.getElementById("city_end1").innerHTML = end;
+          
+        }
+        profile_Details();
 </script>
