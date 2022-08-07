@@ -15,7 +15,7 @@
         <div class="leftPanel">
             <a href="./PageMyProfile.html">
                 <img src="https://cdn-icons-png.flaticon.com/128/1246/1246351.png?ga=GA1.2.1823336501.1659074507" alt="">
-                <div><h3>AJ</h3></div>
+                <div><h3 id="UserNameleftPanel" ></h3></div>
                 
             </a>
             <a  href="./PageMytrip.html" id="mytrip.html">
@@ -44,11 +44,46 @@
             </a>
         </div>
         <div class="right-panel">
-
+            
             <span class="greyText">MY Profile</span>
 
             <div class="profiledetails">
-                <div class="editbutton"><button>EDIT</button></div>
+                <div class="editbutton" id="editbutton">
+                    <button id="edittap">EDIT</button>
+                </div>
+                <div class="userdetail1">
+                    <div class="inputName">
+                        <div>
+                            <label for="YOUR NAME">YOUR NAME</label><br>
+                            <div></div>
+                        </div>
+                        <div>
+                            <label for="DATE OF BIRTH">DATE OF BIRTH</label><br>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="userdetail2">
+                    <p>GENDER</p>
+                    <div></div>
+                </div>
+                <fieldset> <legend>CONTACT DETAILS</legend> </fieldset>
+                <div class="userdetail3">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right-paneltwo">
+            <span class="greyText">MY Profile</span>
+
+            <div class="profiledetails">
+                
+                <div class="editbutton">
+                    <button id="cancelbutton">CANCEL</button>
+                    <button id="savebutton" onclick="userDetails()" >SAVE</button>
+                </div>
                 <div class="userdetail1">
                     <div class="inputName">
                         <div>
@@ -62,20 +97,63 @@
                     </div>
                 </div>
                 <div class="userdetail2">
-                    <p>GENDER</p>
+                    <label for="">GENDER</label><br>
                     <select name="gender" id="gender">
-                    	<option value="none" selected>Gender</option>
+                        <option value=""></option>
                     	<option value="male">Male</option>
                     	<option value="female">Female</option>
                     </select>
                 </div>
                 <fieldset> <legend>CONTACT DETAILS</legend> </fieldset>
                 <div class="userdetail3">
-                    <input type="text" placeholder="EMAIL" />
-                    <input type= "text " placeholder="NUMBER">
+                    <div>
+                        <label for="">EMAIL</label>
+                        <input type="text" id="email"/>
+                    </div>
+                    <div>
+                        <label for="">NUMBER</label>
+                        <input type= "text " id="number">
+                    </div>
                 </div>
             </div>
-        
+        </div>
+
+        <div class="right-panel3">
+            
+            <span class="greyText">MY Profile</span>
+
+            <div class="profiledetails">
+                <div class="editbutton" id="editbutton">
+                    <button id="edittap">EDIT</button>
+                </div>
+                <div class="userdetail1">
+                    <div class="inputName">
+                        <div>
+                            <label for="YOUR NAME">YOUR NAME</label><br>
+                            <div id="nameUserPrint"></div>
+                        </div>
+                        <div>
+                            <label for="DATE OF BIRTH">DATE OF BIRTH</label><br>
+                            <div id="datePrint"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="userdetail2">
+                    <p>GENDER</p>
+                    <div id="genderPrint"></div>
+                </div>
+                <fieldset> <legend>CONTACT DETAILS</legend> </fieldset>
+                <div class="userdetail3">
+                    <div>
+                        <label for="">EMAIL</label>
+                        <div id="emailPrint"></div>
+                    </div>
+                    <div>
+                        <label for="">NUMBER</label>
+                        <div id="numberPrint"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -83,3 +161,114 @@
 </body>
 </html>
 <script src="./Pages.js" type="module"></script>
+<script>
+
+    document.getElementById("edittap").addEventListener("click",function (){
+        document.querySelector(".right-paneltwo").style.display = "block";
+        document.querySelector(".right-panel").style.display = "none";
+    })
+
+
+    document.getElementById("cancelbutton").addEventListener("click",function(){
+        document.querySelector(".right-paneltwo").style.display = "none"
+        document.querySelector(".right-panel").style.display = "block"
+    })
+
+    document.getElementById("savebutton").addEventListener("click",userData)
+    let UserContainer = []
+    function userData(){
+        document.querySelector(".right-paneltwo").style.display = "none"
+        document.querySelector(".right-panel3").style.display = "block";
+        event.preventDefault();
+
+        let UserName = document.getElementById("userName");
+        let DateofBirth = document.getElementById("date")
+        let Gender = document.getElementById("gender")
+        let Email = document.getElementById("email")
+        let Number = document.getElementById("number");
+
+        let userObj = {
+            UserName : UserName.value,
+            DateofBirth : DateofBirth.value,
+            Gender : Gender.value,
+            Email : Email.value,
+            Number : Number.value,
+        }
+        UserContainer.push(userObj)
+        // console.log(UserContainer)
+        localStorage.setItem("userDetail",JSON.stringify(UserContainer))
+
+    }
+
+
+
+var userDetail = JSON.parse(localStorage.getItem("userDetail"));
+// console.log(userDetail)
+
+       
+// window.addEventListener("load",displayData);
+
+function userDetails(){
+
+    userDetail.map(function (elem){
+        console.log(elem)
+        var div1 = document.createElement("div");
+        div1.setAttribute("class","containerUser")
+
+        
+        var div2 = document.createElement("div");
+        div2.setAttribute("class","containerUser")
+
+        var div3 = document.createElement("div");
+        div3.setAttribute("class","containerUser")
+
+        var div4 = document.createElement("div");
+        div4.setAttribute("class","containerUser")
+
+        var div5 = document.createElement("div");
+        div5.setAttribute("class","containerUser")
+
+        
+        var div6 = document.createElement("div");
+        div6.setAttribute("class","containerUser")
+
+        var name = document.createElement("p");
+        name.innerText = elem.UserName;
+
+        var Name = document.createElement("p");
+        Name.innerText = elem.UserName;
+
+        console.log(name)
+
+        let dateofbirth = document.createElement("p")
+        dateofbirth.textContent = elem.DateofBirth;
+
+        let gender = document.createElement("p")
+        gender.textContent = elem.Gender;
+
+        var email = document.createElement("p");
+        email.innerText = elem.Email;
+
+        var number = document.createElement("p");
+        number.innerText = elem.Number
+
+        div1.append(Name)
+        div2.append(dateofbirth)
+        div3.append(gender)
+        div4.append(email)
+        div5.append(number)
+        div6.append(name)
+        document.getElementById("nameUserPrint").append(div1);
+        document.getElementById("datePrint").append(div2);
+        document.getElementById("genderPrint").append(div3);
+        document.getElementById("emailPrint").append(div4);
+        document.getElementById("numberPrint").append(div5);
+       
+        document.getElementById("UserNameleftPanel").append(div6)
+    });
+}
+
+
+
+
+</script>

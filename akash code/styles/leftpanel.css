@@ -55,6 +55,25 @@
     min-height: 520px;
     /* border: 1px solid; */
 }
+
+.right-paneltwo{
+    height: 520px;
+    width: 1272px;
+    border-left: 2px solid #393D40;
+    float: left;
+    display: none;
+    min-height: 520px;
+    /* border: 1px solid; */
+}
+.right-panel3{
+    height: 520px;
+    width: 1272px;
+    border-left: 2px solid #393D40;
+    float: left;
+    display: none;
+    min-height: 520px;
+    /* border: 1px solid; */
+}
 .greyText{
     height: 23px;
     width: 94px;
@@ -75,6 +94,27 @@
     /* background-color: gray; */
     font-size: 13.33px;
     font-family: Montserrat;
+}
+
+#savebutton{
+    background-color: rgb(202, 72, 72);
+}
+
+#userName{
+    border-bottom: 1px solid #393D40;
+}
+#date{
+    border-bottom: 1px solid #393D40;
+}
+#number{
+    border-bottom: 1px solid #393D40;
+}
+#email{
+    border-bottom: 1px solid #393D40;
+}
+#gender{
+    border-radius: 10px;
+    margin-top: 5px;
 }
 
 .editbutton{
@@ -125,10 +165,9 @@
     width: 200px;
 }
 .userdetail2{
-    /* border: 1px solid; */
-    /* height: 10px; */
     margin: -20px 80px 20px 80px;
 }
+
 fieldset{
     height: 50px;
     width: 809px;
@@ -161,33 +200,12 @@ legend{
     margin: 0 80px 0 80px;
     /* border: 1px solid; */
 }
-.userdetail3 > input{
+.userdetail3 > div > input{
     border: none;
     width: 180px;
     height: 20px;
     border-radius: 3px;
 }
-
-@media only screen and (max-width: 500px){
-    .boxContainer{
-        width: 100%;
-        height: auto;
-        margin-top: -15px;
-    
-    }
-    .boxContainer .leftPanel, .right-panel{
-     
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        color: #d0c7c7;
-    }
-}
-
-
-
-
-
 
 
 
