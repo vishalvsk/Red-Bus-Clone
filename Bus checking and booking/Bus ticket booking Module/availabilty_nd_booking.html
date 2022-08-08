@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../styles/mobile.css">
     <title>Bus-Availability</title>
     <script src="https://kit.fontawesome.com/792b524030.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="../../Mohit Codes/akash code/styles/SignupLogin.css">
     <style>
        
     </style>
@@ -18,10 +19,11 @@
     <!-- <iframe src="../Vishal Codes/passenger.html" frameborder="0"></iframe> -->
     <div id="container">
     <div class="nav_cover"> 
-    <nav>
+        <div id="header"> </div>
+    <!-- <nav>
         <a href="../../Mohit Codes/akash code/homePage.html"><img src="https://s3.rdbuz.com/web/images/home/sgp/r_logo.png" alt=""></a>
         <h2 class="center">NavBar</h2>
-    </nav>
+    </nav> -->
 
 </div>
     <div id="header_cover">
@@ -38,53 +40,53 @@
     <main>
         <!-- <div id="left_section_coverDiv"> -->
             <div class="left_section">
-                <h6>FILTER</h6>
+                <h6 id="p">FILTER</h6>
                 <hr>
                 <div id="heading_line" class="filter_div">
-                    <P>Live Tracking (15)</P>
+                    <P id="p1">Live Tracking (15)</P>
                 </div>
                 <hr>
                 <div class="filter_div">
-                    <h6>DEPARTURE TIME</h6>
+                    <p id="p2">DEPARTURE TIME</p>
                     <label for=""><input type="checkbox" value="" id="before-6am">Before 6 am (<span id="span1">0</span>)</label>
                     <label for=""><input type="checkbox" value="" id="morning">6 am to 12 pm (<span id="span2">0</span>)</label>
                     <label for=""><input type="checkbox" value="" id="evening">12 pm to 6 pm (<span id="span3">0</span>)</label>
                     <label for=""><input type="checkbox" value="">After 6 pm (0)</label>
                 </div>
                 <div class="filter_div">
-                    <h6>BUS TYPES</h6>
+                    <p id="p2">BUS TYPES</p>
                     <label for=""><input type="checkbox" value="" id="seater">SEATER (<span id="span4">0</span>)</label>
                     <label for=""><input type="checkbox" value="" id="sleeper">SLEEPER (<span id="span5">0</span>)</label>
                     <label for=""><input type="checkbox" value="" id="ac">AC (23)</label>
                 </div>
                 <div class="filter_div">
-                    <h6>SEAT AVAILABILITY</h6>
+                    <p id="p2">SEAT AVAILABILITY</p>
                     <label for=""><input type="checkbox" value="">Single Seats (9)</label>
                 </div>
                 <div class="filter_div">
-                    <h6>ARRIVAL TIME</h6>
+                    <p id="p2">ARRIVAL TIME</p>
                     <label for="" ><input type="checkbox" value="" >Before 6 am (5)</label>
                     <label for=""><input type="checkbox" value="">6 am to 12 pm (18)</label>
                     <label for=""><input type="checkbox" value="">12 pm to 6 pm (0)</label>
                     <label for=""><input type="checkbox" value="">After 6 pm (0)</label>
                 </div>
                 <div class="points_div">
-                    <h6>BOARDING POINT</h6>
+                    <p id="p3">BOARDING POINT</p>
                     <label for=""><i class="fa-solid fa-magnifying-glass"></i><input type="text" name="" id=""
                             placeholder="BOARDING POINT"></label>
                 </div>
                 <div class="points_div">
-                    <h6>DROPPING POINT</h6>
+                    <p id="p3">DROPPING POINT</p>
                     <label for=""><i class="fa-solid fa-magnifying-glass"></i><input type="text" name="" id=""
                             placeholder="DROPPING POINT"></label>
                 </div>
                 <div class="points_div">
-                    <h6>OPERATOR</h6>
+                    <p id="p3">OPERATOR</p>
                     <label for=""><i class="fa-solid fa-magnifying-glass"></i><input type="text" name="" id=""
                             placeholder="OPERATOR"></label>
                 </div>
                 <div class="points_div">
-                    <h6>AMENITIES</h6>
+                    <p id="p3">AMENITIES</p>
                     <ul class="amenties">
                         <li>WIFI (23)</li>
                         <li>Water Bottle (23)</li>
@@ -106,18 +108,18 @@
                 <img src="https://s3.rdbuz.com/Images/ReddealsCards/IND/4_10_MainCard.png" alt="">
             </ul>
             <div id="heading_line">
-                <h4><i class="fa-solid fa-shield-virus"></i>All bus ratings include safety as a major factor</h4>
+                <p id="p4"><i class="fa-solid fa-shield-virus"></i>All bus ratings include safety as a major factor</p>
                 <hr class="heading_hr">
             </div>
             <div id="details_sorting_heading">
-                <p><span id="no_of_buses" class="bold">0 Buses </span> found</p>
+                <p id="p-span"><span id="no_of_buses" class="bold">0 Buses </span>  <span id="span">found</span> </p>
                 <p class="bold">SORT BY:</p>
-                <p id="departure">Departure <span id="order_departure_icon"></span></p>
-                <p id="duration">Duration</p>
-                <p id="arrival">Arrival</p>
-                <p id="rating">Ratings</p>
-                <p id="price">Fare</p>
-                <p id="seat">Seats Available</p>
+                <p id="departure" class="p">Departure <span id="order_departure_icon" class="p"></span></p>
+                <p id="duration" class="p">Duration</p>
+                <p id="arrival" class="p">Arrival</p>
+                <p id="rating" class="p">Ratings</p>
+                <p id="price" class="p">Fare</p>
+                <p id="seat" class="p">Seats Available</p>
                 <hr>
             </div>
             <div id="bus_details_section">

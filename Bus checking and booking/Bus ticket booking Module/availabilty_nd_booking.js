@@ -3,7 +3,10 @@ import getData from "../utilityFunctions/getBus_data.js";
 import { upperDeck, lowerDeck } from "../utilityFunctions/getSeats.js";
 import checking_point from "../utilityFunctions/checking_points_popUp.js"
 import { patchSeat_upper, patchSeat_lower } from "../utilityFunctions/patch_seatDetail.js";
+import navbar from "../../Mohit Codes/akash code/navbarhome.js"
 
+
+document.getElementById("header").innerHTML = navbar();
 init_busData();
 // show_popups();
 // init_upperDeck();
@@ -191,6 +194,7 @@ const sortDepature = (data) => {
 }
 
 const sortSeat = (data) => {
+  // console.log(data)
   let sortSea = data.sort((a, b) => {
     return b.seat_available - a.seat_available
   })

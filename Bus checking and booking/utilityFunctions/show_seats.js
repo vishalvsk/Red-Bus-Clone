@@ -31,12 +31,12 @@ async function init_upperDeck() {
       seat_ele.setAttribute("title", `No: ${seat.id}`);
       seat_ele.innerText = seat.id;
       if (seat.Gender == "Female") {
-        seat_ele.style.border = "2px solid red";
+        seat_ele.style.border = "1px solid #d84355";
       }
       
      if(selected_bus[0].booked_seats.includes(seat.id)){
       seat_ele.style.color="white";
-      seat_ele.style.backgroundColor="red";
+      seat_ele.style.backgroundColor="#d84355";
       seat_ele.setAttribute("title", `No: ${seat.id} Booked`);
      }else{
       seat_ele.style.backgroundColor="white";
@@ -70,11 +70,11 @@ async function init_upperDeck() {
       seat_ele.setAttribute("title", `No: ${seat.id}`);
       seat_ele.innerText = seat.id;
       if (seat.Gender == "Female") {
-        seat_ele.style.border = "2px solid red";
+        seat_ele.style.border = "1px solid #d84355";
       }
       if(selected_bus[0].booked_seats.includes(seat.id)){
         seat_ele.style.color="white";
-        seat_ele.style.backgroundColor="red";
+        seat_ele.style.backgroundColor="#d84355";
         seat_ele.setAttribute("title", `No: ${seat.id} Booked`);
        }else{
         seat_ele.style.backgroundColor="white";

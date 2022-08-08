@@ -20,7 +20,10 @@
       "rating": 4.8,
       "price": 741,
       "seat_available": 87,
-      "booked_seats": []
+      "booked_seats": [
+        2,
+        47
+      ]
     },
     {
       "id": 3,
@@ -1855,5 +1858,38 @@
       "Gender": "Female"
     }
   ],
-  "Tickets": []
+  "Tickets": [
+    {
+      "name": "Mohit",
+      "age": "23",
+      "email": "mohit@gh/com",
+      "phone": "234567890",
+      "booked_bus": [
+        {
+          "id": 2,
+          "bus_name": "Volvo Multi-Axle Sleeper A/C",
+          "company": "Jakhar Travels",
+          "time_in": "0:15",
+          "time_out": "6:23",
+          "rating": 4.8,
+          "price": 741,
+          "seat_available": 87,
+          "booked_seats": [
+            2,
+            47
+          ]
+        }
+      ],
+      "booked_seatID": 47,
+      "booked_price": 1041,
+      "cur_Dt_time": "16:57 1-7-2022",
+      "user_points_input": {
+        "pickPoint": "PNP",
+        "dropPoint": "Gur",
+        "date": "2022-08-08"
+      },
+      "ticketN0": 249,
+      "id": 2
+    }
+  ]
 }

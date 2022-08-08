@@ -1,7 +1,7 @@
 // import g from "../homePage.html"
 function navbar(){
-    return `<div id="headerBlock">
-
+    return `
+    <div id="headerBlock">
 
     <article class="container">
       <nav class="leftNav">
@@ -50,7 +50,7 @@ function navbar(){
         </ul>
       </nav>
     </article>
-  </div>`;
+  </div>`
 }
 
 export default navbar;
