@@ -52,15 +52,10 @@
     float: left;
     min-height: 520px;
     /* border: 1px solid; */
-    /* display: none; */
+    
 }
 
-.right-paneltwo{
-    display: none;
-}
-.right-panel3{
-    /* display: none; */
-}
+
 .greyText{
     height: 23px;
     width: 94px;

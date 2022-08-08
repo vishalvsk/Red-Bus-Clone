@@ -1855,22 +1855,6 @@
       "Gender": "Female"
     }
   ],
-  "Tickets": [],
-  "test_obj": [
-    {
-      "id": 1,
-      "ele": [
-        2,
-        3
-      ]
-    },
-    {
-      "booked_seats": [
-        2,
-        3,
-        15
-      ],
-      "id": 2
-    }
-  ]
+  "Tickets": []
+
 }
