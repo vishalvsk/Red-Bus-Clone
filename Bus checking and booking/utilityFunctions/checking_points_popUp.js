@@ -28,9 +28,9 @@ let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
   let boarding_points = document.querySelector(".boarding-points");
   let continue_btn = document.getElementById("continue_btn");
   let div1 = document.createElement("div");
-  div1.innerHTML = `<input type="checkbox"><p class="bold" id="pick_time">${selected_bus[0].time_in} </p><p class="bold" id="boarding-point"> Kashmiri Gate</p>`;
+  div1.innerHTML = `<input type="checkbox"><p class="bold" id="pick_time">${selected_bus[0].time_in} </p><p class="bold" id="boarding-point"> ${input_obj.pickPoint}</p>`;
   let div2 = document.createElement("div");
-  div2.innerHTML = `<input type="checkbox"><p class="bold" id="drop_time">${selected_bus[0].time_out}</p><p class="bold" id="dropping-point"> Lucknow Gate</p>`;
+  div2.innerHTML = `<input type="checkbox"><p class="bold" id="drop_time">${selected_bus[0].time_out}</p><p class="bold" id="dropping-point"> ${input_obj.dropPoint}</p>`;
   boarding_points.innerHTML = "";
   boarding_points.append(div1);
   boardPoint_div.addEventListener("click", () => {

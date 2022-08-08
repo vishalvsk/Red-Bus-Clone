@@ -174,22 +174,22 @@
     let PhoneNumber = JSON.parse(localStorage.getItem("number"));
     document.getElementById("numberPrint1").append(PhoneNumber);
     document.getElementById("numberPrint2").append(PhoneNumber);
-
+/*
     document.getElementById("edittap").addEventListener("click",function (){
         document.querySelector(".right-paneltwo").style.display = "block";
         document.querySelector(".right-panel").style.display = "none";
     })
-
-
+*/
     document.getElementById("cancelbutton").addEventListener("click",function(){
         document.querySelector(".right-paneltwo").style.display = "none"
         document.querySelector(".right-panel").style.display = "block"
     })
 
-    document.getElementById("savebutton").addEventListener("click",()=>{
+    document.getElementById("edittap").addEventListener("click",()=>{
 
+        document.querySelector(".right-panel").style.display = "none"
+        document.querySelector(".right-paneltwo").style.display = "block"
         event.preventDefault();
-        function userDetails() {}
          let UserName = document.getElementById("userName");
         let DateofBirth = document.getElementById("date")
         let Gender = document.getElementById("gender")
@@ -201,21 +201,22 @@
             Gender : Gender.value,
             Email : Email.value,
         }
-        localStorage.setItem("userDetail",JSON.stringify(userObj));
+        localStorage.setItem("userProfile",JSON.stringify(userObj));
         display();
     });
 
-
+    // display()
+    // document.querySelector(".right-panel3").style.display = "block";
 
 function display(){
  
     document.querySelector(".right-paneltwo").style.display = "none"
     document.querySelector(".right-panel3").style.display = "block";
 
-    var userDetail = JSON.parse(localStorage.getItem("userDetail"));
+    let userDetail = JSON.parse(localStorage.getItem("userProfile"));
     let FixedNumber = JSON.parse(localStorage.getItem("number"));
-        console.log(userDetail)
-        console.log(FixedNumber)
+        // console.log(userDetail)
+        // console.log(FixedNumber)
 
         var div1 = document.createElement("div");
         div1.setAttribute("class","containerUser")
@@ -239,7 +240,7 @@ function display(){
         name.innerText = userDetail.UserName;
 
         var Name = document.createElement("p");
-        Name.innerText = userDetail.Username;
+        Name.innerText = userDetail.UserName;
 
         let dateofbirth = document.createElement("p")
         dateofbirth.textContent = userDetail.DateofBirth;

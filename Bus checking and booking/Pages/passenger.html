@@ -440,7 +440,6 @@
   document.getElementById("tot_price").innerHTML = booking_details.tot_price;
 
   async function postData() {
-    StoreValues();
     let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
     let name = document.getElementById("inputName").value;
     let genderName = document.querySelector(
@@ -482,6 +481,7 @@
         "Content-Type": "application/json",
       },
     });
+    StoreValues();
     location.href = "../Payment_Page/payment.html";
   }
 
