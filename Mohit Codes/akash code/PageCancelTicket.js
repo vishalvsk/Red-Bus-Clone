@@ -20,6 +20,16 @@ async function get_ticket(ticket_no) {
 }
 
 function sidplayTicket(ticket) {
+  if(!ticket){
+    let msg = document.createElement("p");
+    msg.innerText = "No Ticket found !"
+    msg.setAttribute("class", "center");
+    msg.style.color = "red";
+    ticket_container.innerHTML="";
+     ticket_container.append(msg);
+    // ticket_container.innerHTML = "Ticket not Exist !"
+ }else{
+
   let bus = ticket.booked_bus[0];
   // console.log(ticket)
   if (!ticket) {
@@ -122,4 +132,5 @@ async function patch_busSeat(updObj, selected_busID) {
   } catch (err) {
     console.log(err);
   }
+}
 }

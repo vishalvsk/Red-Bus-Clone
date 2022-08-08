@@ -5,7 +5,7 @@ async function gettrips(){
         let url = `http://localhost:3000/Tickets`;
         let res = await fetch(url);
         let trips = await res.json();
-        //  console.log(trips);
+          console.log(trips);
           show_all_trips(trips);
     }catch(err){
         console.log(err);
@@ -17,15 +17,17 @@ document.getElementById("userName").innerText = userDetail.UserName;
 gettrips();
 function show_all_trips(trips){
     let tripsContainer = document.querySelector(".trips_det");
+    if(trips.length==0){
+        // tripsContainer.innerHTML = "No trips Yet !";
+        console.log("running")
+        let msg = document.createElement("p");
+        msg.innerText = "No Trips Yet !"
+        msg.setAttribute("class", "center");
+        msg.style.color = "red";
+        tripsContainer.innerHTML="";
+        tripsContainer.append(msg);
+    }else{
     tripsContainer.innerHTML="";
-       if(!trips){
-          let msg = document.createElement("p");
-          msg.innerText = "No Trips found !"
-          msg.setAttribute("class", "center");
-          msg.style.color = "red";
-          tripsContainer.innerHTML="";
-          tripsContainer.append(msg);
-       }else{
         trips.map((trip)=>{
        let card = document.createElement("div");
        card.setAttribute("id", "ticketCard");
@@ -56,4 +58,4 @@ function show_all_trips(trips){
         tripsContainer.append(card);
     });
 }
-}
+    }

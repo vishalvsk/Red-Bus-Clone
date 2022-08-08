@@ -38,16 +38,16 @@
     nav{
         display: none;
     }
-    #header{
+    #headerDet{
          display: flex;
         padding: 0px 5px;
         font-size: 15px;
         width: 100vw;
     }
-    #header p{
+    #headerDet p{
         font-size: 15px;
     }
-    #header button{
+    #headerDet button{
         height: 20px;
         background-color: brown;
         color: white;

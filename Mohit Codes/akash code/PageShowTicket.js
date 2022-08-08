@@ -22,8 +22,6 @@ async function get_ticket(ticket_no){
 }
 
 function sidplayTicket(ticket){
-
-  let bus = ticket.booked_bus[0];
   // console.log(ticket)
  if(!ticket){
     let msg = document.createElement("p");
@@ -31,8 +29,10 @@ function sidplayTicket(ticket){
     msg.setAttribute("class", "center");
     msg.style.color = "red";
     ticket_container.innerHTML="";
-    ticket_container.append(msg);
+     ticket_container.append(msg);
+    // ticket_container.innerHTML = "Ticket not Exist !"
  }else{
+  let bus = ticket.booked_bus[0];
   ticket_container.innerHTML=` 
   <div id="ticketCard">
   <h3 class="center"><span>${ticket.user_points_input.pickPoint}</span> to <span>${ticket.user_points_input.dropPoint}</span></h3>
