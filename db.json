@@ -9,7 +9,9 @@
       "rating": 3.9,
       "price": 312,
       "seat_available": 87,
-      "booked_seats": []
+      "booked_seats": [
+        2
+      ]
     },
     {
       "id": 2,
@@ -1855,7 +1857,39 @@
       "Gender": "Female"
     }
   ],
-  "Tickets": [],
+  "Tickets": [
+    {
+      "name": "Myself",
+      "age": "23",
+      "email": "",
+      "phone": "",
+      "booked_bus": [
+        {
+          "id": 1,
+          "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
+          "company": "VRL Travels",
+          "time_in": "10:25",
+          "time_out": "14:33",
+          "rating": 3.9,
+          "price": 312,
+          "seat_available": 87,
+          "booked_seats": [
+            2
+          ]
+        }
+      ],
+      "booked_seatID": 2,
+      "booked_price": 312,
+      "cur_Dt_time": "14:41 1-7-2022",
+      "user_points_input": {
+        "pickPoint": "PNP",
+        "dropPoint": "DL",
+        "date": "2022-08-08"
+      },
+      "ticketN0": 203,
+      "id": 1
+    }
+  ],
   "test_obj": [
     {
       "id": 1,
