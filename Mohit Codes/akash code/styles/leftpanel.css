@@ -51,9 +51,15 @@
     width: 1272px;
     border-left: 2px solid #393D40;
     float: left;
-    display: block;
     min-height: 520px;
     /* border: 1px solid; */
+    display: none;
+}
+.right-paneltwo{
+    display: none;
+}
+.right-panel3{
+    /* display: none; */
 }
 .greyText{
     height: 23px;
@@ -65,7 +71,7 @@
     height: 360px;
     width: 991px;
     margin: 7px 0 15px 120px;
-    display: block;
+    /* display: block; */
     box-sizing: border-box;
     box-shadow: rgb(62, 67, 69) 0px 0px 10px 0px;
     border-top-left-radius: 6.66px;
@@ -76,6 +82,7 @@
     font-size: 13.33px;
     font-family: Montserrat;
     z-index: -1;
+    /* background-color: yellow; */
 }
 
 .editbutton{

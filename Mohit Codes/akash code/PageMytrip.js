@@ -5,12 +5,14 @@ async function gettrips(){
         let url = `http://localhost:3000/Tickets`;
         let res = await fetch(url);
         let trips = await res.json();
-         console.log(trips);
+        //  console.log(trips);
           show_all_trips(trips);
     }catch(err){
         console.log(err);
     }
 }
+var userDetail = JSON.parse(localStorage.getItem("userProfile"));
+document.getElementById("userName").innerText = userDetail.UserName;
 
 gettrips();
 function show_all_trips(trips){
