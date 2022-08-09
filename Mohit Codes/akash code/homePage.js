@@ -3,9 +3,10 @@ import navbar from "./navbarhome.js";
 let header = document.getElementById("header");
 header.innerHTML = navbar();
 
-function searchBtn(){
-    console.log("searchBtn()")
-}
+// function searchBtn(){
+//     console.log("searchBtn()")
+// }
+
 document.querySelector("form").addEventListener("submit",()=>{
     event.preventDefault();
         let from = document.querySelector("#input-label-from").value;

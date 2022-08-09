@@ -9,7 +9,8 @@
       "rating": 3.9,
       "price": 312,
       "seat_available": 87,
-      "booked_seats": []
+      "booked_seats": [
+      ]
     },
     {
       "id": 2,
@@ -21,8 +22,6 @@
       "price": 741,
       "seat_available": 87,
       "booked_seats": [
-        2,
-        47
       ]
     },
     {
@@ -67,7 +66,9 @@
       "rating": 3,
       "price": 1029,
       "seat_available": 87,
-      "booked_seats": []
+      "booked_seats": [
+        48
+      ]
     },
     {
       "id": 7,
@@ -1860,10 +1861,10 @@
   ],
   "Tickets": [
     {
-      "name": "Mohit",
-      "age": "23",
-      "email": "mohit@gh/com",
-      "phone": "234567890",
+      "name": "Aayesha",
+      "age": "22",
+      "email": "smple@gm.com",
+      "phone": "2345678909",
       "booked_bus": [
         {
           "id": 2,
@@ -1876,20 +1877,21 @@
           "seat_available": 87,
           "booked_seats": [
             2,
-            47
+            47,
+            46
           ]
         }
       ],
-      "booked_seatID": 47,
-      "booked_price": 1041,
-      "cur_Dt_time": "16:57 1-7-2022",
+      "booked_seatID": 46,
+      "booked_price": 991,
+      "cur_Dt_time": "23:46 1-7-2022",
       "user_points_input": {
         "pickPoint": "PNP",
-        "dropPoint": "Gur",
+        "dropPoint": "DL",
         "date": "2022-08-08"
       },
-      "ticketN0": 249,
-      "id": 2
+      "ticketN0": 248,
+      "id": 3
     }
   ]
 }

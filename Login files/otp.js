@@ -39,11 +39,11 @@ document.getElementById("ButtonOTPvarification").addEventListener("click" ,funct
     if(GetOTP == GetInput){
         alert("Login Successfully")
         document.getElementById("invalidOTP").style.display = "none";
-        location.href = "./homePage.html";
+        location.href = "../Mohit Codes/akash code/homePage.html";
     }
     else{
-        let invalidOTP = document.getElementById("invalidOTP") 
-
+        let invalidOTP = document.getElementById("invalidOTP");
+       
 
         const displayData = (parentNode) => {
     
@@ -52,12 +52,10 @@ document.getElementById("ButtonOTPvarification").addEventListener("click" ,funct
                 let invalid = document.createElement("p");
                 invalid.textContent = "Invalid OTP!";
                 invalid.style.color = "red"
-                
-
                 div.append(invalid)
-
                 parentNode.append(div)
             }
+            invalidOTP.innerText="";
             displayData(invalidOTP);
         }
        

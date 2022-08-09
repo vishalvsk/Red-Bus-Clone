@@ -1,4 +1,5 @@
-// import g from "../homePage.html"
+
+
 function navbar(){
     return `
     <div id="headerBlock">
@@ -11,11 +12,11 @@ function navbar(){
           </div>
           <div class="leftmenu">
             <ul>
-              <li><a href="./homePage.html">BUS TICKETS</a></li>
+              <li><a href="./SignupLogin.html"">BUS TICKETS</a></li>
               <li>
-                <a href="../rYde page/rYde.html" id="ryd">rYde<sup>new</sup></a>
+                <a href="../Mohit Codes/rYde page/rYde.html" id="ryd">rYde<sup>new</sup></a>
               </li>
-              <li><a href="../redrail page/redrail.html">redrail</a></li>
+              <li><a href="../Mohit Codes/redrail page/redrail.html">redrail</a></li>
             
             </ul>
           </div>
@@ -31,7 +32,7 @@ function navbar(){
             <span><i class="fas fa-chevron-down"></i> </span> 
             </a>
             <div class="dropdown-menu-booking">
-              <div>
+              <div class=="dropdown-menu_2">
               <a class="dropdown-item" href="#">Sign In First</a>
               </div>
             </div>

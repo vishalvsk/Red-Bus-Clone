@@ -15,6 +15,7 @@ async function init_busData() {
   let data = await getData();
   display_buses(data);
 }
+
 /*
 async function init_upperDeck() {
   let data = await upperDeck();

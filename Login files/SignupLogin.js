@@ -1,9 +1,13 @@
-import navbar from "./utilities/navbar.js";
+import navbar from "../Mohit Codes/../Mohit Codes/akash code/utilities/navbar.js";
 
 
 let header = document.getElementById("header");
 header.innerHTML = navbar();
 
+document.querySelector("form").addEventListener("submit",()=>{
+    event.preventDefault();
+    alert("Please Login first");
+})
 
 // manging 
 document.getElementById("dropup-menu-booking").addEventListener("dblclick",function(){
@@ -13,7 +17,6 @@ document.getElementById("dropup-menu-booking").addEventListener("dblclick",funct
 document.querySelector("#dropup-menu-booking").addEventListener("click",function(){
     document.querySelector(".dropdown-menu-booking").style.display = "none";
 });
-
 
 // ------------double click on profile:- profile menu open----------------------
 document.getElementById("dropup-menu").addEventListener("dblclick",function(){
@@ -29,6 +32,10 @@ document.getElementById("dropup-menu").addEventListener("click",function(){
 document.querySelector(".dropdown-menu").addEventListener("click",function(){
     document.querySelector(".windowSignUp").style.display = "flex";
     document.querySelector(".dropdown-menu").style.display = "none";
+});
+document.querySelector(".dropdown-menu_2").addEventListener("click",function(){
+    document.querySelector(".windowSignUp").style.display = "flex";
+    document.querySelector(".dropdown-menu_2").style.display = "none";
 });
 // ------Click on close and close 1st Popup-------------
 document.getElementById("close").addEventListener("click",function(){

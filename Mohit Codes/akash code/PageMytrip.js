@@ -11,7 +11,7 @@ async function gettrips(){
         console.log(err);
     }
 }
-var userDetail = JSON.parse(localStorage.getItem("userProfile"));
+var userDetail = JSON.parse(localStorage.getItem("userProfile")) || [];
 document.getElementById("userName").innerText = userDetail.UserName;
 
 gettrips();
@@ -19,7 +19,7 @@ function show_all_trips(trips){
     let tripsContainer = document.querySelector(".trips_det");
     if(trips.length==0){
         // tripsContainer.innerHTML = "No trips Yet !";
-        console.log("running")
+        // console.log("running")
         let msg = document.createElement("p");
         msg.innerText = "No Trips Yet !"
         msg.setAttribute("class", "center");
@@ -27,6 +27,7 @@ function show_all_trips(trips){
         tripsContainer.innerHTML="";
         tripsContainer.append(msg);
     }else{
+        console.log(trips)
     tripsContainer.innerHTML="";
         trips.map((trip)=>{
        let card = document.createElement("div");

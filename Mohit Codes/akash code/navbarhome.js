@@ -46,7 +46,7 @@ function navbar(){
                 <a class="dropdown-item" href="PageMytrip.html">MY Trips</a><br>
                 <a class="dropdown-item" href="PageWalletAndCard.html">Wallets</a><br>
                 <a class="dropdown-item" href="PageMyProfile.html">MY Profile</a><br>
-                <a class="dropdown-item" href="SignupLogin.html">Sign Out</a><br>
+                <a class="dropdown-item" href="../../Login files/SignupLogin.html">Sign Out</a><br>
                 </div>          
               </div>
             </li>
