@@ -42,7 +42,7 @@ function display_buses(data) {
   let no_of_buses = document.getElementById("no_of_buses");
   let bus_details_section = document.getElementById("bus_details_section");
   bus_details_section.innerHTML = "";
-  no_of_buses.innerHTML = `${data.length} Buses`;
+  no_of_buses.innerHTML = `${data.length} `;
   data.forEach((bus) => {
     let bus_card = document.createElement("div");
     bus_card.setAttribute("class", "bus_card");
@@ -72,7 +72,7 @@ function display_buses(data) {
             </tr>
         </table>
         <div class="price_nd_seat_div">
-            <p>Starts from INR <span class="bold">${bus.price}</span></p>
+            <p>Starts from <span class="bold" id="Bus_price">INR ${bus.price}</span></p>
             <p>${balance_avl_seats} Seats available</p>
 
         </div>

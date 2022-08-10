@@ -10,6 +10,7 @@
       "price": 312,
       "seat_available": 87,
       "booked_seats": [
+        85
       ]
     },
     {
@@ -22,6 +23,7 @@
       "price": 741,
       "seat_available": 87,
       "booked_seats": [
+        46
       ]
     },
     {
@@ -1861,10 +1863,10 @@
   ],
   "Tickets": [
     {
-      "name": "Aayesha",
+      "name": "MYself",
       "age": "22",
-      "email": "smple@gm.com",
-      "phone": "2345678909",
+      "email": "",
+      "phone": "",
       "booked_bus": [
         {
           "id": 2,
@@ -1876,22 +1878,51 @@
           "price": 741,
           "seat_available": 87,
           "booked_seats": [
-            2,
-            47,
             46
           ]
         }
       ],
       "booked_seatID": 46,
       "booked_price": 991,
-      "cur_Dt_time": "23:46 1-7-2022",
+      "cur_Dt_time": "1 : 20  10 - 7 - 2022",
       "user_points_input": {
         "pickPoint": "PNP",
         "dropPoint": "DL",
-        "date": "2022-08-08"
+        "date": "2022-08-11"
       },
       "ticketN0": 248,
-      "id": 3
+      "id": 1
+    },
+    {
+      "name": "Dummy",
+      "age": "44",
+      "email": "",
+      "phone": "",
+      "booked_bus": [
+        {
+          "id": 1,
+          "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
+          "company": "VRL Travels",
+          "time_in": "10:25",
+          "time_out": "14:33",
+          "rating": 3.9,
+          "price": 312,
+          "seat_available": 87,
+          "booked_seats": [
+            85
+          ]
+        }
+      ],
+      "booked_seatID": 85,
+      "booked_price": 612,
+      "cur_Dt_time": "1 : 23  10 - 7 - 2022",
+      "user_points_input": {
+        "pickPoint": "MP",
+        "dropPoint": "RJ",
+        "date": "2022-08-11"
+      },
+      "ticketN0": 286,
+      "id": 2
     }
   ]
 }

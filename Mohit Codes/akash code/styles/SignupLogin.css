@@ -11,8 +11,7 @@ body {
 #headerBlock {
   display:block;
   height: 60px;
-  width: 100%;
-
+  width: 100vw;
   background: #d84f57;
   transform: none;
   transition: all 1.5s linear 0s;
@@ -22,12 +21,14 @@ body {
   z-index: 1;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 750px){
   .boxContainer{
       width: 100%;
       height: auto;
       
-  
+  }
+  #headerBlock {
+    width: 100%;
   }
   .boxContainer .leftPanel, .right-panel{
    

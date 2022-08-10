@@ -2,8 +2,8 @@
     background-color: #2d3031;
 } */
 .boxContainer{
-    height: 892px;
-    width: 1591px;
+    /* height: 892px; */
+    /* width: 1591px; */
     display: flex;
 }
 .leftPanel{
@@ -20,8 +20,6 @@
 }
 .leftPanel > a{
     display: flex;
-    height: 66px;
-    width: 240px;
     color: #b9b3aa;
     list-style-type: none;
     list-style-position: outside;
@@ -64,8 +62,8 @@
 }
 .profiledetails{
     height: 360px;
-    width: 991px;
-    margin: 7px 0 15px 120px;
+    margin: 0px 80px;
+    /* margin: 7px 0 15px 120px; */
     /* display: block; */
     box-sizing: border-box;
     box-shadow: rgb(62, 67, 69) 0px 0px 10px 0px;
@@ -87,7 +85,6 @@
     padding: 20px 0 0 0;
     display: block;
     /* border: 1px solid; */
-  
 }
 .editbutton > button{
    
@@ -100,6 +97,9 @@
     margin: 0 27px 0 0 ;
     border-radius: 2px;
     color: white;
+}
+button:hover{
+    background-color: #298529;
 }
 .userdetail1{
     height: 80px;

@@ -48,14 +48,14 @@ document.getElementById("ButtonOTPvarification").addEventListener("click" ,funct
         const displayData = (parentNode) => {
     
                 let div = document.createElement("div");
-            
+                invalidOTP.innerText="";
                 let invalid = document.createElement("p");
                 invalid.textContent = "Invalid OTP!";
                 invalid.style.color = "red"
                 div.append(invalid)
                 parentNode.append(div)
             }
-            invalidOTP.innerText="";
+            
             displayData(invalidOTP);
         }
        

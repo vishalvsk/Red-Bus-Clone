@@ -432,19 +432,19 @@
 <script>
   let booking_details = JSON.parse(localStorage.getItem("booking_details"));
   let today = new Date();
-  let time = today.getHours() + ":" + today.getMinutes();
+  let time = today.getHours() + " : " + today.getMinutes();
   let date =
-    today.getDay() + "-" + today.getMonth() + "-" + today.getFullYear();
-  let date_time = time + " " + date;
+    today.getDate() + " - " + today.getMonth() + " - " + today.getFullYear();
+  let date_time = time + "  " + date;
 
   document.getElementById("tot_price").innerHTML = booking_details.tot_price;
 
   async function postData() {
     let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
     let name = document.getElementById("inputName").value;
-    let genderName = document.querySelector(
-      `input[name="gender"]:checked`
-    ).value;
+    // let genderName = document.querySelector(
+    //   `input[name="gender"]:checked`
+    // ).value;
 
     let age = document.querySelector("#input").value;
     let email = document.getElementById("email").value;
@@ -488,7 +488,6 @@
 //   store value for details page don't change this values
    function StoreValues() {
     let name = document.getElementById("inputName").value;
-   
 
     let age = document.getElementById("input").value;
     let OBj = {

@@ -8,15 +8,15 @@ function navbar(){
       <nav class="leftNav">
         <section>
           <div class="logo">
-            <a href="./homePage.html"><img src="https://st.redbus.in/Images/redrail/r_logo.png" alt=""></a>
+            <a href="./index.html"><img src="https://st.redbus.in/Images/redrail/r_logo.png" alt=""></a>
           </div>
           <div class="leftmenu">
             <ul>
-              <li><a href="./SignupLogin.html"">BUS TICKETS</a></li>
+              <li><a href="./index.html">BUS TICKETS</a></li>
               <li>
-                <a href="../Mohit Codes/rYde page/rYde.html" id="ryd">rYde<sup>new</sup></a>
+                <a href="./index.html" id="ryd">rYde<sup>new</sup></a>
               </li>
-              <li><a href="../Mohit Codes/redrail page/redrail.html">redrail</a></li>
+              <li><a href="./index.html">redrail</a></li>
             
             </ul>
           </div>

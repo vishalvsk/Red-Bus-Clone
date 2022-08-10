@@ -1,9 +1,8 @@
-import navbar from "../Mohit Codes/../Mohit Codes/akash code/utilities/navbar.js";
+import navbar from "../Mohit Codes/akash code/utilities/navbar.js";
 
 
 let header = document.getElementById("header");
 header.innerHTML = navbar();
-
 document.querySelector("form").addEventListener("submit",()=>{
     event.preventDefault();
     alert("Please Login first");
@@ -33,10 +32,7 @@ document.querySelector(".dropdown-menu").addEventListener("click",function(){
     document.querySelector(".windowSignUp").style.display = "flex";
     document.querySelector(".dropdown-menu").style.display = "none";
 });
-document.querySelector(".dropdown-menu_2").addEventListener("click",function(){
-    document.querySelector(".windowSignUp").style.display = "flex";
-    document.querySelector(".dropdown-menu_2").style.display = "none";
-});
+
 // ------Click on close and close 1st Popup-------------
 document.getElementById("close").addEventListener("click",function(){
     document.querySelector(".windowSignUp").style.display = "none";
@@ -49,8 +45,7 @@ document.getElementById("ButtonSigup").addEventListener("click",function(){
     document.querySelector(".windowOTP").style.display = "flex";
 
     let Number = document.getElementById("inputName").value;
-    localStorage.setItem("number",JSON.stringify(Number)
-    )
+    localStorage.setItem("number",JSON.stringify(Number));
 });
 document.getElementById("closetwo").addEventListener("click",function(){
     document.querySelector(".windowOTP").style.display = "none";

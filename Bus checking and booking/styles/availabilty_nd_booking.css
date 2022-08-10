@@ -81,9 +81,6 @@ hr{
 }
 #headerDet{
 
-
-
-
     display: flex;
     padding: 0px 20px;
     align-items: center;
@@ -229,6 +226,9 @@ hr{
     margin-bottom: 30px;
 }
 
+#no_of_buses{
+    font-size: small;
+}
 .right_section .heading_hr {
     margin-top: -9px;
 }
@@ -242,9 +242,10 @@ hr{
     grid-template-columns: 1fr 1.4fr 1.7fr 1.2fr 1.5fr 1.5fr 1.3fr 1fr;
 }
 #details_sorting_heading .p{
-   font-size: 12px;
+   font-size: 14px;
    color: #3e3e52;
-   font-weight: 400;
+   font-weight: bold;
+
 }
 #details_sorting_heading #span{
 font-size: 14px;
@@ -321,13 +322,18 @@ p {
     margin-top: 20px;
     margin-right: 15px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    gap: 80px;
     justify-content: center;
 }
 
 .price_nd_seat_div p {
 
-    font-size: small;
+    font-size: 16px;
+}
+#Bus_price{
+    font-size: 18px;
+    margin-left: 10px;
 }
 .see_setails_sml_screen{
    display: none;

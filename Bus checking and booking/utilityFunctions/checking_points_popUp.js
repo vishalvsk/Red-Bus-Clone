@@ -7,6 +7,7 @@ async function checking_point() {
 let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
 
   let selected_busID = localStorage.getItem("selected_busID");
+  console.log(selected_busID)
   let selected_seat_id = localStorage.getItem("selected_seat_id");
   selected_seat_id = +selected_seat_id;
 
@@ -69,8 +70,8 @@ let input_obj = JSON.parse(localStorage.getItem("user_inputs"));
           booked_seatID: selected_seat_id
         }
         localStorage.setItem("booking_details", JSON.stringify(booking_details));
-         window.open("../Pages/passenger.html","_self");
         patch_ele(upd_bus[0], selected_busID);
+        window.open("../Pages/passenger.html","_self");
       }
     });
   });

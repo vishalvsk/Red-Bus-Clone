@@ -389,7 +389,7 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <script>
-  let bookingDetails = JSON.parse(localStorage.getItem("booking_details"));
+  let bookingDetails = JSON.parse(localStorage.getItem("booking_details")) || [];
 
   let start = document.getElementById("city_start").innerHTML = localStorage.getItem("from");
   let end = document.getElementById("city_end").innerHTML = localStorage.getItem("to");
@@ -458,11 +458,14 @@
          document.querySelector("#discount").innerText="INR "+ discount;           
           let total=Math.floor(price-(discount));         
            document.querySelector("#total_price").innerText="Total : Rs "+ total;            
-           localStorage.setItem("pay",total);            
+           localStorage.setItem("pay",total); 
+           document.querySelector("#offerCode").value="";           
            alert("Promo Code Applied!");     
           }        
           else{            
-            let discount=0;        
+            let discount=0;   
+            alert("PromoCode not valid !");  
+            document.querySelector("#offerCode").value=""; 
           }
         });
 </script>

@@ -27,7 +27,7 @@ function show_all_trips(trips){
         tripsContainer.innerHTML="";
         tripsContainer.append(msg);
     }else{
-        console.log(trips)
+        // console.log(trips)
     tripsContainer.innerHTML="";
         trips.map((trip)=>{
        let card = document.createElement("div");
