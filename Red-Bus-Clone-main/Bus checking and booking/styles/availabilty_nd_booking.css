@@ -115,13 +115,12 @@ hr{
 }
 .left_section #p1{
   font-size: 12px;
-  font-weight: 900; 
+  font-weight: 600; 
   color: #525267;   
 }
 .filter_div #p2{
    font-size: 12px;
-   font-weight: 750;
-   /* font-weight: bolder; */
+   font-weight: 600;
    color: #3e3e52;
 }
 #modify_btn {
@@ -234,27 +233,19 @@ hr{
     margin-top: -9px;
 }
 #details_sorting_heading #p-span{
-   width: 150px;
-   /* border: 1px solid #000; */
+   width: 200px;
 }
 #details_sorting_heading {
   
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1.7fr 1.1fr 1.1fr 1.1fr 3.2fr 2fr 1.2fr;
-
+    grid-template-columns: 1fr 1.4fr 1.7fr 1.2fr 1.5fr 1.5fr 1.3fr 1fr;
 }
 #details_sorting_heading .p{
    font-size: 14px;
    color: #3e3e52;
-<<<<<<< HEAD:Bus checking and booking/styles/availabilty_nd_booking.css
    font-weight: bold;
 
-=======
-   font-weight: 400;
-   /* border: 1px solid #000; */
-   /* padding-right: -10px; */
->>>>>>> e345d4828656d8a612691409f2f6a1b77947d6ce:Red-Bus-Clone-main/Bus checking and booking/styles/availabilty_nd_booking.css
 }
 #details_sorting_heading #span{
 font-size: 14px;

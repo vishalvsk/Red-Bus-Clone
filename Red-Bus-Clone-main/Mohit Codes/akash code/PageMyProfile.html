@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyProfile</title>
     <link rel="stylesheet" href="./styles/SignupLogin.css">
-<<<<<<< HEAD:Mohit Codes/akash code/PageMyProfile.html
     <link rel="stylesheet" href="./styles/leftpanel.css">
     <style>
         #rightPanel_section {
@@ -22,9 +21,6 @@
         }
     
     </style>
-=======
-    <link rel="stylesheet" href="./styles/Profilerightpanel.css">
->>>>>>> e345d4828656d8a612691409f2f6a1b77947d6ce:Red-Bus-Clone-main/Mohit Codes/akash code/PageMyProfile.html
 </head>
 
 <body>
@@ -69,7 +65,6 @@
                 </div>
             </a>
         </div>
-<<<<<<< HEAD:Mohit Codes/akash code/PageMyProfile.html
 
         <div id="rightPanel_section">
 
@@ -109,53 +104,13 @@
                             <label for="">NUMBER</label>
                             <div id="numberPrint"></div>
                         </div>
-=======
-        <div class="right-side">
-            
-            <span class="greyText">MY Profile</span>
-
-            <div class="profiledetails">
-                <div class="editbutton" id="editbutton">
-                    <button id="edittap">EDIT</button>
-                </div>
-                <div class="userdetail1">
-                    <div class="inputName">
-                        <div>
-                            <label for="YOUR NAME">YOUR NAME</label><br>
-                            <div id="nameUserPrint"></div>
-                        </div>
-                        <div>
-                            <label for="DATE OF BIRTH">DATE OF BIRTH</label><br>
-                            <div id="datePrint"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="userdetail2"> 
-                    <p>GENDER</p>
-                    <div id="genderPrint"></div>
-                </div>
-                <fieldset> <legend>CONTACT DETAILS</legend> </fieldset>
-                <div class="userdetail3">
-                    <div>
-                        <label for="">EMAIL</label>
-                        <div id="emailPrint"></div>
-                    </div>
-                    <div>
-                        <label for="">NUMBER</label>
-                        <div id="numberPrint"></div>
->>>>>>> e345d4828656d8a612691409f2f6a1b77947d6ce:Red-Bus-Clone-main/Mohit Codes/akash code/PageMyProfile.html
                     </div>
                 </div>
             </div>
 
 
-<<<<<<< HEAD:Mohit Codes/akash code/PageMyProfile.html
             <div class="right-paneltwo">
                 <span class="greyText">MY Profile</span>
-=======
-        <div class="right-side-two">
-            <span class="greyText">MY Profile</span>
->>>>>>> e345d4828656d8a612691409f2f6a1b77947d6ce:Red-Bus-Clone-main/Mohit Codes/akash code/PageMyProfile.html
 
                 <div class="profiledetails">
 
@@ -200,11 +155,7 @@
                 </div>
             </div>
 
-<<<<<<< HEAD:Mohit Codes/akash code/PageMyProfile.html
             <!-- <div class="right-panel3">
-=======
-        <!-- <div class="right-side-three">
->>>>>>> e345d4828656d8a612691409f2f6a1b77947d6ce:Red-Bus-Clone-main/Mohit Codes/akash code/PageMyProfile.html
             
             <span class="greyText">MY Profile</span>
 
@@ -239,14 +190,9 @@
                         <div id="numberPrint"></div>
                     </div>
                 </div>
-<<<<<<< HEAD:Mohit Codes/akash code/PageMyProfile.html
             </div>
         </div> -->
         </div>
-=======
-            </div> 
-        </div> -->
->>>>>>> e345d4828656d8a612691409f2f6a1b77947d6ce:Red-Bus-Clone-main/Mohit Codes/akash code/PageMyProfile.html
     </div>
 
     <div id="footer"></div>
@@ -259,7 +205,6 @@
     document.querySelector(".right-paneltwo").style.display = "none";
 
     let PhoneNumber = JSON.parse(localStorage.getItem("number"));
-<<<<<<< HEAD:Mohit Codes/akash code/PageMyProfile.html
     document.getElementById("numberPrint2").append(PhoneNumber);
 
     document.getElementById("cancelbutton").addEventListener("click", function () {
@@ -271,25 +216,6 @@
         document.querySelector(".right-panel").style.display = "none";
         document.querySelector(".right-paneltwo").style.display = "block";
 
-=======
-    document.getElementById("numberPrint").append(PhoneNumber);
-    document.getElementById("numberPrint2").append(PhoneNumber);
-
-    document.getElementById("edittap").addEventListener("click",function (){
-        document.querySelector(".right-side-two").style.display = "block";
-        document.querySelector(".right-side").style.display = "none";
-    })
-
-    document.getElementById("cancelbutton").addEventListener("click",function(){
-        document.querySelector(".right-side-two").style.display = "none"
-        document.querySelector(".right-side").style.display = "block"
-    })
-
-    document.getElementById("savebutton").addEventListener("click",()=>{
-
-        // document.querySelector(".right-side-two").style.display = "none"
-        // document.querySelector(".right-side").style.display = "block"
->>>>>>> e345d4828656d8a612691409f2f6a1b77947d6ce:Red-Bus-Clone-main/Mohit Codes/akash code/PageMyProfile.html
         event.preventDefault();
         console.log("edit clicked");
 
@@ -312,14 +238,7 @@
     })
 
 
-<<<<<<< HEAD:Mohit Codes/akash code/PageMyProfile.html
     display();
-=======
-function display(){
- 
-    document.querySelector(".right-side-two").style.display = "none"
-    document.querySelector(".right-side").style.display = "block";
->>>>>>> e345d4828656d8a612691409f2f6a1b77947d6ce:Red-Bus-Clone-main/Mohit Codes/akash code/PageMyProfile.html
 
     function display() {
 

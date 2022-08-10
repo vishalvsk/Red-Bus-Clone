@@ -12,7 +12,7 @@ function navbar(){
                 <li>
                   <a href="../rYde page/rYde.html" id="ryd">rYde<sup>new</sup></a>
                 </li>
-                <li><a href="../redrail page/redrail.html">redRail</a></li>
+                <li><a href="../redrail page/redrail.html">redrail</a></li>
               
               </ul>
             </div>
@@ -23,7 +23,7 @@ function navbar(){
           <ul>
             <li><a href="#">Help</a></li>
             <li>
-              <a href="#" id="dropup-menu-booking" >Manage Booking
+              <a href="#" id="dropup-menu-booking" >Manage booking
               <span><i class="fas fa-chevron-down"></i> </span> 
               </a>
               <div class="dropdown-menu-booking">

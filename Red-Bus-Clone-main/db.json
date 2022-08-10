@@ -10,11 +10,7 @@
       "price": 312,
       "seat_available": 87,
       "booked_seats": [
-<<<<<<< HEAD:db.json
         85
-=======
-        48
->>>>>>> e345d4828656d8a612691409f2f6a1b77947d6ce:Red-Bus-Clone-main/db.json
       ]
     },
     {
@@ -1927,68 +1923,6 @@
       },
       "ticketN0": 286,
       "id": 2
-    },
-    {
-      "name": "akash",
-      "age": "21",
-      "email": "akashjadhav704010@gmail.com",
-      "phone": "9511760126",
-      "booked_bus": [
-        {
-          "id": 1,
-          "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
-          "company": "VRL Travels",
-          "time_in": "10:25",
-          "time_out": "14:33",
-          "rating": 3.9,
-          "price": 312,
-          "seat_available": 87,
-          "booked_seats": [
-            48
-          ]
-        }
-      ],
-      "booked_seatID": 48,
-      "booked_price": 612,
-      "cur_Dt_time": "21:13 1-7-2022",
-      "user_points_input": {
-        "pickPoint": "mumbai",
-        "dropPoint": "dehli",
-        "date": "2022-08-09"
-      },
-      "ticketN0": 249,
-      "id": 3
-    },
-    {
-      "name": "vishal",
-      "age": "21",
-      "email": "akashjadhav704010@gmail.com",
-      "phone": "",
-      "booked_bus": [
-        {
-          "id": 23,
-          "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
-          "company": "VRL Travels",
-          "time_in": "10:25",
-          "time_out": "14:33",
-          "rating": 3.9,
-          "price": 112,
-          "seat_available": 87,
-          "booked_seats": [
-            25
-          ]
-        }
-      ],
-      "booked_seatID": 25,
-      "booked_price": 112,
-      "cur_Dt_time": "22:32 1-7-2022",
-      "user_points_input": {
-        "pickPoint": "thane",
-        "dropPoint": "mumbai",
-        "date": "2022-08-09"
-      },
-      "ticketN0": 248,
-      "id": 4
     }
   ]
 }
