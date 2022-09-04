@@ -10,7 +10,8 @@
       "price": 312,
       "seat_available": 87,
       "booked_seats": [
-        85
+        85,
+        47
       ]
     },
     {
@@ -257,9 +258,7 @@
       "rating": 3.9,
       "price": 112,
       "seat_available": 87,
-      "booked_seats": [
-        45
-      ]
+      "booked_seats": []
     },
     {
       "id": 24,
@@ -1927,35 +1926,36 @@
       "id": 2
     },
     {
-      "name": "vishal",
+      "name": "vishal ",
       "age": "24",
       "email": "vishalkaralevsk@gmail.com",
       "phone": "9860809706",
       "booked_bus": [
         {
-          "id": 23,
+          "id": 1,
           "bus_name": "Volvo Multi-Axle I-Shift A/C Sleeper",
           "company": "VRL Travels",
           "time_in": "10:25",
           "time_out": "14:33",
           "rating": 3.9,
-          "price": 112,
+          "price": 312,
           "seat_available": 87,
           "booked_seats": [
-            45
+            85,
+            47
           ]
         }
       ],
-      "booked_seatID": 45,
-      "booked_price": 362,
-      "cur_Dt_time": "15 : 17  19 - 7 - 2022",
+      "booked_seatID": 47,
+      "booked_price": 612,
+      "cur_Dt_time": "15 : 37  3 - 8 - 2022",
       "user_points_input": {
-        "pickPoint": "Delhi",
-        "dropPoint": "Gurgaon",
-        "date": "2022-08-21"
+        "pickPoint": "pune",
+        "dropPoint": "delhi",
+        "date": "2022-09-05"
       },
-      "ticketN0": 268,
-      "id": 3
+      "ticketN0": 248,
+      "id": 4
     }
   ]
 }
